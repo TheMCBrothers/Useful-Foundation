@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "usefulfoundation:block/copper_block" }
+  }
+}

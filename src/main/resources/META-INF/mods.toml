@@ -1,0 +1,29 @@
+modLoader="javafml" #mandatory
+loaderVersion="[30,)" #mandatory (28 is current forge version)
+issueTrackerURL="https://github.com/TheMCBrothers/Useful-Foundation/issues" #optional
+[[mods]] #mandatory
+modId="usefulfoundation" #mandatory
+version="${file.jarVersion}" #mandatory
+displayName="Useful Foundation" #mandatory
+#updateJSONURL="http://myurl.me/" #optional
+displayURL="https://www.curseforge.com/minecraft/mc-mods/useful-foundation" #optional
+logoFile="logo.png" #optional
+credits="Thanks to TheMCCrazyMan for the awesome textures" #optional
+authors="TheMCBrothers (TheMCLoveMan + TheMCCrazyMan)" #optional
+description='''
+Useful Foundation for some mods
+'''
+
+[[dependencies.usefulfoundation]] #optional
+    modId="forge" #mandatory
+    mandatory=true #mandatory
+    versionRange="[30,)" #mandatory
+    ordering="NONE"
+    side="BOTH"
+# Here's another dependency
+[[dependencies.usefulfoundation]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.15.1,)"
+    ordering="NONE"
+    side="BOTH"
