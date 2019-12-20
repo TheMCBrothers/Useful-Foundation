@@ -4,6 +4,8 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import themcbros.usefulfoundation.UsefulFoundation;
+import themcbros.usefulfoundation.world.WorldGeneration;
 
 public class CommonProxy {
 
@@ -14,7 +16,8 @@ public class CommonProxy {
     }
 
     protected void commonSetup(FMLCommonSetupEvent event) {
-
+        UsefulFoundation.LOGGER.info("Common setup");
+        WorldGeneration.setupOreGeneration();
     }
 
     protected void enqueueIMC(InterModEnqueueEvent event) {
