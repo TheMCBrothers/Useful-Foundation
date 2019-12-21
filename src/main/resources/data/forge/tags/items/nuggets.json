@@ -3,6 +3,12 @@
   "values": [
     "#forge:nuggets/copper",
     "#forge:nuggets/tin",
-    "#forge:nuggets/bronze"
+    "#forge:nuggets/bronze",
+    "#forge:nuggets/nickel",
+    "#forge:nuggets/invar",
+    "#forge:nuggets/lead",
+    "#forge:nuggets/silver",
+    "#forge:nuggets/electrum",
+    "#forge:nuggets/uranium"
   ]
 }
