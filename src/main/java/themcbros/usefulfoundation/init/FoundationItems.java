@@ -21,6 +21,16 @@ public class FoundationItems {
     public static final BlockItem TIN_ORE = register("tin_ore", new BlockItem(FoundationBlocks.TIN_ORE, new Item.Properties().group(UsefulFoundation.GROUP)));
     public static final BlockItem TIN_BLOCK = register("tin_block", new BlockItem(FoundationBlocks.TIN_BLOCK, new Item.Properties().group(UsefulFoundation.GROUP)));
     public static final BlockItem BRONZE_BLOCK = register("bronze_block", new BlockItem(FoundationBlocks.BRONZE_BLOCK, new Item.Properties().group(UsefulFoundation.GROUP)));
+    public static final BlockItem NICKEL_ORE = register("nickel_ore", new BlockItem(FoundationBlocks.NICKEL_ORE, new Item.Properties().group(UsefulFoundation.GROUP)));
+    public static final BlockItem NICKEL_BLOCK = register("nickel_block", new BlockItem(FoundationBlocks.NICKEL_BLOCK, new Item.Properties().group(UsefulFoundation.GROUP)));
+    public static final BlockItem INVAR_BLOCK = register("invar_block", new BlockItem(FoundationBlocks.INVAR_BLOCK, new Item.Properties().group(UsefulFoundation.GROUP)));
+    public static final BlockItem LEAD_ORE = register("lead_ore", new BlockItem(FoundationBlocks.LEAD_ORE, new Item.Properties().group(UsefulFoundation.GROUP)));
+    public static final BlockItem LEAD_BLOCK = register("lead_block", new BlockItem(FoundationBlocks.LEAD_BLOCK, new Item.Properties().group(UsefulFoundation.GROUP)));
+    public static final BlockItem SILVER_ORE = register("silver_ore", new BlockItem(FoundationBlocks.SILVER_ORE, new Item.Properties().group(UsefulFoundation.GROUP)));
+    public static final BlockItem SILVER_BLOCK = register("silver_block", new BlockItem(FoundationBlocks.SILVER_BLOCK, new Item.Properties().group(UsefulFoundation.GROUP)));
+    public static final BlockItem ELECTRUM_BLOCK = register("electrum_block", new BlockItem(FoundationBlocks.ELECTRUM_BLOCK, new Item.Properties().group(UsefulFoundation.GROUP)));
+    public static final BlockItem URANIUM_ORE = register("uranium_ore", new BlockItem(FoundationBlocks.URANIUM_ORE, new Item.Properties().group(UsefulFoundation.GROUP)));
+    public static final BlockItem URANIUM_BLOCK = register("uranium_block", new BlockItem(FoundationBlocks.URANIUM_BLOCK, new Item.Properties().group(UsefulFoundation.GROUP)));
 
     public static final Item IRON_DUST = register("iron_dust", new Item(new Item.Properties().group(UsefulFoundation.GROUP)));
     public static final Item IRON_PLATE = register("iron_plate", new Item(new Item.Properties().group(UsefulFoundation.GROUP)));
@@ -43,7 +53,37 @@ public class FoundationItems {
     public static final Item BRONZE_DUST = register("bronze_dust", new Item(new Item.Properties().group(UsefulFoundation.GROUP)));
     public static final Item BRONZE_PLATE = register("bronze_plate", new Item(new Item.Properties().group(UsefulFoundation.GROUP)));
     public static final Item BRONZE_GEAR = register("bronze_gear", new Item(new Item.Properties().group(UsefulFoundation.GROUP)));
-    // TODO: Aluminum, Nickel, Invar, Electrum, Silver, Lead, Uranium (coming soon)
+    public static final Item NICKEL_INGOT = register("nickel_ingot", new Item(new Item.Properties().group(UsefulFoundation.GROUP)));
+    public static final Item NICKEL_NUGGET = register("nickel_nugget", new Item(new Item.Properties().group(UsefulFoundation.GROUP)));
+    public static final Item NICKEL_DUST = register("nickel_dust", new Item(new Item.Properties().group(UsefulFoundation.GROUP)));
+    public static final Item NICKEL_PLATE = register("nickel_plate", new Item(new Item.Properties().group(UsefulFoundation.GROUP)));
+    public static final Item NICKEL_GEAR = register("nickel_gear", new Item(new Item.Properties().group(UsefulFoundation.GROUP)));
+    public static final Item INVAR_INGOT = register("invar_ingot", new Item(new Item.Properties().group(UsefulFoundation.GROUP)));
+    public static final Item INVAR_NUGGET = register("invar_nugget", new Item(new Item.Properties().group(UsefulFoundation.GROUP)));
+    public static final Item INVAR_DUST = register("invar_dust", new Item(new Item.Properties().group(UsefulFoundation.GROUP)));
+    public static final Item INVAR_PLATE = register("invar_plate", new Item(new Item.Properties().group(UsefulFoundation.GROUP)));
+    public static final Item INVAR_GEAR = register("invar_gear", new Item(new Item.Properties().group(UsefulFoundation.GROUP)));
+    public static final Item LEAD_INGOT = register("lead_ingot", new Item(new Item.Properties().group(UsefulFoundation.GROUP)));
+    public static final Item LEAD_NUGGET = register("lead_nugget", new Item(new Item.Properties().group(UsefulFoundation.GROUP)));
+    public static final Item LEAD_DUST = register("lead_dust", new Item(new Item.Properties().group(UsefulFoundation.GROUP)));
+    public static final Item LEAD_PLATE = register("lead_plate", new Item(new Item.Properties().group(UsefulFoundation.GROUP)));
+    public static final Item LEAD_GEAR = register("lead_gear", new Item(new Item.Properties().group(UsefulFoundation.GROUP)));
+    public static final Item SILVER_INGOT = register("silver_ingot", new Item(new Item.Properties().group(UsefulFoundation.GROUP)));
+    public static final Item SILVER_NUGGET = register("silver_nugget", new Item(new Item.Properties().group(UsefulFoundation.GROUP)));
+    public static final Item SILVER_DUST = register("silver_dust", new Item(new Item.Properties().group(UsefulFoundation.GROUP)));
+    public static final Item SILVER_PLATE = register("silver_plate", new Item(new Item.Properties().group(UsefulFoundation.GROUP)));
+    public static final Item SILVER_GEAR = register("silver_gear", new Item(new Item.Properties().group(UsefulFoundation.GROUP)));
+    public static final Item ELECTRUM_INGOT = register("electrum_ingot", new Item(new Item.Properties().group(UsefulFoundation.GROUP)));
+    public static final Item ELECTRUM_NUGGET = register("electrum_nugget", new Item(new Item.Properties().group(UsefulFoundation.GROUP)));
+    public static final Item ELECTRUM_DUST = register("electrum_dust", new Item(new Item.Properties().group(UsefulFoundation.GROUP)));
+    public static final Item ELECTRUM_PLATE = register("electrum_plate", new Item(new Item.Properties().group(UsefulFoundation.GROUP)));
+    public static final Item ELECTRUM_GEAR = register("electrum_gear", new Item(new Item.Properties().group(UsefulFoundation.GROUP)));
+    public static final Item URANIUM_INGOT = register("uranium_ingot", new Item(new Item.Properties().group(UsefulFoundation.GROUP)));
+    public static final Item URANIUM_NUGGET = register("uranium_nugget", new Item(new Item.Properties().group(UsefulFoundation.GROUP)));
+    public static final Item URANIUM_DUST = register("uranium_dust", new Item(new Item.Properties().group(UsefulFoundation.GROUP)));
+    public static final Item URANIUM_PLATE = register("uranium_plate", new Item(new Item.Properties().group(UsefulFoundation.GROUP)));
+    public static final Item URANIUM_GEAR = register("uranium_gear", new Item(new Item.Properties().group(UsefulFoundation.GROUP)));
+    // TODO: Aluminum (coming soon)
 
     private static <T extends Item> T register(String registryName, T item) {
         item.setRegistryName(UsefulFoundation.getId(registryName));
