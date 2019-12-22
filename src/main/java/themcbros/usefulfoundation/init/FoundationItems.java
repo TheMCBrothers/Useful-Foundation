@@ -7,6 +7,7 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import themcbros.usefulfoundation.UsefulFoundation;
+import themcbros.usefulfoundation.items.HammerItem;
 
 import java.util.List;
 
@@ -14,6 +15,8 @@ import java.util.List;
 public class FoundationItems {
 
     private static final List<Item> ITEMS = Lists.newArrayList();
+
+    public static final HammerItem HAMMER = register("hammer", new HammerItem(new Item.Properties().group(UsefulFoundation.GROUP)));
 
     public static final BlockItem USEFUL_BEE_HIVE = register("useful_beehive", new BlockItem(FoundationBlocks.USEFUL_BEE_HIVE, new Item.Properties().group(UsefulFoundation.GROUP)));
     public static final BlockItem COPPER_ORE = register("copper_ore", new BlockItem(FoundationBlocks.COPPER_ORE, new Item.Properties().group(UsefulFoundation.GROUP)));

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " I#",
+    " SI",
+    "S  "
+  ],
+  "key": {
+    "S": {
+      "tag": "forge:rods/wooden"
+    },
+    "#": {
+      "tag": "forge:string"
+    },
+    "I": {
+      "tag": "forge:ingots"
+    }
+  }
+}

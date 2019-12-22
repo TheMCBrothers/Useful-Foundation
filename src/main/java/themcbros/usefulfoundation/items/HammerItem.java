@@ -15,7 +15,7 @@ public class HammerItem extends ToolItem {
 
     private static final Set<Block> EFFECTIVE_ON = ImmutableSet.of(Blocks.COBBLESTONE, Blocks.GRAVEL, Blocks.SAND);
 
-    protected HammerItem(Properties builder) {
+    public HammerItem(Properties builder) {
         super(0, -2f, ItemTier.IRON, EFFECTIVE_ON, builder);
     }
 
