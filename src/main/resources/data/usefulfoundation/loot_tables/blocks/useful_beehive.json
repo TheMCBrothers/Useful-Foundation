@@ -38,7 +38,7 @@
                 },
                 {
                   "function": "minecraft:copy_state",
-                  "block": "minecraft:beehive",
+                  "block": "usefulfoundation:useful_beehive",
                   "properties": [
                     "honey_level"
                   ]

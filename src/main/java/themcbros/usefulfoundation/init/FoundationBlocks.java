@@ -9,6 +9,7 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import themcbros.usefulfoundation.UsefulFoundation;
+import themcbros.usefulfoundation.block.UsefulBeehiveBlock;
 
 import java.util.List;
 
@@ -17,7 +18,7 @@ public class FoundationBlocks {
 
     private static final List<Block> BLOCKS = Lists.newArrayList();
 
-    public static final BeehiveBlock USEFUL_BEE_HIVE = register("useful_beehive", new BeehiveBlock(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD)));
+    public static final BeehiveBlock USEFUL_BEEHIVE = register("useful_beehive", new UsefulBeehiveBlock(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD)));
     public static final Block COPPER_ORE = register("copper_ore", new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(3f).sound(SoundType.STONE)));
     public static final Block COPPER_BLOCK = register("copper_block", new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(5f).sound(SoundType.METAL)));
     public static final Block TIN_ORE = register("tin_ore", new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(3f).sound(SoundType.STONE)));

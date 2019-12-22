@@ -18,7 +18,7 @@ public class FoundationItems {
 
     public static final HammerItem HAMMER = register("hammer", new HammerItem(new Item.Properties().group(UsefulFoundation.GROUP)));
 
-    public static final BlockItem USEFUL_BEE_HIVE = register("useful_beehive", new BlockItem(FoundationBlocks.USEFUL_BEE_HIVE, new Item.Properties().group(UsefulFoundation.GROUP)));
+    public static final BlockItem USEFUL_BEEHIVE = register("useful_beehive", new BlockItem(FoundationBlocks.USEFUL_BEEHIVE, new Item.Properties().group(UsefulFoundation.GROUP)));
     public static final BlockItem COPPER_ORE = register("copper_ore", new BlockItem(FoundationBlocks.COPPER_ORE, new Item.Properties().group(UsefulFoundation.GROUP)));
     public static final BlockItem COPPER_BLOCK = register("copper_block", new BlockItem(FoundationBlocks.COPPER_BLOCK, new Item.Properties().group(UsefulFoundation.GROUP)));
     public static final BlockItem TIN_ORE = register("tin_ore", new BlockItem(FoundationBlocks.TIN_ORE, new Item.Properties().group(UsefulFoundation.GROUP)));
