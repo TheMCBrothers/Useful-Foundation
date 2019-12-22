@@ -15,5 +15,9 @@
     "I": {
       "tag": "forge:ingots"
     }
+  },
+  "result": {
+    "item": "usefulfoundation:hammer",
+    "count": 1
   }
 }
