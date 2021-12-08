@@ -1,11 +1,12 @@
 package themcbros.usefulfoundation.block;
 
-import net.minecraft.block.BeehiveBlock;
-import net.minecraft.tileentity.TileEntity;
-import net.minecraft.world.IBlockReader;
-import themcbros.usefulfoundation.tileentity.UsefulBeehiveTileEntity;
+import net.minecraft.core.BlockPos;
+import net.minecraft.world.level.block.BeehiveBlock;
+import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.state.BlockState;
+import org.jetbrains.annotations.Nullable;
 
-import javax.annotation.Nullable;
+import javax.annotation.Nonnull;
 
 public class UsefulBeehiveBlock extends BeehiveBlock {
 
@@ -15,7 +16,7 @@ public class UsefulBeehiveBlock extends BeehiveBlock {
 
     @Nullable
     @Override
-    public TileEntity createNewTileEntity(IBlockReader worldIn) {
-        return new UsefulBeehiveTileEntity();
+    public BlockEntity newBlockEntity(@Nonnull BlockPos pos, @Nonnull BlockState state) {
+        return super.newBlockEntity(pos, state);
     }
 }

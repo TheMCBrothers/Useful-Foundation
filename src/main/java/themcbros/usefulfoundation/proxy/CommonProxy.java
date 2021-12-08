@@ -8,7 +8,6 @@ import themcbros.usefulfoundation.UsefulFoundation;
 import themcbros.usefulfoundation.world.WorldGeneration;
 
 public class CommonProxy {
-
     CommonProxy() {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::commonSetup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::enqueueIMC);
@@ -17,15 +16,11 @@ public class CommonProxy {
 
     protected void commonSetup(FMLCommonSetupEvent event) {
         UsefulFoundation.LOGGER.info("Common setup");
-        WorldGeneration.setupOreGeneration();
     }
 
     protected void enqueueIMC(InterModEnqueueEvent event) {
-
     }
 
     protected void processIMC(InterModProcessEvent event) {
-
     }
-
 }

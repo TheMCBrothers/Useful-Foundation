@@ -2,6 +2,6 @@
 @MethodsReturnNonnullByDefault
 package themcbros.usefulfoundation.items;
 
-import mcp.MethodsReturnNonnullByDefault;
+import com.mojang.blaze3d.MethodsReturnNonnullByDefault;
 
 import javax.annotation.ParametersAreNonnullByDefault;

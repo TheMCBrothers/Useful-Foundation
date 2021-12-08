@@ -1,30 +1,31 @@
 buildscript {
     repositories {
-        maven { url = 'https://files.minecraftforge.net/maven' }
-        maven { url = 'https://plugins.gradle.org/m2/' }
-        jcenter()
+        // These repositories are only for Gradle plugins, put any other repositories in the repository block further below
+        maven { url = 'https://maven.minecraftforge.net' }
         mavenCentral()
     }
     dependencies {
-        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '3.+', changing: true
-        classpath "com.wynprice.cursemaven:CurseMaven:2.1.0"
+        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
     }
 }
+
+plugins {
+    id "me.hypherionmc.cursegradle" version "2.0.1"
+}
+
 apply plugin: 'net.minecraftforge.gradle'
-apply plugin: 'eclipse'
+apply plugin: 'idea'
 apply plugin: 'maven-publish'
-apply plugin: "com.wynprice.cursemaven"
 
 group = 'themcbros.usefulfoundation' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = 'UsefulFoundation'
+archivesBaseName = 'usefulfoundation'
 
-sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
 minecraft {
-    mappings channel: 'snapshot', version: mcp_mappings
-
+    mappings channel: 'official', version: project.mc_version
     // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
-    
+
     // accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
 
     // Default run configurations.
@@ -82,30 +83,58 @@ minecraft {
     }
 }
 
+sourceSets.main.java {
+    exclude '**/compat/top/**'
+}
+
+repositories {
+    maven {
+        // location of the maven that hosts JEI files
+        name = "Progwml6 maven"
+        url = "https://dvs1.progwml6.com/files/maven/"
+    }
+    maven {
+        // location of a maven mirror for JEI files, as a fallback
+        name = "ModMaven"
+        url = "https://modmaven.dev"
+    }
+    maven {
+        // TOP
+        name = "tterrag maven"
+        url = "https://maven.tterrag.com/"
+    }
+}
+
 dependencies {
     // Specify the version of Minecraft to use, If this is any group other then 'net.minecraft' it is assumed
     // that the dep is a ForgeGradle 'patcher' dependency. And it's patches will be applied.
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
     minecraft "net.minecraftforge:forge:${mc_version}-${forge_version}"
 
-    // Blue Power
-    if (project.hasProperty('bluepower_fileid')) {
-        compile "curse.maven:blue-power:${bluepower_fileid}"
+    if (project.hasProperty('jei_version')) {
+        // JEI
+        compileOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}:api")
+        runtimeOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}")
     }
 
+    if (project.hasProperty('top_version')) {
+        // TOP
+        compileOnly fg.deobf("mcjty.theoneprobe:TheOneProbe-${top_version}:api")
+        runtimeOnly fg.deobf("mcjty.theoneprobe:TheOneProbe-${top_version}")
+    }
 }
 
 // Example for how to get properties into the manifest for reading by the runtime..
 jar {
     manifest {
         attributes([
-            "Specification-Title": "usefulfoundation",
-            "Specification-Vendor": "themcbrothers",
-            "Specification-Version": "1", // We are version 1 of ourselves
-            "Implementation-Title": project.name,
-            "Implementation-Version": "${version}",
-            "Implementation-Vendor" :"themcbrothers",
-            "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+                "Specification-Title"     : "usefulfoundation",
+                "Specification-Vendor"    : "themcbrothers",
+                "Specification-Version"   : "1", // We are version 1 of ourselves
+                "Implementation-Title"    : project.name,
+                "Implementation-Version"  : "${version}",
+                "Implementation-Vendor"   : "themcbrothers",
+                "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])
     }
 }
@@ -128,6 +157,36 @@ publishing {
     repositories {
         maven {
             url "file:///${project.projectDir}/mcmodsrepo"
+        }
+    }
+}
+
+private String getCurseForgeToken() {
+    File secretFile = file('secrets.properties')
+
+    if (secretFile.canRead()) {
+        Properties secretProps = new Properties()
+        secretProps.load(new FileInputStream(secretFile))
+
+        return secretProps['curseForgeToken'].toString()
+    }
+
+    return null
+}
+
+// For CurseForge Deployment
+curseforge {
+    apiKey = getCurseForgeToken() // This should be kept private.
+    options {
+        forgeGradleIntegration = true
+    }
+    project {
+        id = '355245' // The ID of your project. You can find this on your project Curseforge page
+        changelog = file('changelog.txt') // A file can also be set using: changelog = file('changelog.txt')
+        releaseType = project.curse_type // beta, alpha, release
+        addGameVersion(project.mc_version)
+        mainArtifact(jar) {
+            displayName = "$project.modname $project.version"
         }
     }
 }
