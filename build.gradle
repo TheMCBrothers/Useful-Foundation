@@ -72,7 +72,7 @@ minecraft {
             // Recommended logging level for the console
             property 'forge.logging.console.level', 'debug'
 
-            args '--mod', 'usefulfoundation', '--all', '--output', file('src/generated/resources/')
+            args '--mod', 'usefulfoundation', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
 
             mods {
                 usefulfoundation {
@@ -81,6 +81,10 @@ minecraft {
             }
         }
     }
+}
+
+sourceSets.main.resources {
+    srcDir 'src/generated/resources'
 }
 
 sourceSets.main.java {

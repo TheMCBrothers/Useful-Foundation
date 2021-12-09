@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "usefulfoundation:block/electrum_block"
+    }
+  }
+}
