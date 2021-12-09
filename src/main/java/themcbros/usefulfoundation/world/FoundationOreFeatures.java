@@ -13,11 +13,11 @@ import static net.minecraft.data.worldgen.features.OreFeatures.STONE_ORE_REPLACE
 
 public final class FoundationOreFeatures {
     //Targets
-    public static final List<OreConfiguration.TargetBlockState> ORE_LEAD_TARGET_LIST = List.of(OreConfiguration.target(STONE_ORE_REPLACEABLES, FoundationBlocks.LEAD_ORE.defaultBlockState()), OreConfiguration.target(DEEPSLATE_ORE_REPLACEABLES, FoundationBlocks.LEAD_ORE.defaultBlockState()));
-    public static final List<OreConfiguration.TargetBlockState> ORE_NICKEL_TARGET_LIST = List.of(OreConfiguration.target(STONE_ORE_REPLACEABLES, FoundationBlocks.NICKEL_ORE.defaultBlockState()), OreConfiguration.target(DEEPSLATE_ORE_REPLACEABLES, FoundationBlocks.NICKEL_ORE.defaultBlockState()));
-    public static final List<OreConfiguration.TargetBlockState> ORE_SILVER_TARGET_LIST = List.of(OreConfiguration.target(STONE_ORE_REPLACEABLES, FoundationBlocks.SILVER_ORE.defaultBlockState()), OreConfiguration.target(DEEPSLATE_ORE_REPLACEABLES, FoundationBlocks.SILVER_ORE.defaultBlockState()));
-    public static final List<OreConfiguration.TargetBlockState> ORE_TIN_TARGET_LIST = List.of(OreConfiguration.target(STONE_ORE_REPLACEABLES, FoundationBlocks.TIN_ORE.defaultBlockState()), OreConfiguration.target(DEEPSLATE_ORE_REPLACEABLES, FoundationBlocks.TIN_BLOCK.defaultBlockState()));
-    public static final List<OreConfiguration.TargetBlockState> ORE_URANIUM_TARGET_LIST = List.of(OreConfiguration.target(STONE_ORE_REPLACEABLES, FoundationBlocks.URANIUM_ORE.defaultBlockState()), OreConfiguration.target(DEEPSLATE_ORE_REPLACEABLES, FoundationBlocks.URANIUM_ORE.defaultBlockState()));
+    public static final List<OreConfiguration.TargetBlockState> ORE_LEAD_TARGET_LIST = List.of(OreConfiguration.target(STONE_ORE_REPLACEABLES, FoundationBlocks.LEAD_ORE.defaultBlockState()), OreConfiguration.target(DEEPSLATE_ORE_REPLACEABLES, FoundationBlocks.DEEPSLATE_LEAD_ORE.defaultBlockState()));
+    public static final List<OreConfiguration.TargetBlockState> ORE_NICKEL_TARGET_LIST = List.of(OreConfiguration.target(STONE_ORE_REPLACEABLES, FoundationBlocks.NICKEL_ORE.defaultBlockState()), OreConfiguration.target(DEEPSLATE_ORE_REPLACEABLES, FoundationBlocks.DEEPSLATE_NICKEL_ORE.defaultBlockState()));
+    public static final List<OreConfiguration.TargetBlockState> ORE_SILVER_TARGET_LIST = List.of(OreConfiguration.target(STONE_ORE_REPLACEABLES, FoundationBlocks.SILVER_ORE.defaultBlockState()), OreConfiguration.target(DEEPSLATE_ORE_REPLACEABLES, FoundationBlocks.DEEPSLATE_SILVER_ORE.defaultBlockState()));
+    public static final List<OreConfiguration.TargetBlockState> ORE_TIN_TARGET_LIST = List.of(OreConfiguration.target(STONE_ORE_REPLACEABLES, FoundationBlocks.TIN_ORE.defaultBlockState()), OreConfiguration.target(DEEPSLATE_ORE_REPLACEABLES, FoundationBlocks.DEEPSLATE_TIN_ORE.defaultBlockState()));
+    public static final List<OreConfiguration.TargetBlockState> ORE_URANIUM_TARGET_LIST = List.of(OreConfiguration.target(STONE_ORE_REPLACEABLES, FoundationBlocks.URANIUM_ORE.defaultBlockState()), OreConfiguration.target(DEEPSLATE_ORE_REPLACEABLES, FoundationBlocks.DEEPSLATE_URANIUM_ORE.defaultBlockState()));
 
     //Features
     public static final ConfiguredFeature<?, ?> ORE_LEAD = FeatureUtils.register("ore_lead", Feature.ORE.configured(new OreConfiguration(ORE_LEAD_TARGET_LIST, 8)));
