@@ -1,6 +1,7 @@
 package themcbros.usefulfoundation.data;
 
 import net.minecraft.data.DataGenerator;
+import net.minecraft.data.tags.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -18,9 +19,14 @@ public class Events {
             gen.addProvider(new FoundationBlockStateProvider(gen, fileHelper));
             gen.addProvider(new FoundationItemModelProvider(gen, fileHelper));
             gen.addProvider(new FoundationLanguageProvider(gen));
+            gen.addProvider(new FoundationRecipeProvider(gen));
         }
 
         if (event.includeServer()) {
+            BlockTagsProvider blockTagsProvider = new FoundationTagProvider.Blocks(gen, fileHelper);
+
+            gen.addProvider(blockTagsProvider);
+            gen.addProvider(new FoundationTagProvider.Items(gen, blockTagsProvider, fileHelper));
         }
     }
 }
