@@ -1,0 +1,11 @@
+1.1.0:
+- added Deepslate Ores
+- added raw Materials
+- added/updated various Material Textures
+- updated Material Tags
+- updated crafting Recipes
+- fixed block required tools
+- removed Dust Items
+
+1.0.0:
+- Updated to 1.18
