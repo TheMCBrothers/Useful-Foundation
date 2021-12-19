@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "usefulfoundation:raw_uranium_block"
+    ]
+  },
+  "criteria": {
+    "has_raw_uranium": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "usefulfoundation:raw_uranium"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "usefulfoundation:raw_uranium_block"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_raw_uranium",
+      "has_the_recipe"
+    ]
+  ]
+}

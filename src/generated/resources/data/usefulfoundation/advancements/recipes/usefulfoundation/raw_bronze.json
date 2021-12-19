@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "usefulfoundation:raw_bronze"
+    ]
+  },
+  "criteria": {
+    "has_raw_copper": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:raw_materials/copper"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "usefulfoundation:raw_bronze"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_raw_copper",
+      "has_the_recipe"
+    ]
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:raw_storage_blocks/bronze"
+    }
+  ],
+  "result": {
+    "item": "usefulfoundation:raw_bronze",
+    "count": 9
+  }
+}

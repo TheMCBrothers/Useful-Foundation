@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:raw_materials/copper"
+    },
+    {
+      "tag": "forge:raw_materials/copper"
+    },
+    {
+      "tag": "forge:raw_materials/copper"
+    },
+    {
+      "tag": "forge:raw_materials/tin"
+    }
+  ],
+  "result": {
+    "item": "usefulfoundation:raw_bronze",
+    "count": 4
+  }
+}

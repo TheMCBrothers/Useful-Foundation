@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/silver"
+    },
+    {
+      "item": "usefulfoundation:hammer"
+    }
+  ],
+  "result": {
+    "item": "usefulfoundation:silver_plate"
+  }
+}

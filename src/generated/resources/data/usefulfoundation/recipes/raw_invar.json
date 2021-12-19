@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:raw_materials/iron"
+    },
+    {
+      "tag": "forge:raw_materials/iron"
+    },
+    {
+      "tag": "forge:raw_materials/nickel"
+    }
+  ],
+  "result": {
+    "item": "usefulfoundation:raw_invar",
+    "count": 3
+  }
+}

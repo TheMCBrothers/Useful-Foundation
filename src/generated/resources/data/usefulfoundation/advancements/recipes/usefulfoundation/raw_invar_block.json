@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "usefulfoundation:raw_invar_block"
+    ]
+  },
+  "criteria": {
+    "has_raw_invar": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "usefulfoundation:raw_invar"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "usefulfoundation:raw_invar_block"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_raw_invar",
+      "has_the_recipe"
+    ]
+  ]
+}
