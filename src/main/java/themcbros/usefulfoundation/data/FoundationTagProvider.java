@@ -126,7 +126,7 @@ public class FoundationTagProvider {
 
             //Vanilla Tags
             this.tag(BlockTags.BEACON_BASE_BLOCKS).addTags(FoundationTags.Blocks.BLOCKS_BRONZE, FoundationTags.Blocks.BLOCKS_COPPER, FoundationTags.Blocks.BLOCKS_ELECTRUM, FoundationTags.Blocks.BLOCKS_INVAR, FoundationTags.Blocks.BLOCKS_LEAD, FoundationTags.Blocks.BLOCKS_NICKEL, FoundationTags.Blocks.BLOCKS_SILVER, FoundationTags.Blocks.BLOCKS_TIN, FoundationTags.Blocks.BLOCKS_URANIUM);
-            this.tag(BlockTags.MINEABLE_WITH_PICKAXE).add(FoundationBlocks.LEAD_ORE, FoundationBlocks.DEEPSLATE_LEAD_ORE, FoundationBlocks.LEAD_BLOCK, FoundationBlocks.NICKEL_ORE, FoundationBlocks.DEEPSLATE_NICKEL_ORE, FoundationBlocks.NICKEL_BLOCK, FoundationBlocks.SILVER_ORE, FoundationBlocks.DEEPSLATE_SILVER_ORE, FoundationBlocks.SILVER_BLOCK, FoundationBlocks.TIN_ORE, FoundationBlocks.DEEPSLATE_TIN_ORE, FoundationBlocks.TIN_BLOCK, FoundationBlocks.URANIUM_ORE, FoundationBlocks.DEEPSLATE_URANIUM_ORE, FoundationBlocks.URANIUM_BLOCK);
+            this.tag(BlockTags.MINEABLE_WITH_PICKAXE).add(FoundationBlocks.LEAD_ORE, FoundationBlocks.DEEPSLATE_LEAD_ORE, FoundationBlocks.LEAD_BLOCK, FoundationBlocks.NICKEL_ORE, FoundationBlocks.DEEPSLATE_NICKEL_ORE, FoundationBlocks.NICKEL_BLOCK, FoundationBlocks.SILVER_ORE, FoundationBlocks.DEEPSLATE_SILVER_ORE, FoundationBlocks.SILVER_BLOCK, FoundationBlocks.TIN_ORE, FoundationBlocks.DEEPSLATE_TIN_ORE, FoundationBlocks.TIN_BLOCK, FoundationBlocks.URANIUM_ORE, FoundationBlocks.DEEPSLATE_URANIUM_ORE, FoundationBlocks.URANIUM_BLOCK, FoundationBlocks.BRONZE_BLOCK, FoundationBlocks.INVAR_BLOCK, FoundationBlocks.ELECTRUM_BLOCK);
             this.tag(BlockTags.MINEABLE_WITH_AXE).add(FoundationBlocks.USEFUL_BEEHIVE);
         }
     }
