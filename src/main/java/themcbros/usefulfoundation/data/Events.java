@@ -27,6 +27,7 @@ public class Events {
 
             gen.addProvider(blockTagsProvider);
             gen.addProvider(new FoundationTagProvider.Items(gen, blockTagsProvider, fileHelper));
+            gen.addProvider(new FoundationLootTableProvider(gen));
         }
     }
 }

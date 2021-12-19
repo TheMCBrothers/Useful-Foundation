@@ -5,9 +5,10 @@ import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import themcbros.usefulfoundation.UsefulFoundation;
-import themcbros.usefulfoundation.init.FoundationBlocks;
 
 import java.util.Objects;
+
+import static themcbros.usefulfoundation.init.FoundationBlocks.*;
 
 public class FoundationBlockStateProvider extends BlockStateProvider {
     public FoundationBlockStateProvider(DataGenerator gen, ExistingFileHelper exFileHelper) {
@@ -16,46 +17,62 @@ public class FoundationBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        simpleBlock(FoundationBlocks.LEAD_ORE);
-        simpleBlock(FoundationBlocks.DEEPSLATE_LEAD_ORE);
-        simpleBlock(FoundationBlocks.LEAD_BLOCK);
-        simpleBlock(FoundationBlocks.NICKEL_ORE);
-        simpleBlock(FoundationBlocks.DEEPSLATE_NICKEL_ORE);
-        simpleBlock(FoundationBlocks.NICKEL_BLOCK);
-        simpleBlock(FoundationBlocks.SILVER_ORE);
-        simpleBlock(FoundationBlocks.DEEPSLATE_SILVER_ORE);
-        simpleBlock(FoundationBlocks.SILVER_BLOCK);
-        simpleBlock(FoundationBlocks.TIN_ORE);
-        simpleBlock(FoundationBlocks.DEEPSLATE_TIN_ORE);
-        simpleBlock(FoundationBlocks.TIN_BLOCK);
-        simpleBlock(FoundationBlocks.URANIUM_ORE);
-        simpleBlock(FoundationBlocks.DEEPSLATE_URANIUM_ORE);
-        simpleBlock(FoundationBlocks.URANIUM_BLOCK);
-        simpleBlock(FoundationBlocks.BRONZE_BLOCK);
-        simpleBlock(FoundationBlocks.ELECTRUM_BLOCK);
-        simpleBlock(FoundationBlocks.INVAR_BLOCK);
+        simpleBlock(LEAD_ORE);
+        simpleBlock(DEEPSLATE_LEAD_ORE);
+        simpleBlock(NICKEL_ORE);
+        simpleBlock(DEEPSLATE_NICKEL_ORE);
+        simpleBlock(SILVER_ORE);
+        simpleBlock(DEEPSLATE_SILVER_ORE);
+        simpleBlock(DEEPSLATE_TIN_ORE);
+        simpleBlock(TIN_ORE);
+        simpleBlock(URANIUM_ORE);
+        simpleBlock(DEEPSLATE_URANIUM_ORE);
+        simpleBlock(BRONZE_BLOCK);
+        simpleBlock(RAW_BRONZE_BLOCK);
+        simpleBlock(ELECTRUM_BLOCK);
+        simpleBlock(RAW_ELECTRUM_BLOCK);
+        simpleBlock(INVAR_BLOCK);
+        simpleBlock(RAW_INVAR_BLOCK);
+        simpleBlock(LEAD_BLOCK);
+        simpleBlock(RAW_LEAD_BLOCK);
+        simpleBlock(NICKEL_BLOCK);
+        simpleBlock(RAW_NICKEL_BLOCK);
+        simpleBlock(SILVER_BLOCK);
+        simpleBlock(RAW_SILVER_BLOCK);
+        simpleBlock(TIN_BLOCK);
+        simpleBlock(RAW_TIN_BLOCK);
+        simpleBlock(URANIUM_BLOCK);
+        simpleBlock(RAW_URANIUM_BLOCK);
 
-        horizontalBlock(FoundationBlocks.USEFUL_BEEHIVE, models().getExistingFile(mcLoc("block/beehive")));
+        horizontalBlock(USEFUL_BEEHIVE, models().getExistingFile(mcLoc("block/beehive")));
 
-        simpleBlockItem(FoundationBlocks.LEAD_ORE);
-        simpleBlockItem(FoundationBlocks.DEEPSLATE_LEAD_ORE);
-        simpleBlockItem(FoundationBlocks.NICKEL_ORE);
-        simpleBlockItem(FoundationBlocks.DEEPSLATE_NICKEL_ORE);
-        simpleBlockItem(FoundationBlocks.SILVER_ORE);
-        simpleBlockItem(FoundationBlocks.DEEPSLATE_SILVER_ORE);
-        simpleBlockItem(FoundationBlocks.TIN_ORE);
-        simpleBlockItem(FoundationBlocks.DEEPSLATE_TIN_ORE);
-        simpleBlockItem(FoundationBlocks.URANIUM_ORE);
-        simpleBlockItem(FoundationBlocks.DEEPSLATE_URANIUM_ORE);
-        simpleBlockItem(FoundationBlocks.BRONZE_BLOCK);
-        simpleBlockItem(FoundationBlocks.ELECTRUM_BLOCK);
-        simpleBlockItem(FoundationBlocks.INVAR_BLOCK);
-        simpleBlockItem(FoundationBlocks.LEAD_BLOCK);
-        simpleBlockItem(FoundationBlocks.NICKEL_BLOCK);
-        simpleBlockItem(FoundationBlocks.SILVER_BLOCK);
-        simpleBlockItem(FoundationBlocks.TIN_BLOCK);
-        simpleBlockItem(FoundationBlocks.URANIUM_BLOCK);
-        simpleBlockItem(FoundationBlocks.USEFUL_BEEHIVE, models().getExistingFile(mcLoc("block/beehive")));
+        simpleBlockItem(LEAD_ORE);
+        simpleBlockItem(DEEPSLATE_LEAD_ORE);
+        simpleBlockItem(NICKEL_ORE);
+        simpleBlockItem(DEEPSLATE_NICKEL_ORE);
+        simpleBlockItem(SILVER_ORE);
+        simpleBlockItem(DEEPSLATE_SILVER_ORE);
+        simpleBlockItem(TIN_ORE);
+        simpleBlockItem(DEEPSLATE_TIN_ORE);
+        simpleBlockItem(URANIUM_ORE);
+        simpleBlockItem(DEEPSLATE_URANIUM_ORE);
+        simpleBlockItem(BRONZE_BLOCK);
+        simpleBlockItem(RAW_BRONZE_BLOCK);
+        simpleBlockItem(ELECTRUM_BLOCK);
+        simpleBlockItem(RAW_ELECTRUM_BLOCK);
+        simpleBlockItem(INVAR_BLOCK);
+        simpleBlockItem(RAW_INVAR_BLOCK);
+        simpleBlockItem(LEAD_BLOCK);
+        simpleBlockItem(RAW_LEAD_BLOCK);
+        simpleBlockItem(NICKEL_BLOCK);
+        simpleBlockItem(RAW_NICKEL_BLOCK);
+        simpleBlockItem(SILVER_BLOCK);
+        simpleBlockItem(RAW_SILVER_BLOCK);
+        simpleBlockItem(TIN_BLOCK);
+        simpleBlockItem(RAW_TIN_BLOCK);
+        simpleBlockItem(URANIUM_BLOCK);
+        simpleBlockItem(RAW_URANIUM_BLOCK);
+        simpleBlockItem(USEFUL_BEEHIVE, models().getExistingFile(mcLoc("block/beehive")));
     }
 
     private void simpleBlockItem(Block block) {

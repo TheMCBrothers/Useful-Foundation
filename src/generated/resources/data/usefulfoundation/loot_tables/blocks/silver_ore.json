@@ -2,7 +2,8 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "rolls": 1,
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "minecraft:alternatives",
@@ -24,31 +25,21 @@
                   }
                 }
               ],
-              "functions": [
-                {
-                  "function": "minecraft:copy_nbt",
-                  "source": "block_entity",
-                  "ops": [
-                    {
-                      "source": "Bees",
-                      "target": "BlockEntityTag.Bees",
-                      "op": "replace"
-                    }
-                  ]
-                },
-                {
-                  "function": "minecraft:copy_state",
-                  "block": "usefulfoundation:useful_beehive",
-                  "properties": [
-                    "honey_level"
-                  ]
-                }
-              ],
-              "name": "minecraft:beehive"
+              "name": "usefulfoundation:silver_ore"
             },
             {
               "type": "minecraft:item",
-              "name": "usefulfoundation:useful_beehive"
+              "functions": [
+                {
+                  "function": "minecraft:apply_bonus",
+                  "enchantment": "minecraft:fortune",
+                  "formula": "minecraft:ore_drops"
+                },
+                {
+                  "function": "minecraft:explosion_decay"
+                }
+              ],
+              "name": "usefulfoundation:raw_silver"
             }
           ]
         }
