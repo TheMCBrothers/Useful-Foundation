@@ -1,3 +1,11 @@
+2.0.0:
+- added raw Materials with Raw Blocks
+- added/changed Loot Tables
+- added/changed all Recipes
+- fixed Gold Gear/Plate names
+- fixed other tiny issues
+- all Blocks are now mineable
+
 1.1.0:
 - added Deepslate Ores
 - added raw Materials

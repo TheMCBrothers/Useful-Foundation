@@ -17,7 +17,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'idea'
 apply plugin: 'maven-publish'
 
-group = 'themcbros.usefulfoundation' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+group = 'net.themcbrothers' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'usefulfoundation'
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
@@ -135,8 +135,8 @@ jar {
                 "Specification-Title"     : "usefulfoundation",
                 "Specification-Vendor"    : "themcbrothers",
                 "Specification-Version"   : "1", // We are version 1 of ourselves
-                "Implementation-Title"    : project.name,
-                "Implementation-Version"  : "${version}",
+                "Implementation-Title"    : "useful-foundation",
+                "Implementation-Version"  : "${archiveVersion.get()}",
                 "Implementation-Vendor"   : "themcbrothers",
                 "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])
@@ -153,26 +153,34 @@ def reobfArtifact = artifacts.add('default', reobfFile) {
     builtBy 'reobfJar'
 }
 publishing {
-    publications {
-        mavenJava(MavenPublication) {
-            artifact reobfArtifact
+    publications { PublicationContainer publicationContainer ->
+        publicationContainer.register("maven", MavenPublication) { MavenPublication publication ->
+            publication.artifacts = [jar]
+            publication.version = "$project.mc_version-$project.version"
+            publication.artifactId = "useful-foundation"
         }
     }
+
     repositories {
         maven {
-            url "file:///${project.projectDir}/mcmodsrepo"
+            credentials {
+                username = getSecretByKey("nexus_uname")
+                password = getSecretByKey("nexus_pwd")
+            }
+
+            url "https://nexus.themcbrothers.net/repository/maven-releases/"
         }
     }
 }
 
-private String getCurseForgeToken() {
+private String getSecretByKey(String key) {
     File secretFile = file('secrets.properties')
 
     if (secretFile.canRead()) {
         Properties secretProps = new Properties()
         secretProps.load(new FileInputStream(secretFile))
 
-        return secretProps['curseForgeToken'].toString()
+        return secretProps[key].toString()
     }
 
     return null
@@ -180,7 +188,7 @@ private String getCurseForgeToken() {
 
 // For CurseForge Deployment
 curseforge {
-    apiKey = getCurseForgeToken() // This should be kept private.
+    apiKey = getSecretByKey("curseForgeToken") // This should be kept private.
     options {
         forgeGradleIntegration = true
     }
