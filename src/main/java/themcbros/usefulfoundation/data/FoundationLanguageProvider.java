@@ -4,7 +4,8 @@ import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.data.LanguageProvider;
 import themcbros.usefulfoundation.UsefulFoundation;
 import themcbros.usefulfoundation.init.FoundationBlocks;
-import themcbros.usefulfoundation.init.FoundationItems;
+
+import static themcbros.usefulfoundation.init.FoundationItems.*;
 
 public class FoundationLanguageProvider extends LanguageProvider {
     public FoundationLanguageProvider(DataGenerator gen) {
@@ -25,6 +26,14 @@ public class FoundationLanguageProvider extends LanguageProvider {
         this.add(FoundationBlocks.SILVER_BLOCK, "Block of Silver");
         this.add(FoundationBlocks.TIN_BLOCK, "Block of Tin");
         this.add(FoundationBlocks.URANIUM_BLOCK, "Block of Uranium");
+        this.add(FoundationBlocks.RAW_BRONZE_BLOCK, "Block of Raw Bronze");
+        this.add(FoundationBlocks.RAW_ELECTRUM_BLOCK, "Block of Raw Electrum");
+        this.add(FoundationBlocks.RAW_INVAR_BLOCK, "Block of Raw Invar");
+        this.add(FoundationBlocks.RAW_LEAD_BLOCK, "Block of Raw Lead");
+        this.add(FoundationBlocks.RAW_NICKEL_BLOCK, "Block of Raw Nickel");
+        this.add(FoundationBlocks.RAW_SILVER_BLOCK, "Block of Raw Silver");
+        this.add(FoundationBlocks.RAW_TIN_BLOCK, "Block of Raw Tin");
+        this.add(FoundationBlocks.RAW_URANIUM_BLOCK, "Block of Raw Uranium");
         this.add(FoundationBlocks.USEFUL_BEEHIVE, "Useful Beehive");
 
         //Ores
@@ -40,49 +49,57 @@ public class FoundationLanguageProvider extends LanguageProvider {
         this.add(FoundationBlocks.DEEPSLATE_URANIUM_ORE, "Deepslate Uranium Ore");
 
         //Mod Items
-        this.add(FoundationItems.BRONZE_GEAR, "Bronze Gear");
-        this.add(FoundationItems.BRONZE_INGOT, "Bronze Ingot");
-        this.add(FoundationItems.BRONZE_NUGGET, "Bronze Nugget");
-        this.add(FoundationItems.BRONZE_PLATE, "Bronze Plate");
-        this.add(FoundationItems.ELECTRUM_GEAR, "Electrum Gear");
-        this.add(FoundationItems.ELECTRUM_INGOT, "Electrum Ingot");
-        this.add(FoundationItems.ELECTRUM_NUGGET, "Electrum Nugget");
-        this.add(FoundationItems.ELECTRUM_PLATE, "Electrum Plate");
-        this.add(FoundationItems.INVAR_GEAR, "Invar Gear");
-        this.add(FoundationItems.INVAR_INGOT, "Invar Ingot");
-        this.add(FoundationItems.INVAR_NUGGET, "Invar Nugget");
-        this.add(FoundationItems.INVAR_PLATE, "Invar Plate");
-        this.add(FoundationItems.LEAD_GEAR, "Lead Gear");
-        this.add(FoundationItems.LEAD_INGOT, "Lead Ingot");
-        this.add(FoundationItems.LEAD_NUGGET, "Lead Nugget");
-        this.add(FoundationItems.LEAD_PLATE, "Lead Plate");
-        this.add(FoundationItems.NICKEL_GEAR, "Nickel Gear");
-        this.add(FoundationItems.NICKEL_INGOT, "Nickel Ingot");
-        this.add(FoundationItems.NICKEL_NUGGET, "Nickel Nugget");
-        this.add(FoundationItems.NICKEL_PLATE, "Nickel Plate");
-        this.add(FoundationItems.SILVER_GEAR, "Silver Gear");
-        this.add(FoundationItems.SILVER_INGOT, "Silver Ingot");
-        this.add(FoundationItems.SILVER_NUGGET, "Silver Nugget");
-        this.add(FoundationItems.SILVER_PLATE, "Silver Plate");
-        this.add(FoundationItems.TIN_GEAR, "Tin Gear");
-        this.add(FoundationItems.TIN_INGOT, "Tin Ingot");
-        this.add(FoundationItems.TIN_NUGGET, "Tin Nugget");
-        this.add(FoundationItems.TIN_PLATE, "Tin Plate");
-        this.add(FoundationItems.URANIUM_GEAR, "Uranium Gear");
-        this.add(FoundationItems.URANIUM_INGOT, "Uranium Ingot");
-        this.add(FoundationItems.URANIUM_NUGGET, "Uranium Nugget");
-        this.add(FoundationItems.URANIUM_PLATE, "Uranium Plate");
+        this.add(BRONZE_GEAR, "Bronze Gear");
+        this.add(BRONZE_INGOT, "Bronze Ingot");
+        this.add(RAW_BRONZE, "Raw Bronze");
+        this.add(BRONZE_NUGGET, "Bronze Nugget");
+        this.add(BRONZE_PLATE, "Bronze Plate");
+        this.add(ELECTRUM_GEAR, "Electrum Gear");
+        this.add(ELECTRUM_INGOT, "Electrum Ingot");
+        this.add(RAW_ELECTRUM, "Raw Electrum");
+        this.add(ELECTRUM_NUGGET, "Electrum Nugget");
+        this.add(ELECTRUM_PLATE, "Electrum Plate");
+        this.add(INVAR_GEAR, "Invar Gear");
+        this.add(INVAR_INGOT, "Invar Ingot");
+        this.add(RAW_INVAR, "Raw Invar");
+        this.add(INVAR_NUGGET, "Invar Nugget");
+        this.add(INVAR_PLATE, "Invar Plate");
+        this.add(LEAD_GEAR, "Lead Gear");
+        this.add(LEAD_INGOT, "Lead Ingot");
+        this.add(RAW_LEAD, "Raw Lead");
+        this.add(LEAD_NUGGET, "Lead Nugget");
+        this.add(LEAD_PLATE, "Lead Plate");
+        this.add(NICKEL_GEAR, "Nickel Gear");
+        this.add(NICKEL_INGOT, "Nickel Ingot");
+        this.add(RAW_NICKEL, "Raw Nickel");
+        this.add(NICKEL_NUGGET, "Nickel Nugget");
+        this.add(NICKEL_PLATE, "Nickel Plate");
+        this.add(SILVER_GEAR, "Silver Gear");
+        this.add(SILVER_INGOT, "Silver Ingot");
+        this.add(RAW_SILVER, "Raw Silver");
+        this.add(SILVER_NUGGET, "Silver Nugget");
+        this.add(SILVER_PLATE, "Silver Plate");
+        this.add(TIN_GEAR, "Tin Gear");
+        this.add(TIN_INGOT, "Tin Ingot");
+        this.add(RAW_TIN, "Raw Tin");
+        this.add(TIN_NUGGET, "Tin Nugget");
+        this.add(TIN_PLATE, "Tin Plate");
+        this.add(URANIUM_GEAR, "Uranium Gear");
+        this.add(URANIUM_INGOT, "Uranium Ingot");
+        this.add(RAW_URANIUM, "Raw Uranium");
+        this.add(URANIUM_NUGGET, "Uranium Nugget");
+        this.add(URANIUM_PLATE, "Uranium Plate");
 
         //Vanilla Items
-        this.add(FoundationItems.COPPER_GEAR, "Copper Gear");
-        this.add(FoundationItems.COPPER_NUGGET, "Copper Nugget");
-        this.add(FoundationItems.COPPER_PLATE, "Copper Plate");
-        this.add(FoundationItems.GOLD_GEAR, "Copper Gear");
-        this.add(FoundationItems.GOLD_PLATE, "Copper Plate");
-        this.add(FoundationItems.IRON_GEAR, "Iron Gear");
-        this.add(FoundationItems.IRON_PLATE, "Iron Plate");
+        this.add(COPPER_GEAR, "Copper Gear");
+        this.add(COPPER_NUGGET, "Copper Nugget");
+        this.add(COPPER_PLATE, "Copper Plate");
+        this.add(GOLD_GEAR, "Gold Gear");
+        this.add(GOLD_PLATE, "Gold Plate");
+        this.add(IRON_GEAR, "Iron Gear");
+        this.add(IRON_PLATE, "Iron Plate");
 
         //Tools
-        this.add(FoundationItems.HAMMER, "Hammer");
+        this.add(HAMMER, "Hammer");
     }
 }

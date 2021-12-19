@@ -15,6 +15,17 @@
     "usefulfoundation:tin_block",
     "usefulfoundation:uranium_ore",
     "usefulfoundation:deepslate_uranium_ore",
-    "usefulfoundation:uranium_block"
+    "usefulfoundation:uranium_block",
+    "usefulfoundation:bronze_block",
+    "usefulfoundation:invar_block",
+    "usefulfoundation:electrum_block",
+    "usefulfoundation:raw_bronze_block",
+    "usefulfoundation:raw_electrum_block",
+    "usefulfoundation:raw_invar_block",
+    "usefulfoundation:raw_lead_block",
+    "usefulfoundation:raw_nickel_block",
+    "usefulfoundation:raw_silver_block",
+    "usefulfoundation:raw_tin_block",
+    "usefulfoundation:raw_uranium_block"
   ]
 }

@@ -26,6 +26,20 @@ public class FoundationTags {
         public static final Tags.IOptionalNamedTag<Block> BLOCKS_SILVER = BlockTags.createOptional(new ResourceLocation("forge", "storage_blocks/silver"));
         public static final Tags.IOptionalNamedTag<Block> BLOCKS_TIN = BlockTags.createOptional(new ResourceLocation("forge", "storage_blocks/tin"));
         public static final Tags.IOptionalNamedTag<Block> BLOCKS_URANIUM = BlockTags.createOptional(new ResourceLocation("forge", "storage_blocks/uranium"));
+
+        //Raw Storage Blocks
+        public static final Tags.IOptionalNamedTag<Block> RAW_BLOCKS = BlockTags.createOptional(new ResourceLocation("forge", "raw_storage_blocks"));
+        public static final Tags.IOptionalNamedTag<Block> RAW_BLOCKS_BRONZE = BlockTags.createOptional(new ResourceLocation("forge", "raw_storage_blocks/bronze"));
+        public static final Tags.IOptionalNamedTag<Block> RAW_BLOCKS_COPPER = BlockTags.createOptional(new ResourceLocation("forge", "raw_storage_blocks/copper"));
+        public static final Tags.IOptionalNamedTag<Block> RAW_BLOCKS_ELECTRUM = BlockTags.createOptional(new ResourceLocation("forge", "raw_storage_blocks/electrum"));
+        public static final Tags.IOptionalNamedTag<Block> RAW_BLOCKS_GOLD = BlockTags.createOptional(new ResourceLocation("forge", "raw_storage_blocks/gold"));
+        public static final Tags.IOptionalNamedTag<Block> RAW_BLOCKS_INVAR = BlockTags.createOptional(new ResourceLocation("forge", "raw_storage_blocks/invar"));
+        public static final Tags.IOptionalNamedTag<Block> RAW_BLOCKS_IRON = BlockTags.createOptional(new ResourceLocation("forge", "raw_storage_blocks/iron"));
+        public static final Tags.IOptionalNamedTag<Block> RAW_BLOCKS_LEAD = BlockTags.createOptional(new ResourceLocation("forge", "raw_storage_blocks/lead"));
+        public static final Tags.IOptionalNamedTag<Block> RAW_BLOCKS_NICKEL = BlockTags.createOptional(new ResourceLocation("forge", "raw_storage_blocks/nickel"));
+        public static final Tags.IOptionalNamedTag<Block> RAW_BLOCKS_SILVER = BlockTags.createOptional(new ResourceLocation("forge", "raw_storage_blocks/silver"));
+        public static final Tags.IOptionalNamedTag<Block> RAW_BLOCKS_TIN = BlockTags.createOptional(new ResourceLocation("forge", "raw_storage_blocks/tin"));
+        public static final Tags.IOptionalNamedTag<Block> RAW_BLOCKS_URANIUM = BlockTags.createOptional(new ResourceLocation("forge", "raw_storage_blocks/uranium"));
     }
 
     public static class Items {
@@ -39,7 +53,21 @@ public class FoundationTags {
         public static final Tags.IOptionalNamedTag<Item> INGOTS_SILVER = ItemTags.createOptional(new ResourceLocation("forge", "ingots/silver"));
         public static final Tags.IOptionalNamedTag<Item> INGOTS_TIN = ItemTags.createOptional(new ResourceLocation("forge", "ingots/tin"));
         public static final Tags.IOptionalNamedTag<Item> INGOTS_URANIUM = ItemTags.createOptional(new ResourceLocation("forge", "ingots/uranium"));
-        
+
+        //Raw Materials
+        public static final Tags.IOptionalNamedTag<Item> RAW_MATERIALS = ItemTags.createOptional(new ResourceLocation("forge", "raw_materials"));
+        public static final Tags.IOptionalNamedTag<Item> RAW_MATERIALS_BRONZE = ItemTags.createOptional(new ResourceLocation("forge", "raw_materials/bronze"));
+        public static final Tags.IOptionalNamedTag<Item> RAW_MATERIALS_COPPER = ItemTags.createOptional(new ResourceLocation("forge", "raw_materials/copper"));
+        public static final Tags.IOptionalNamedTag<Item> RAW_MATERIALS_ELECTRUM = ItemTags.createOptional(new ResourceLocation("forge", "raw_materials/electrum"));
+        public static final Tags.IOptionalNamedTag<Item> RAW_MATERIALS_GOLD = ItemTags.createOptional(new ResourceLocation("forge", "raw_materials/gold"));
+        public static final Tags.IOptionalNamedTag<Item> RAW_MATERIALS_INVAR = ItemTags.createOptional(new ResourceLocation("forge", "raw_materials/invar"));
+        public static final Tags.IOptionalNamedTag<Item> RAW_MATERIALS_IRON = ItemTags.createOptional(new ResourceLocation("forge", "raw_materials/iron"));
+        public static final Tags.IOptionalNamedTag<Item> RAW_MATERIALS_LEAD = ItemTags.createOptional(new ResourceLocation("forge", "raw_materials/lead"));
+        public static final Tags.IOptionalNamedTag<Item> RAW_MATERIALS_NICKEL = ItemTags.createOptional(new ResourceLocation("forge", "raw_materials/nickel"));
+        public static final Tags.IOptionalNamedTag<Item> RAW_MATERIALS_SILVER = ItemTags.createOptional(new ResourceLocation("forge", "raw_materials/silver"));
+        public static final Tags.IOptionalNamedTag<Item> RAW_MATERIALS_TIN = ItemTags.createOptional(new ResourceLocation("forge", "raw_materials/tin"));
+        public static final Tags.IOptionalNamedTag<Item> RAW_MATERIALS_URANIUM = ItemTags.createOptional(new ResourceLocation("forge", "raw_materials/uranium"));
+
         //Nuggets
         public static final Tags.IOptionalNamedTag<Item> NUGGETS_BRONZE = ItemTags.createOptional(new ResourceLocation("forge", "nuggets/bronze"));
         public static final Tags.IOptionalNamedTag<Item> NUGGETS_COPPER = ItemTags.createOptional(new ResourceLocation("forge", "nuggets/copper"));
@@ -50,7 +78,7 @@ public class FoundationTags {
         public static final Tags.IOptionalNamedTag<Item> NUGGETS_SILVER = ItemTags.createOptional(new ResourceLocation("forge", "nuggets/silver"));
         public static final Tags.IOptionalNamedTag<Item> NUGGETS_TIN = ItemTags.createOptional(new ResourceLocation("forge", "nuggets/tin"));
         public static final Tags.IOptionalNamedTag<Item> NUGGETS_URANIUM = ItemTags.createOptional(new ResourceLocation("forge", "nuggets/uranium"));
-        
+
         //Storage Blocks
         public static final Tags.IOptionalNamedTag<Item> BLOCKS_BRONZE = ItemTags.createOptional(new ResourceLocation("forge", "storage_blocks/bronze"));
         public static final Tags.IOptionalNamedTag<Item> BLOCKS_COPPER = ItemTags.createOptional(new ResourceLocation("forge", "storage_blocks/copper"));
@@ -61,6 +89,20 @@ public class FoundationTags {
         public static final Tags.IOptionalNamedTag<Item> BLOCKS_SILVER = ItemTags.createOptional(new ResourceLocation("forge", "storage_blocks/silver"));
         public static final Tags.IOptionalNamedTag<Item> BLOCKS_TIN = ItemTags.createOptional(new ResourceLocation("forge", "storage_blocks/tin"));
         public static final Tags.IOptionalNamedTag<Item> BLOCKS_URANIUM = ItemTags.createOptional(new ResourceLocation("forge", "storage_blocks/uranium"));
+
+        //Raw Storage Blocks
+        public static final Tags.IOptionalNamedTag<Item> RAW_BLOCKS = ItemTags.createOptional(new ResourceLocation("forge", "raw_storage_blocks"));
+        public static final Tags.IOptionalNamedTag<Item> RAW_BLOCKS_BRONZE = ItemTags.createOptional(new ResourceLocation("forge", "raw_storage_blocks/bronze"));
+        public static final Tags.IOptionalNamedTag<Item> RAW_BLOCKS_COPPER = ItemTags.createOptional(new ResourceLocation("forge", "raw_storage_blocks/copper"));
+        public static final Tags.IOptionalNamedTag<Item> RAW_BLOCKS_ELECTRUM = ItemTags.createOptional(new ResourceLocation("forge", "raw_storage_blocks/electrum"));
+        public static final Tags.IOptionalNamedTag<Item> RAW_BLOCKS_GOLD = ItemTags.createOptional(new ResourceLocation("forge", "raw_storage_blocks/gold"));
+        public static final Tags.IOptionalNamedTag<Item> RAW_BLOCKS_INVAR = ItemTags.createOptional(new ResourceLocation("forge", "raw_storage_blocks/invar"));
+        public static final Tags.IOptionalNamedTag<Item> RAW_BLOCKS_IRON = ItemTags.createOptional(new ResourceLocation("forge", "raw_storage_blocks/iron"));
+        public static final Tags.IOptionalNamedTag<Item> RAW_BLOCKS_LEAD = ItemTags.createOptional(new ResourceLocation("forge", "raw_storage_blocks/lead"));
+        public static final Tags.IOptionalNamedTag<Item> RAW_BLOCKS_NICKEL = ItemTags.createOptional(new ResourceLocation("forge", "raw_storage_blocks/nickel"));
+        public static final Tags.IOptionalNamedTag<Item> RAW_BLOCKS_SILVER = ItemTags.createOptional(new ResourceLocation("forge", "raw_storage_blocks/silver"));
+        public static final Tags.IOptionalNamedTag<Item> RAW_BLOCKS_TIN = ItemTags.createOptional(new ResourceLocation("forge", "raw_storage_blocks/tin"));
+        public static final Tags.IOptionalNamedTag<Item> RAW_BLOCKS_URANIUM = ItemTags.createOptional(new ResourceLocation("forge", "raw_storage_blocks/uranium"));
 
         //Ores
         public static final Tags.IOptionalNamedTag<Item> ORES_LEAD = ItemTags.createOptional(new ResourceLocation("forge", "ores/lead"));
@@ -82,7 +124,7 @@ public class FoundationTags {
         public static final Tags.IOptionalNamedTag<Item> GEARS_SILVER = ItemTags.createOptional(new ResourceLocation("forge", "gears/silver"));
         public static final Tags.IOptionalNamedTag<Item> GEARS_TIN = ItemTags.createOptional(new ResourceLocation("forge", "gears/tin"));
         public static final Tags.IOptionalNamedTag<Item> GEARS_URANIUM = ItemTags.createOptional(new ResourceLocation("forge", "gears/uranium"));
-        
+
         //Plates
         public static final Tags.IOptionalNamedTag<Item> PLATES = ItemTags.createOptional(new ResourceLocation("forge", "plates"));
         public static final Tags.IOptionalNamedTag<Item> PLATES_BRONZE = ItemTags.createOptional(new ResourceLocation("forge", "plates/bronze"));

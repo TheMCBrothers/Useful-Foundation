@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:raw_storage_blocks/bronze",
+    "#forge:raw_storage_blocks/copper",
+    "#forge:raw_storage_blocks/electrum",
+    "#forge:raw_storage_blocks/gold",
+    "#forge:raw_storage_blocks/invar",
+    "#forge:raw_storage_blocks/iron",
+    "#forge:raw_storage_blocks/lead",
+    "#forge:raw_storage_blocks/nickel",
+    "#forge:raw_storage_blocks/silver",
+    "#forge:raw_storage_blocks/tin",
+    "#forge:raw_storage_blocks/uranium"
+  ]
+}
