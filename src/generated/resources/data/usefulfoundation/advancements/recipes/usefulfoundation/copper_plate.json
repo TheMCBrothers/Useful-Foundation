@@ -2,16 +2,16 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "usefulfoundation:raw_bronze_from_raw_bronze_block"
+      "usefulfoundation:copper_plate"
     ]
   },
   "criteria": {
-    "has_raw_bronze": {
+    "has_copper_ingot": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "tag": "forge:storage_blocks/raw_bronze"
+            "tag": "forge:ingots/copper"
           }
         ]
       }
@@ -19,13 +19,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "usefulfoundation:raw_bronze_from_raw_bronze_block"
+        "recipe": "usefulfoundation:copper_plate"
       }
     }
   },
   "requirements": [
     [
-      "has_raw_bronze",
+      "has_copper_ingot",
       "has_the_recipe"
     ]
   ]

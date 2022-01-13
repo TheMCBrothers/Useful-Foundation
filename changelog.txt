@@ -1,3 +1,6 @@
+3.0.0:
+- update tags
+
 2.0.0:
 - added raw Materials with Raw Blocks
 - added/changed Loot Tables

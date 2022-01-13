@@ -77,17 +77,14 @@ public class FoundationTagProvider {
 
             //Raw Materials
             this.tag(RAW_MATERIALS_BRONZE).add(RAW_BRONZE);
-            this.tag(RAW_MATERIALS_COPPER).add(net.minecraft.world.item.Items.RAW_COPPER);
             this.tag(RAW_MATERIALS_ELECTRUM).add(RAW_ELECTRUM);
-            this.tag(RAW_MATERIALS_GOLD).add(net.minecraft.world.item.Items.RAW_GOLD);
             this.tag(RAW_MATERIALS_INVAR).add(RAW_INVAR);
-            this.tag(RAW_MATERIALS_IRON).add(net.minecraft.world.item.Items.RAW_IRON);
             this.tag(RAW_MATERIALS_LEAD).add(RAW_LEAD);
             this.tag(RAW_MATERIALS_NICKEL).add(RAW_NICKEL);
             this.tag(RAW_MATERIALS_SILVER).add(RAW_SILVER);
             this.tag(RAW_MATERIALS_TIN).add(RAW_TIN);
             this.tag(RAW_MATERIALS_URANIUM).add(RAW_URANIUM);
-            this.tag(RAW_MATERIALS).addTags(RAW_MATERIALS_BRONZE, RAW_MATERIALS_COPPER, RAW_MATERIALS_ELECTRUM, RAW_MATERIALS_GOLD, RAW_MATERIALS_INVAR, RAW_MATERIALS_IRON, RAW_MATERIALS_LEAD, RAW_MATERIALS_NICKEL, RAW_MATERIALS_SILVER, RAW_MATERIALS_TIN, RAW_MATERIALS_URANIUM);
+            this.tag(Tags.Items.RAW_MATERIALS).addTags(RAW_MATERIALS_BRONZE, RAW_MATERIALS_ELECTRUM, RAW_MATERIALS_INVAR, RAW_MATERIALS_LEAD, RAW_MATERIALS_NICKEL, RAW_MATERIALS_SILVER, RAW_MATERIALS_TIN, RAW_MATERIALS_URANIUM);
 
             //Storage Blocks
             this.copy(Tags.Blocks.STORAGE_BLOCKS, Tags.Items.STORAGE_BLOCKS);
@@ -102,13 +99,9 @@ public class FoundationTagProvider {
             this.copy(FoundationTags.Blocks.BLOCKS_URANIUM, BLOCKS_URANIUM);
 
             //Raw Storage Blocks
-            this.copy(FoundationTags.Blocks.RAW_BLOCKS, RAW_BLOCKS);
             this.copy(FoundationTags.Blocks.RAW_BLOCKS_BRONZE, RAW_BLOCKS_BRONZE);
-            this.copy(FoundationTags.Blocks.RAW_BLOCKS_COPPER, RAW_BLOCKS_COPPER);
             this.copy(FoundationTags.Blocks.RAW_BLOCKS_ELECTRUM, RAW_BLOCKS_ELECTRUM);
-            this.copy(FoundationTags.Blocks.RAW_BLOCKS_GOLD, RAW_BLOCKS_GOLD);
             this.copy(FoundationTags.Blocks.RAW_BLOCKS_INVAR, RAW_BLOCKS_INVAR);
-            this.copy(FoundationTags.Blocks.RAW_BLOCKS_IRON, RAW_BLOCKS_IRON);
             this.copy(FoundationTags.Blocks.RAW_BLOCKS_LEAD, RAW_BLOCKS_LEAD);
             this.copy(FoundationTags.Blocks.RAW_BLOCKS_NICKEL, RAW_BLOCKS_NICKEL);
             this.copy(FoundationTags.Blocks.RAW_BLOCKS_SILVER, RAW_BLOCKS_SILVER);
@@ -122,6 +115,11 @@ public class FoundationTagProvider {
             this.copy(FoundationTags.Blocks.ORES_SILVER, ORES_SILVER);
             this.copy(FoundationTags.Blocks.ORES_TIN, ORES_TIN);
             this.copy(FoundationTags.Blocks.ORES_URANIUM, ORES_URANIUM);
+
+            //Forge Tags
+            this.copy(Tags.Blocks.ORES_IN_GROUND_STONE, Tags.Items.ORES_IN_GROUND_STONE);
+            this.copy(Tags.Blocks.ORES_IN_GROUND_DEEPSLATE, Tags.Items.ORES_IN_GROUND_DEEPSLATE);
+            this.copy(Tags.Blocks.ORE_RATES_SINGULAR, Tags.Items.ORE_RATES_SINGULAR);
         }
     }
 
@@ -146,17 +144,14 @@ public class FoundationTagProvider {
 
             //Raw Storage Blocks
             this.tag(FoundationTags.Blocks.RAW_BLOCKS_BRONZE).add(FoundationBlocks.RAW_BRONZE_BLOCK);
-            this.tag(FoundationTags.Blocks.RAW_BLOCKS_COPPER).add(net.minecraft.world.level.block.Blocks.RAW_COPPER_BLOCK);
             this.tag(FoundationTags.Blocks.RAW_BLOCKS_ELECTRUM).add(FoundationBlocks.RAW_ELECTRUM_BLOCK);
-            this.tag(FoundationTags.Blocks.RAW_BLOCKS_GOLD).add(net.minecraft.world.level.block.Blocks.RAW_GOLD_BLOCK);
             this.tag(FoundationTags.Blocks.RAW_BLOCKS_INVAR).add(FoundationBlocks.RAW_INVAR_BLOCK);
-            this.tag(FoundationTags.Blocks.RAW_BLOCKS_IRON).add(net.minecraft.world.level.block.Blocks.RAW_IRON_BLOCK);
             this.tag(FoundationTags.Blocks.RAW_BLOCKS_LEAD).add(FoundationBlocks.RAW_LEAD_BLOCK);
             this.tag(FoundationTags.Blocks.RAW_BLOCKS_NICKEL).add(FoundationBlocks.RAW_NICKEL_BLOCK);
             this.tag(FoundationTags.Blocks.RAW_BLOCKS_SILVER).add(FoundationBlocks.RAW_SILVER_BLOCK);
             this.tag(FoundationTags.Blocks.RAW_BLOCKS_TIN).add(FoundationBlocks.RAW_TIN_BLOCK);
             this.tag(FoundationTags.Blocks.RAW_BLOCKS_URANIUM).add(FoundationBlocks.RAW_URANIUM_BLOCK);
-            this.tag(FoundationTags.Blocks.RAW_BLOCKS).addTags(FoundationTags.Blocks.RAW_BLOCKS_BRONZE, FoundationTags.Blocks.RAW_BLOCKS_COPPER, FoundationTags.Blocks.RAW_BLOCKS_ELECTRUM, FoundationTags.Blocks.RAW_BLOCKS_GOLD, FoundationTags.Blocks.RAW_BLOCKS_INVAR, FoundationTags.Blocks.RAW_BLOCKS_IRON, FoundationTags.Blocks.RAW_BLOCKS_LEAD, FoundationTags.Blocks.RAW_BLOCKS_NICKEL, FoundationTags.Blocks.RAW_BLOCKS_SILVER, FoundationTags.Blocks.RAW_BLOCKS_TIN, FoundationTags.Blocks.RAW_BLOCKS_URANIUM);
+            this.tag(Tags.Blocks.STORAGE_BLOCKS).addTags(FoundationTags.Blocks.RAW_BLOCKS_BRONZE, FoundationTags.Blocks.RAW_BLOCKS_ELECTRUM, FoundationTags.Blocks.RAW_BLOCKS_INVAR, FoundationTags.Blocks.RAW_BLOCKS_LEAD, FoundationTags.Blocks.RAW_BLOCKS_NICKEL, FoundationTags.Blocks.RAW_BLOCKS_SILVER, FoundationTags.Blocks.RAW_BLOCKS_TIN, FoundationTags.Blocks.RAW_BLOCKS_URANIUM);
 
             //Ore Blocks
             this.tag(FoundationTags.Blocks.ORES_LEAD).add(FoundationBlocks.LEAD_ORE, FoundationBlocks.DEEPSLATE_LEAD_ORE);
@@ -165,6 +160,11 @@ public class FoundationTagProvider {
             this.tag(FoundationTags.Blocks.ORES_TIN).add(FoundationBlocks.TIN_ORE, FoundationBlocks.DEEPSLATE_TIN_ORE);
             this.tag(FoundationTags.Blocks.ORES_URANIUM).add(FoundationBlocks.URANIUM_ORE, FoundationBlocks.DEEPSLATE_URANIUM_ORE);
             this.tag(Tags.Blocks.ORES).addTags(FoundationTags.Blocks.ORES_LEAD, FoundationTags.Blocks.ORES_NICKEL, FoundationTags.Blocks.ORES_SILVER, FoundationTags.Blocks.ORES_TIN, FoundationTags.Blocks.ORES_URANIUM);
+
+            //Forge Tags
+            this.tag(Tags.Blocks.ORES_IN_GROUND_STONE).add(FoundationBlocks.LEAD_ORE, FoundationBlocks.NICKEL_ORE, FoundationBlocks.SILVER_ORE, FoundationBlocks.TIN_ORE, FoundationBlocks.URANIUM_ORE);
+            this.tag(Tags.Blocks.ORES_IN_GROUND_DEEPSLATE).add(FoundationBlocks.DEEPSLATE_LEAD_ORE, FoundationBlocks.DEEPSLATE_NICKEL_ORE, FoundationBlocks.DEEPSLATE_SILVER_ORE, FoundationBlocks.DEEPSLATE_TIN_ORE, FoundationBlocks.DEEPSLATE_URANIUM_ORE);
+            this.tag(Tags.Blocks.ORE_RATES_SINGULAR).add(FoundationBlocks.LEAD_ORE, FoundationBlocks.NICKEL_ORE, FoundationBlocks.SILVER_ORE, FoundationBlocks.TIN_ORE, FoundationBlocks.URANIUM_ORE, FoundationBlocks.DEEPSLATE_LEAD_ORE, FoundationBlocks.DEEPSLATE_NICKEL_ORE, FoundationBlocks.DEEPSLATE_SILVER_ORE, FoundationBlocks.DEEPSLATE_TIN_ORE, FoundationBlocks.DEEPSLATE_URANIUM_ORE);
 
             //Vanilla Tags
             this.tag(BlockTags.BEACON_BASE_BLOCKS).addTags(FoundationTags.Blocks.BLOCKS_BRONZE, FoundationTags.Blocks.BLOCKS_COPPER, FoundationTags.Blocks.BLOCKS_ELECTRUM, FoundationTags.Blocks.BLOCKS_INVAR, FoundationTags.Blocks.BLOCKS_LEAD, FoundationTags.Blocks.BLOCKS_NICKEL, FoundationTags.Blocks.BLOCKS_SILVER, FoundationTags.Blocks.BLOCKS_TIN, FoundationTags.Blocks.BLOCKS_URANIUM);

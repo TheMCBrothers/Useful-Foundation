@@ -9,6 +9,14 @@
     "#forge:storage_blocks/nickel",
     "#forge:storage_blocks/silver",
     "#forge:storage_blocks/tin",
-    "#forge:storage_blocks/uranium"
+    "#forge:storage_blocks/uranium",
+    "#forge:storage_blocks/raw_bronze",
+    "#forge:storage_blocks/raw_electrum",
+    "#forge:storage_blocks/raw_invar",
+    "#forge:storage_blocks/raw_lead",
+    "#forge:storage_blocks/raw_nickel",
+    "#forge:storage_blocks/raw_silver",
+    "#forge:storage_blocks/raw_tin",
+    "#forge:storage_blocks/raw_uranium"
   ]
 }

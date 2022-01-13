@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "usefulfoundation:deepslate_lead_ore",
+    "usefulfoundation:deepslate_nickel_ore",
+    "usefulfoundation:deepslate_silver_ore",
+    "usefulfoundation:deepslate_tin_ore",
+    "usefulfoundation:deepslate_uranium_ore"
+  ]
+}

@@ -69,9 +69,9 @@ public class FoundationRecipeProvider extends RecipeProvider {
         SimpleCookingRecipeBuilder.blasting(Ingredient.of(ORES_URANIUM), URANIUM_INGOT, 0.7F, 100).unlockedBy("has_uranium_ore", has(ORES_URANIUM)).save(recipe, getId("uranium_ingot_from_blasting_uranium_ore"));
 
         //Raw Materials
-        ShapelessRecipeBuilder.shapeless(RAW_BRONZE, 4).requires(RAW_MATERIALS_COPPER).requires(RAW_MATERIALS_COPPER).requires(RAW_MATERIALS_COPPER).requires(RAW_MATERIALS_TIN).unlockedBy("has_raw_copper", has(RAW_MATERIALS_COPPER)).save(recipe);
-        ShapelessRecipeBuilder.shapeless(RAW_ELECTRUM, 2).requires(RAW_MATERIALS_GOLD).requires(RAW_MATERIALS_SILVER).unlockedBy("has_raw_silver", has(RAW_MATERIALS_SILVER)).save(recipe);
-        ShapelessRecipeBuilder.shapeless(RAW_INVAR, 3).requires(RAW_MATERIALS_IRON).requires(RAW_MATERIALS_IRON).requires(RAW_MATERIALS_NICKEL).unlockedBy("has_raw_iron", has(RAW_MATERIALS_IRON)).save(recipe);
+        ShapelessRecipeBuilder.shapeless(RAW_BRONZE, 4).requires(Tags.Items.RAW_MATERIALS_COPPER).requires(Tags.Items.RAW_MATERIALS_COPPER).requires(Tags.Items.RAW_MATERIALS_COPPER).requires(RAW_MATERIALS_TIN).unlockedBy("has_raw_copper", has(Tags.Items.RAW_MATERIALS_COPPER)).save(recipe);
+        ShapelessRecipeBuilder.shapeless(RAW_ELECTRUM, 2).requires(Tags.Items.RAW_MATERIALS_GOLD).requires(RAW_MATERIALS_SILVER).unlockedBy("has_raw_silver", has(RAW_MATERIALS_SILVER)).save(recipe);
+        ShapelessRecipeBuilder.shapeless(RAW_INVAR, 3).requires(Tags.Items.RAW_MATERIALS_IRON).requires(Tags.Items.RAW_MATERIALS_IRON).requires(RAW_MATERIALS_NICKEL).unlockedBy("has_raw_iron", has(Tags.Items.RAW_MATERIALS_IRON)).save(recipe);
 
         ShapelessRecipeBuilder.shapeless(RAW_BRONZE, 9).requires(RAW_BLOCKS_BRONZE).unlockedBy("has_raw_bronze", has(RAW_BLOCKS_BRONZE)).save(recipe, getId("raw_bronze_from_raw_bronze_block"));
         ShapelessRecipeBuilder.shapeless(RAW_ELECTRUM, 9).requires(RAW_BLOCKS_ELECTRUM).unlockedBy("has_raw_electrum", has(RAW_BLOCKS_ELECTRUM)).save(recipe, getId("raw_electrum_from_raw_electrum_block"));

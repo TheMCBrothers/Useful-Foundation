@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "usefulfoundation:lead_ore",
+    "usefulfoundation:nickel_ore",
+    "usefulfoundation:silver_ore",
+    "usefulfoundation:tin_ore",
+    "usefulfoundation:uranium_ore"
+  ]
+}
