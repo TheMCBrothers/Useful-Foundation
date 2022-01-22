@@ -1,3 +1,11 @@
+4.0.0:
+- new Sorting of Items in Creative Tab
+- added new Materials (Aluminum, Enderium, Platinum, Signalum, Steel)
+- added Dust for all Materials
+- added Diamond Plate and Diamond Gear
+- changed Ore Generation
+- removed Raw Bronze, Raw Electrum and Raw Invar
+
 3.0.0:
 - update tags
 

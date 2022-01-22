@@ -144,26 +144,9 @@ public class FoundationRecipeProvider extends RecipeProvider {
         ShapelessRecipeBuilder.shapeless(URANIUM_NUGGET, 9).requires(INGOTS_URANIUM).unlockedBy("has_uranium_ingot", has(INGOTS_URANIUM)).save(recipe);
 
         //Dusts
-        ShapelessRecipeBuilder.shapeless(ALUMINUM_DUST).requires(INGOTS_ALUMINUM).requires(HAMMER).unlockedBy("has_aluminum_ingot", has(INGOTS_ALUMINUM)).save(recipe);
-        ShapelessRecipeBuilder.shapeless(BRONZE_DUST).requires(INGOTS_BRONZE).requires(HAMMER).unlockedBy("has_bronze_ingot", has(INGOTS_BRONZE)).save(recipe);
         ShapelessRecipeBuilder.shapeless(BRONZE_DUST, 4).requires(DUSTS_COPPER).requires(DUSTS_COPPER).requires(DUSTS_COPPER).requires(DUSTS_TIN).unlockedBy("has_copper_dust", has(DUSTS_COPPER)).save(recipe, getId("bronze_dust_from_dust_mix"));
-        ShapelessRecipeBuilder.shapeless(COPPER_DUST).requires(Tags.Items.INGOTS_COPPER).requires(HAMMER).unlockedBy("has_copper_ingot", has(Tags.Items.INGOTS_COPPER)).save(recipe);
-        ShapelessRecipeBuilder.shapeless(DIAMOND_DUST).requires(Tags.Items.GEMS_DIAMOND).requires(HAMMER).unlockedBy("has_diamond_gem", has(Tags.Items.GEMS_DIAMOND)).save(recipe);
-        ShapelessRecipeBuilder.shapeless(ELECTRUM_DUST).requires(INGOTS_ELECTRUM).requires(HAMMER).unlockedBy("has_electrum_ingot", has(INGOTS_ELECTRUM)).save(recipe);
         ShapelessRecipeBuilder.shapeless(ELECTRUM_DUST, 2).requires(DUSTS_GOLD).requires(DUSTS_SILVER).unlockedBy("has_silver_dust", has(DUSTS_SILVER)).save(recipe, getId("electrum_dust_from_dust_mix"));
-        ShapelessRecipeBuilder.shapeless(ENDERIUM_DUST).requires(INGOTS_ENDERIUM).requires(HAMMER).unlockedBy("has_enderium_ingot", has(INGOTS_ENDERIUM)).save(recipe);
-        ShapelessRecipeBuilder.shapeless(GOLD_DUST).requires(Tags.Items.INGOTS_GOLD).requires(HAMMER).unlockedBy("has_gold_ingot", has(Tags.Items.INGOTS_GOLD)).save(recipe);
-        ShapelessRecipeBuilder.shapeless(INVAR_DUST).requires(INGOTS_INVAR).requires(HAMMER).unlockedBy("has_invar_ingot", has(INGOTS_INVAR)).save(recipe);
         ShapelessRecipeBuilder.shapeless(INVAR_DUST, 3).requires(DUSTS_IRON).requires(DUSTS_IRON).requires(DUSTS_NICKEL).unlockedBy("has_iron_dust", has(DUSTS_IRON)).save(recipe, getId("invar_dust_from_dust_mix"));
-        ShapelessRecipeBuilder.shapeless(IRON_DUST).requires(Tags.Items.INGOTS_IRON).requires(HAMMER).unlockedBy("has_iron_ingot", has(Tags.Items.INGOTS_IRON)).save(recipe);
-        ShapelessRecipeBuilder.shapeless(LEAD_DUST).requires(INGOTS_LEAD).requires(HAMMER).unlockedBy("has_lead_ingot", has(INGOTS_LEAD)).save(recipe);
-        ShapelessRecipeBuilder.shapeless(NICKEL_DUST).requires(INGOTS_NICKEL).requires(HAMMER).unlockedBy("has_nickel_ingot", has(INGOTS_NICKEL)).save(recipe);
-        ShapelessRecipeBuilder.shapeless(PLATINUM_DUST).requires(INGOTS_PLATINUM).requires(HAMMER).unlockedBy("has_platinum_ingot", has(INGOTS_PLATINUM)).save(recipe);
-        ShapelessRecipeBuilder.shapeless(SIGNALUM_DUST).requires(INGOTS_SIGNALUM).requires(HAMMER).unlockedBy("has_signalum_ingot", has(INGOTS_SIGNALUM)).save(recipe);
-        ShapelessRecipeBuilder.shapeless(SILVER_DUST).requires(INGOTS_SILVER).requires(HAMMER).unlockedBy("has_silver_ingot", has(INGOTS_SILVER)).save(recipe);
-        ShapelessRecipeBuilder.shapeless(STEEL_DUST).requires(INGOTS_STEEL).requires(HAMMER).unlockedBy("has_steel_ingot", has(INGOTS_STEEL)).save(recipe);
-        ShapelessRecipeBuilder.shapeless(TIN_DUST).requires(INGOTS_TIN).requires(HAMMER).unlockedBy("has_tin_ingot", has(INGOTS_TIN)).save(recipe);
-        ShapelessRecipeBuilder.shapeless(URANIUM_DUST).requires(INGOTS_URANIUM).requires(HAMMER).unlockedBy("has_uranium_ingot", has(INGOTS_URANIUM)).save(recipe);
 
         //Storage Blocks
         ShapedRecipeBuilder.shaped(ALUMINUM_BLOCK).pattern("XXX").pattern("XXX").pattern("XXX").define('X', INGOTS_ALUMINUM).unlockedBy("has_aluminum_ingot", has(INGOTS_ALUMINUM)).save(recipe);
