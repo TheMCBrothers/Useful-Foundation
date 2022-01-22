@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "usefulfoundation:electrum_dust_from_dust_mix"
+    ]
+  },
+  "criteria": {
+    "has_silver_dust": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:dusts/silver"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "usefulfoundation:electrum_dust_from_dust_mix"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_silver_dust",
+      "has_the_recipe"
+    ]
+  ]
+}

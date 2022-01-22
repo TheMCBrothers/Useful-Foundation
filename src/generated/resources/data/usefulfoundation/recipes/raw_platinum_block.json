@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "tag": "forge:raw_materials/platinum"
+    }
+  },
+  "result": {
+    "item": "usefulfoundation:raw_platinum_block"
+  }
+}

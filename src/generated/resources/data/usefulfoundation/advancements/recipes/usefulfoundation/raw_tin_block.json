@@ -11,9 +11,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "usefulfoundation:raw_tin"
-            ]
+            "tag": "forge:raw_materials/tin"
           }
         ]
       }

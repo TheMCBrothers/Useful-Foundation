@@ -1,11 +1,10 @@
 {
   "replace": false,
   "values": [
-    "#forge:raw_materials/bronze",
-    "#forge:raw_materials/electrum",
-    "#forge:raw_materials/invar",
+    "#forge:raw_materials/aluminum",
     "#forge:raw_materials/lead",
     "#forge:raw_materials/nickel",
+    "#forge:raw_materials/platinum",
     "#forge:raw_materials/silver",
     "#forge:raw_materials/tin",
     "#forge:raw_materials/uranium"

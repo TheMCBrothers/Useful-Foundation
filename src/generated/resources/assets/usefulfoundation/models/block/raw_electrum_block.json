@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "usefulfoundation:block/raw_electrum_block"
-  }
-}

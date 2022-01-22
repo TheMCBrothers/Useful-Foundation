@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " X ",
+    "X X",
+    " X "
+  ],
+  "key": {
+    "X": {
+      "tag": "forge:ingots/signalum"
+    }
+  },
+  "result": {
+    "item": "usefulfoundation:signalum_gear"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "usefulfoundation:invar_dust_from_dust_mix"
+    ]
+  },
+  "criteria": {
+    "has_iron_dust": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:dusts/iron"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "usefulfoundation:invar_dust_from_dust_mix"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_iron_dust",
+      "has_the_recipe"
+    ]
+  ]
+}

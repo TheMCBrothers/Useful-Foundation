@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "tag": "forge:raw_materials/aluminum"
+    }
+  },
+  "result": {
+    "item": "usefulfoundation:raw_aluminum_block"
+  }
+}

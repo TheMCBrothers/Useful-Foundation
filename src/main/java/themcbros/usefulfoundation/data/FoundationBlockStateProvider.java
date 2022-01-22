@@ -23,16 +23,16 @@ public class FoundationBlockStateProvider extends BlockStateProvider {
         simpleBlock(DEEPSLATE_NICKEL_ORE);
         simpleBlock(SILVER_ORE);
         simpleBlock(DEEPSLATE_SILVER_ORE);
-        simpleBlock(DEEPSLATE_TIN_ORE);
         simpleBlock(TIN_ORE);
+        simpleBlock(DEEPSLATE_TIN_ORE);
         simpleBlock(URANIUM_ORE);
         simpleBlock(DEEPSLATE_URANIUM_ORE);
-        simpleBlock(BRONZE_BLOCK);
-        simpleBlock(RAW_BRONZE_BLOCK);
+        simpleBlock(ALUMINUM_ORE);
+        simpleBlock(DEEPSLATE_ALUMINUM_ORE);
+        simpleBlock(PLATINUM_ORE);
+        simpleBlock(DEEPSLATE_PLATINUM_ORE);
         simpleBlock(ELECTRUM_BLOCK);
-        simpleBlock(RAW_ELECTRUM_BLOCK);
         simpleBlock(INVAR_BLOCK);
-        simpleBlock(RAW_INVAR_BLOCK);
         simpleBlock(LEAD_BLOCK);
         simpleBlock(RAW_LEAD_BLOCK);
         simpleBlock(NICKEL_BLOCK);
@@ -43,6 +43,14 @@ public class FoundationBlockStateProvider extends BlockStateProvider {
         simpleBlock(RAW_TIN_BLOCK);
         simpleBlock(URANIUM_BLOCK);
         simpleBlock(RAW_URANIUM_BLOCK);
+        simpleBlock(ALUMINUM_BLOCK);
+        simpleBlock(RAW_ALUMINUM_BLOCK);
+        simpleBlock(PLATINUM_BLOCK);
+        simpleBlock(RAW_PLATINUM_BLOCK);
+        simpleBlock(SIGNALUM_BLOCK);
+        simpleBlock(ENDERIUM_BLOCK);
+        simpleBlock(STEEL_BLOCK);
+        simpleBlock(BRONZE_BLOCK);
 
         horizontalBlock(USEFUL_BEEHIVE, models().getExistingFile(mcLoc("block/beehive")));
 
@@ -56,12 +64,13 @@ public class FoundationBlockStateProvider extends BlockStateProvider {
         simpleBlockItem(DEEPSLATE_TIN_ORE);
         simpleBlockItem(URANIUM_ORE);
         simpleBlockItem(DEEPSLATE_URANIUM_ORE);
+        simpleBlockItem(ALUMINUM_ORE);
+        simpleBlockItem(DEEPSLATE_ALUMINUM_ORE);
+        simpleBlockItem(PLATINUM_ORE);
+        simpleBlockItem(DEEPSLATE_PLATINUM_ORE);
         simpleBlockItem(BRONZE_BLOCK);
-        simpleBlockItem(RAW_BRONZE_BLOCK);
         simpleBlockItem(ELECTRUM_BLOCK);
-        simpleBlockItem(RAW_ELECTRUM_BLOCK);
         simpleBlockItem(INVAR_BLOCK);
-        simpleBlockItem(RAW_INVAR_BLOCK);
         simpleBlockItem(LEAD_BLOCK);
         simpleBlockItem(RAW_LEAD_BLOCK);
         simpleBlockItem(NICKEL_BLOCK);
@@ -72,6 +81,13 @@ public class FoundationBlockStateProvider extends BlockStateProvider {
         simpleBlockItem(RAW_TIN_BLOCK);
         simpleBlockItem(URANIUM_BLOCK);
         simpleBlockItem(RAW_URANIUM_BLOCK);
+        simpleBlockItem(ALUMINUM_BLOCK);
+        simpleBlockItem(RAW_ALUMINUM_BLOCK);
+        simpleBlockItem(PLATINUM_BLOCK);
+        simpleBlockItem(RAW_PLATINUM_BLOCK);
+        simpleBlockItem(SIGNALUM_BLOCK);
+        simpleBlockItem(ENDERIUM_BLOCK);
+        simpleBlockItem(STEEL_BLOCK);
         simpleBlockItem(USEFUL_BEEHIVE, models().getExistingFile(mcLoc("block/beehive")));
     }
 

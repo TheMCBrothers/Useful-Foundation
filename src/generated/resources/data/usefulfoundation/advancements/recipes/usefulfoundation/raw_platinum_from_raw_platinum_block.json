@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "usefulfoundation:raw_platinum_from_raw_platinum_block"
+    ]
+  },
+  "criteria": {
+    "has_raw_platinum": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:storage_blocks/raw_platinum"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "usefulfoundation:raw_platinum_from_raw_platinum_block"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_raw_platinum",
+      "has_the_recipe"
+    ]
+  ]
+}

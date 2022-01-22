@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " X ",
+    "X X",
+    " X "
+  ],
+  "key": {
+    "X": {
+      "tag": "forge:ingots/aluminum"
+    }
+  },
+  "result": {
+    "item": "usefulfoundation:aluminum_gear"
+  }
+}
