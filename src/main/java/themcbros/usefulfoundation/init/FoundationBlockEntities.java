@@ -12,7 +12,7 @@ import themcbros.usefulfoundation.tileentity.UsefulBeehiveBlockEntity;
 import java.util.List;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, modid = UsefulFoundation.MOD_ID)
-public class FoundationTileEntities {
+public class FoundationBlockEntities {
     private static final List<BlockEntityType<?>> TILE_ENTITY_TYPES = Lists.newArrayList();
 
     public static final BlockEntityType<UsefulBeehiveBlockEntity> USEFUL_BEEHIVE = BlockEntityType.Builder.of(UsefulBeehiveBlockEntity::new, FoundationBlocks.USEFUL_BEEHIVE).build(null);

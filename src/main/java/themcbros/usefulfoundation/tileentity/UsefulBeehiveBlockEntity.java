@@ -4,7 +4,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.block.entity.BeehiveBlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
-import themcbros.usefulfoundation.init.FoundationTileEntities;
+import themcbros.usefulfoundation.init.FoundationBlockEntities;
 
 public class UsefulBeehiveBlockEntity extends BeehiveBlockEntity {
     public UsefulBeehiveBlockEntity(BlockPos pos, BlockState state) {
@@ -13,6 +13,6 @@ public class UsefulBeehiveBlockEntity extends BeehiveBlockEntity {
 
     @Override
     public BlockEntityType<?> getType() {
-        return FoundationTileEntities.USEFUL_BEEHIVE;
+        return FoundationBlockEntities.USEFUL_BEEHIVE;
     }
 }
