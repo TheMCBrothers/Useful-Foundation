@@ -10,8 +10,11 @@ import themcbros.usefulfoundation.UsefulFoundation;
 public class WorldGeneration {
     @SubscribeEvent
     public static void setupOreGeneration(final BiomeLoadingEvent event) {
+        event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, FoundationOrePlacement.ORE_ALUMINUM);
         event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, FoundationOrePlacement.ORE_LEAD);
         event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, FoundationOrePlacement.ORE_NICKEL);
+        event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, FoundationOrePlacement.ORE_PLATINUM);
+        event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, FoundationOrePlacement.ORE_PLATINUM_TOP);
         event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, FoundationOrePlacement.ORE_TIN);
         event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, FoundationOrePlacement.ORE_SILVER);
         event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, FoundationOrePlacement.ORE_URANIUM);
