@@ -1,3 +1,6 @@
+5.0.0:
+- removed Dust recipes
+
 4.0.0:
 - new Sorting of Items in Creative Tab
 - added new Materials (Aluminum, Enderium, Platinum, Signalum, Steel)
