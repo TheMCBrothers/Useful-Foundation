@@ -1,30 +1,15 @@
 package themcbros.usefulfoundation.init;
 
-import com.google.common.collect.Lists;
-import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
-import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.common.Mod;
-import themcbros.usefulfoundation.UsefulFoundation;
+import net.minecraftforge.registries.RegistryObject;
 import themcbros.usefulfoundation.tileentity.UsefulBeehiveBlockEntity;
 
-import java.util.List;
+import static themcbros.usefulfoundation.init.Registration.BLOCK_ENTITY_TYPES;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, modid = UsefulFoundation.MOD_ID)
 public class FoundationBlockEntities {
-    private static final List<BlockEntityType<?>> TILE_ENTITY_TYPES = Lists.newArrayList();
+    public static final RegistryObject<BlockEntityType<UsefulBeehiveBlockEntity>> USEFUL_BEEHIVE = BLOCK_ENTITY_TYPES.register("useful_beehive", () -> BlockEntityType.Builder.of(UsefulBeehiveBlockEntity::new, FoundationBlocks.USEFUL_BEEHIVE.get()).build(null));
 
-    public static final BlockEntityType<UsefulBeehiveBlockEntity> USEFUL_BEEHIVE = BlockEntityType.Builder.of(UsefulBeehiveBlockEntity::new, FoundationBlocks.USEFUL_BEEHIVE).build(null);
+    protected static void init() {
 
-    private static <T extends BlockEntity> BlockEntityType<T> registerType(String registryName, BlockEntityType<T> type) {
-        type.setRegistryName(UsefulFoundation.getId(registryName));
-        TILE_ENTITY_TYPES.add(type);
-        return type;
-    }
-
-    @SubscribeEvent
-    public static void registerTileEntityTypes(final RegistryEvent.Register<BlockEntityType<?>> event) {
-        TILE_ENTITY_TYPES.forEach(event.getRegistry()::register);
     }
 }

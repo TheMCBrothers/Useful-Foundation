@@ -5,7 +5,6 @@ import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import themcbros.usefulfoundation.UsefulFoundation;
-import themcbros.usefulfoundation.world.WorldGeneration;
 
 public class CommonProxy {
     CommonProxy() {

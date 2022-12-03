@@ -1,9 +1,9 @@
 {
   "type": "minecraft:blasting",
+  "cookingtime": 50,
+  "experience": 0.7,
   "ingredient": {
     "tag": "forge:raw_materials/aluminum"
   },
-  "result": "usefulfoundation:aluminum_ingot",
-  "experience": 0.7,
-  "cookingtime": 50
+  "result": "usefulfoundation:aluminum_ingot"
 }

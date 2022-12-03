@@ -13,6 +13,6 @@ public class UsefulBeehiveBlockEntity extends BeehiveBlockEntity {
 
     @Override
     public BlockEntityType<?> getType() {
-        return FoundationBlockEntities.USEFUL_BEEHIVE;
+        return FoundationBlockEntities.USEFUL_BEEHIVE.get();
     }
 }

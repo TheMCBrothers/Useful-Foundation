@@ -19,8 +19,6 @@ import java.util.function.Consumer;
 import java.util.function.Supplier;
 
 public class FoundationLootTableProvider extends LootTableProvider {
-    private final List<Pair<Supplier<Consumer<BiConsumer<ResourceLocation, LootTable.Builder>>>, LootContextParamSet>> subProviders = ImmutableList.of(Pair.of(FoundationBlockLoot::new, LootContextParamSets.BLOCK));
-
     public FoundationLootTableProvider(DataGenerator gen) {
         super(gen);
     }
@@ -28,7 +26,10 @@ public class FoundationLootTableProvider extends LootTableProvider {
     @Nonnull
     @Override
     protected List<Pair<Supplier<Consumer<BiConsumer<ResourceLocation, LootTable.Builder>>>, LootContextParamSet>> getTables() {
-        return this.subProviders;
+        ImmutableList.Builder<Pair<Supplier<Consumer<BiConsumer<ResourceLocation, LootTable.Builder>>>, LootContextParamSet>> builder = new ImmutableList.Builder<>();
+
+        builder.add(Pair.of(FoundationBlockLoot::new, LootContextParamSets.BLOCK));
+        return builder.build();
     }
 
     @Override

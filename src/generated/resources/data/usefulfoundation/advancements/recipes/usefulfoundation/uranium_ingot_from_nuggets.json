@@ -1,26 +1,21 @@
 {
   "parent": "minecraft:recipes/root",
-  "rewards": {
-    "recipes": [
-      "usefulfoundation:uranium_ingot_from_nuggets"
-    ]
-  },
   "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "usefulfoundation:uranium_ingot_from_nuggets"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
     "has_uranium_nugget": {
-      "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "tag": "forge:nuggets/uranium"
           }
         ]
-      }
-    },
-    "has_the_recipe": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "usefulfoundation:uranium_ingot_from_nuggets"
-      }
+      },
+      "trigger": "minecraft:inventory_changed"
     }
   },
   "requirements": [
@@ -28,5 +23,10 @@
       "has_uranium_nugget",
       "has_the_recipe"
     ]
-  ]
+  ],
+  "rewards": {
+    "recipes": [
+      "usefulfoundation:uranium_ingot_from_nuggets"
+    ]
+  }
 }

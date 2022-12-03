@@ -12,7 +12,7 @@
     }
   ],
   "result": {
-    "item": "usefulfoundation:invar_dust",
-    "count": 3
+    "count": 3,
+    "item": "usefulfoundation:invar_dust"
   }
 }

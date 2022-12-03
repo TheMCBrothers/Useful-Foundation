@@ -1,21 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    " X#",
-    " RX",
-    "R  "
-  ],
   "key": {
-    "X": {
-      "tag": "forge:ingots/iron"
-    },
     "#": {
       "tag": "forge:string"
     },
     "R": {
       "tag": "forge:rods/wooden"
+    },
+    "X": {
+      "tag": "forge:ingots/iron"
     }
   },
+  "pattern": [
+    " X#",
+    " RX",
+    "R  "
+  ],
   "result": {
     "item": "usefulfoundation:hammer"
   }
