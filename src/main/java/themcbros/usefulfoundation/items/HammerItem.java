@@ -18,11 +18,6 @@ public class HammerItem extends DiggerItem {
 
     @Override
     public boolean isCorrectToolForDrops(ItemStack stack, BlockState state) {
-        return this.isCorrectToolForDrops(state);
-    }
-
-    @Override
-    public boolean isCorrectToolForDrops(BlockState state) {
         return state.is(Tags.Blocks.COBBLESTONE) || state.is(Tags.Blocks.SAND) || state.is(Tags.Blocks.GRAVEL) || state.is(Tags.Blocks.ORES);
     }
 

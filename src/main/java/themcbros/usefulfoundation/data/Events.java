@@ -11,7 +11,7 @@ import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import themcbros.usefulfoundation.UsefulFoundation;
-import themcbros.usefulfoundation.world.FoundationBiomeModifiers;
+import themcbros.usefulfoundation.data.world.FoundationOreGenerationProvider;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, modid = UsefulFoundation.MOD_ID)
 public class Events {
@@ -34,6 +34,6 @@ public class Events {
         gen.addProvider(event.includeServer(), blockTagsProvider);
         gen.addProvider(event.includeServer(), new FoundationTagProvider.Items(gen, blockTagsProvider, fileHelper));
         gen.addProvider(event.includeServer(), new FoundationLootTableProvider(gen));
-        gen.addProvider(event.includeServer(), FoundationBiomeModifiers.dataGenBiomeModifiers(gen, fileHelper, regOps));
+        gen.addProvider(event.includeServer(), new FoundationOreGenerationProvider(gen, fileHelper, regOps));
     }
 }
