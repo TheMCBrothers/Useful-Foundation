@@ -1,6 +1,5 @@
-package themcbros.usefulfoundation.world;
+package themcbros.usefulfoundation.data.world;
 
-import net.minecraft.core.Registry;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
 import net.minecraft.world.level.levelgen.placement.BiomeFilter;
 import net.minecraft.world.level.levelgen.placement.CountPlacement;
@@ -9,15 +8,13 @@ import net.minecraft.world.level.levelgen.placement.InSquarePlacement;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 import net.minecraft.world.level.levelgen.placement.PlacementModifier;
 import net.minecraft.world.level.levelgen.placement.RarityFilter;
-import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
-import themcbros.usefulfoundation.UsefulFoundation;
 
 import java.util.List;
 
-public final class FoundationOrePlacement {
-    public static final DeferredRegister<PlacedFeature> PLACED_FEATURES = DeferredRegister.create(Registry.PLACED_FEATURE_REGISTRY, UsefulFoundation.MOD_ID);
+import static themcbros.usefulfoundation.init.Registration.PLACED_FEATURES;
 
+public final class FoundationOrePlacement {
     public static final RegistryObject<PlacedFeature> ORE_ALUMINUM = PLACED_FEATURES.register("ore_aluminum", () -> new PlacedFeature(FoundationOreFeatures.ORE_ALUMINUM.getHolder().orElseThrow(), commonOrePlacement(23, HeightRangePlacement.uniform(VerticalAnchor.absolute(20), VerticalAnchor.absolute(80)))));
     public static final RegistryObject<PlacedFeature> ORE_LEAD = PLACED_FEATURES.register("ore_lead", () -> new PlacedFeature(FoundationOreFeatures.ORE_LEAD.getHolder().orElseThrow(), commonOrePlacement(18, HeightRangePlacement.uniform(VerticalAnchor.bottom(), VerticalAnchor.absolute(80)))));
     public static final RegistryObject<PlacedFeature> ORE_NICKEL = PLACED_FEATURES.register("ore_nickel", () -> new PlacedFeature(FoundationOreFeatures.ORE_NICKEL.getHolder().orElseThrow(), commonOrePlacement(10, HeightRangePlacement.uniform(VerticalAnchor.bottom(), VerticalAnchor.absolute(60)))));

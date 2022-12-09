@@ -1,13 +1,10 @@
-package themcbros.usefulfoundation.world;
+package themcbros.usefulfoundation.data.world;
 
 import com.google.common.base.Suppliers;
-import net.minecraft.core.Registry;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
-import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
-import themcbros.usefulfoundation.UsefulFoundation;
 import themcbros.usefulfoundation.init.FoundationBlocks;
 
 import java.util.List;
@@ -15,10 +12,9 @@ import java.util.function.Supplier;
 
 import static net.minecraft.data.worldgen.features.OreFeatures.DEEPSLATE_ORE_REPLACEABLES;
 import static net.minecraft.data.worldgen.features.OreFeatures.STONE_ORE_REPLACEABLES;
+import static themcbros.usefulfoundation.init.Registration.CONFIGURED_FEATURES;
 
 public final class FoundationOreFeatures {
-    public static final DeferredRegister<ConfiguredFeature<?, ?>> CONFIGURED_FEATURES = DeferredRegister.create(Registry.CONFIGURED_FEATURE_REGISTRY, UsefulFoundation.MOD_ID);
-
     //Targets
     private static final Supplier<List<OreConfiguration.TargetBlockState>> ORE_ALUMINUM_SUPPLIER = Suppliers.memoize(() -> List.of(OreConfiguration.target(STONE_ORE_REPLACEABLES, FoundationBlocks.ALUMINUM_ORE.get().defaultBlockState()), OreConfiguration.target(DEEPSLATE_ORE_REPLACEABLES, FoundationBlocks.DEEPSLATE_ALUMINUM_ORE.get().defaultBlockState())));
     private static final Supplier<List<OreConfiguration.TargetBlockState>> ORE_LEAD_SUPPLIER = Suppliers.memoize(() -> List.of(OreConfiguration.target(STONE_ORE_REPLACEABLES, FoundationBlocks.LEAD_ORE.get().defaultBlockState()), OreConfiguration.target(DEEPSLATE_ORE_REPLACEABLES, FoundationBlocks.DEEPSLATE_LEAD_ORE.get().defaultBlockState())));
