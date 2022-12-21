@@ -1,0 +1,11 @@
+{
+  "values": [
+    "usefulfoundation:uranium_ore",
+    "usefulfoundation:deepslate_uranium_ore",
+    "usefulfoundation:uranium_block",
+    "usefulfoundation:raw_uranium_block",
+    "usefulfoundation:electrum_block",
+    "usefulfoundation:enderium_block",
+    "usefulfoundation:signalum_block"
+  ]
+}
