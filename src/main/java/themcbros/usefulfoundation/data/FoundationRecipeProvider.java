@@ -16,6 +16,7 @@ import java.util.function.Consumer;
 import static themcbros.usefulfoundation.FoundationTags.Items.*;
 import static themcbros.usefulfoundation.UsefulFoundation.getId;
 import static themcbros.usefulfoundation.init.FoundationItems.*;
+import static themcbros.usefulfoundation.init.FoundationBlocks.*;
 
 public class FoundationRecipeProvider extends RecipeProvider {
     public FoundationRecipeProvider(DataGenerator gen) {

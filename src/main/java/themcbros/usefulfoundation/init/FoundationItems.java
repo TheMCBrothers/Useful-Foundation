@@ -1,6 +1,5 @@
 package themcbros.usefulfoundation.init;
 
-import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.registries.RegistryObject;
 import themcbros.usefulfoundation.UsefulFoundation;
@@ -11,46 +10,6 @@ import static themcbros.usefulfoundation.init.Registration.ITEMS;
 public class FoundationItems {
     //Tool Items
     public static final RegistryObject<HammerItem> HAMMER = ITEMS.register("hammer", () -> new HammerItem(new Item.Properties().tab(UsefulFoundation.GROUP)));
-
-    //Blocks
-    public static final RegistryObject<BlockItem> USEFUL_BEEHIVE = ITEMS.register("useful_beehive", () -> new BlockItem(FoundationBlocks.USEFUL_BEEHIVE.get(), new Item.Properties().tab(UsefulFoundation.GROUP)));
-    public static final RegistryObject<BlockItem> TIN_ORE = ITEMS.register("tin_ore", () -> new BlockItem(FoundationBlocks.TIN_ORE.get(), new Item.Properties().tab(UsefulFoundation.GROUP)));
-    public static final RegistryObject<BlockItem> NICKEL_ORE = ITEMS.register("nickel_ore", () -> new BlockItem(FoundationBlocks.NICKEL_ORE.get(), new Item.Properties().tab(UsefulFoundation.GROUP)));
-    public static final RegistryObject<BlockItem> LEAD_ORE = ITEMS.register("lead_ore", () -> new BlockItem(FoundationBlocks.LEAD_ORE.get(), new Item.Properties().tab(UsefulFoundation.GROUP)));
-    public static final RegistryObject<BlockItem> SILVER_ORE = ITEMS.register("silver_ore", () -> new BlockItem(FoundationBlocks.SILVER_ORE.get(), new Item.Properties().tab(UsefulFoundation.GROUP)));
-    public static final RegistryObject<BlockItem> URANIUM_ORE = ITEMS.register("uranium_ore", () -> new BlockItem(FoundationBlocks.URANIUM_ORE.get(), new Item.Properties().tab(UsefulFoundation.GROUP)));
-    public static final RegistryObject<BlockItem> ALUMINUM_ORE = ITEMS.register("aluminum_ore", () -> new BlockItem(FoundationBlocks.ALUMINUM_ORE.get(), new Item.Properties().tab(UsefulFoundation.GROUP)));
-    public static final RegistryObject<BlockItem> PLATINUM_ORE = ITEMS.register("platinum_ore", () -> new BlockItem(FoundationBlocks.PLATINUM_ORE.get(), new Item.Properties().tab(UsefulFoundation.GROUP)));
-
-    public static final RegistryObject<BlockItem> DEEPSLATE_TIN_ORE = ITEMS.register("deepslate_tin_ore", () -> new BlockItem(FoundationBlocks.DEEPSLATE_TIN_ORE.get(), new Item.Properties().tab(UsefulFoundation.GROUP)));
-    public static final RegistryObject<BlockItem> DEEPSLATE_NICKEL_ORE = ITEMS.register("deepslate_nickel_ore", () -> new BlockItem(FoundationBlocks.DEEPSLATE_NICKEL_ORE.get(), new Item.Properties().tab(UsefulFoundation.GROUP)));
-    public static final RegistryObject<BlockItem> DEEPSLATE_LEAD_ORE = ITEMS.register("deepslate_lead_ore", () -> new BlockItem(FoundationBlocks.DEEPSLATE_LEAD_ORE.get(), new Item.Properties().tab(UsefulFoundation.GROUP)));
-    public static final RegistryObject<BlockItem> DEEPSLATE_SILVER_ORE = ITEMS.register("deepslate_silver_ore", () -> new BlockItem(FoundationBlocks.DEEPSLATE_SILVER_ORE.get(), new Item.Properties().tab(UsefulFoundation.GROUP)));
-    public static final RegistryObject<BlockItem> DEEPSLATE_URANIUM_ORE = ITEMS.register("deepslate_uranium_ore", () -> new BlockItem(FoundationBlocks.DEEPSLATE_URANIUM_ORE.get(), new Item.Properties().tab(UsefulFoundation.GROUP)));
-    public static final RegistryObject<BlockItem> DEEPSLATE_ALUMINUM_ORE = ITEMS.register("deepslate_aluminum_ore", () -> new BlockItem(FoundationBlocks.DEEPSLATE_ALUMINUM_ORE.get(), new Item.Properties().tab(UsefulFoundation.GROUP)));
-    public static final RegistryObject<BlockItem> DEEPSLATE_PLATINUM_ORE = ITEMS.register("deepslate_platinum_ore", () -> new BlockItem(FoundationBlocks.DEEPSLATE_PLATINUM_ORE.get(), new Item.Properties().tab(UsefulFoundation.GROUP)));
-
-    public static final RegistryObject<BlockItem> RAW_TIN_BLOCK = ITEMS.register("raw_tin_block", () -> new BlockItem(FoundationBlocks.RAW_TIN_BLOCK.get(), new Item.Properties().tab(UsefulFoundation.GROUP)));
-    public static final RegistryObject<BlockItem> RAW_NICKEL_BLOCK = ITEMS.register("raw_nickel_block", () -> new BlockItem(FoundationBlocks.RAW_NICKEL_BLOCK.get(), new Item.Properties().tab(UsefulFoundation.GROUP)));
-    public static final RegistryObject<BlockItem> RAW_LEAD_BLOCK = ITEMS.register("raw_lead_block", () -> new BlockItem(FoundationBlocks.RAW_LEAD_BLOCK.get(), new Item.Properties().tab(UsefulFoundation.GROUP)));
-    public static final RegistryObject<BlockItem> RAW_SILVER_BLOCK = ITEMS.register("raw_silver_block", () -> new BlockItem(FoundationBlocks.RAW_SILVER_BLOCK.get(), new Item.Properties().tab(UsefulFoundation.GROUP)));
-    public static final RegistryObject<BlockItem> RAW_URANIUM_BLOCK = ITEMS.register("raw_uranium_block", () -> new BlockItem(FoundationBlocks.RAW_URANIUM_BLOCK.get(), new Item.Properties().tab(UsefulFoundation.GROUP)));
-    public static final RegistryObject<BlockItem> RAW_ALUMINUM_BLOCK = ITEMS.register("raw_aluminum_block", () -> new BlockItem(FoundationBlocks.RAW_ALUMINUM_BLOCK.get(), new Item.Properties().tab(UsefulFoundation.GROUP)));
-    public static final RegistryObject<BlockItem> RAW_PLATINUM_BLOCK = ITEMS.register("raw_platinum_block", () -> new BlockItem(FoundationBlocks.RAW_PLATINUM_BLOCK.get(), new Item.Properties().tab(UsefulFoundation.GROUP)));
-
-    public static final RegistryObject<BlockItem> TIN_BLOCK = ITEMS.register("tin_block", () -> new BlockItem(FoundationBlocks.TIN_BLOCK.get(), new Item.Properties().tab(UsefulFoundation.GROUP)));
-    public static final RegistryObject<BlockItem> BRONZE_BLOCK = ITEMS.register("bronze_block", () -> new BlockItem(FoundationBlocks.BRONZE_BLOCK.get(), new Item.Properties().tab(UsefulFoundation.GROUP)));
-    public static final RegistryObject<BlockItem> NICKEL_BLOCK = ITEMS.register("nickel_block", () -> new BlockItem(FoundationBlocks.NICKEL_BLOCK.get(), new Item.Properties().tab(UsefulFoundation.GROUP)));
-    public static final RegistryObject<BlockItem> INVAR_BLOCK = ITEMS.register("invar_block", () -> new BlockItem(FoundationBlocks.INVAR_BLOCK.get(), new Item.Properties().tab(UsefulFoundation.GROUP)));
-    public static final RegistryObject<BlockItem> LEAD_BLOCK = ITEMS.register("lead_block", () -> new BlockItem(FoundationBlocks.LEAD_BLOCK.get(), new Item.Properties().tab(UsefulFoundation.GROUP)));
-    public static final RegistryObject<BlockItem> SILVER_BLOCK = ITEMS.register("silver_block", () -> new BlockItem(FoundationBlocks.SILVER_BLOCK.get(), new Item.Properties().tab(UsefulFoundation.GROUP)));
-    public static final RegistryObject<BlockItem> ELECTRUM_BLOCK = ITEMS.register("electrum_block", () -> new BlockItem(FoundationBlocks.ELECTRUM_BLOCK.get(), new Item.Properties().tab(UsefulFoundation.GROUP)));
-    public static final RegistryObject<BlockItem> URANIUM_BLOCK = ITEMS.register("uranium_block", () -> new BlockItem(FoundationBlocks.URANIUM_BLOCK.get(), new Item.Properties().tab(UsefulFoundation.GROUP)));
-    public static final RegistryObject<BlockItem> ALUMINUM_BLOCK = ITEMS.register("aluminum_block", () -> new BlockItem(FoundationBlocks.ALUMINUM_BLOCK.get(), new Item.Properties().tab(UsefulFoundation.GROUP)));
-    public static final RegistryObject<BlockItem> PLATINUM_BLOCK = ITEMS.register("platinum_block", () -> new BlockItem(FoundationBlocks.PLATINUM_BLOCK.get(), new Item.Properties().tab(UsefulFoundation.GROUP)));
-    public static final RegistryObject<BlockItem> ENDERIUM_BLOCK = ITEMS.register("enderium_block", () -> new BlockItem(FoundationBlocks.ENDERIUM_BLOCK.get(), new Item.Properties().tab(UsefulFoundation.GROUP)));
-    public static final RegistryObject<BlockItem> SIGNALUM_BLOCK = ITEMS.register("signalum_block", () -> new BlockItem(FoundationBlocks.SIGNALUM_BLOCK.get(), new Item.Properties().tab(UsefulFoundation.GROUP)));
-    public static final RegistryObject<BlockItem> STEEL_BLOCK = ITEMS.register("steel_block", () -> new BlockItem(FoundationBlocks.STEEL_BLOCK.get(), new Item.Properties().tab(UsefulFoundation.GROUP)));
 
     //Material Items
     public static final RegistryObject<Item> IRON_PLATE = ITEMS.register("iron_plate", () -> new Item(new Item.Properties().tab(UsefulFoundation.GROUP)));

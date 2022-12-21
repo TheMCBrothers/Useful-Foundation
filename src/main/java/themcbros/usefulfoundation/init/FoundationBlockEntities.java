@@ -10,6 +10,5 @@ public class FoundationBlockEntities {
     public static final RegistryObject<BlockEntityType<UsefulBeehiveBlockEntity>> USEFUL_BEEHIVE = BLOCK_ENTITY_TYPES.register("useful_beehive", () -> BlockEntityType.Builder.of(UsefulBeehiveBlockEntity::new, FoundationBlocks.USEFUL_BEEHIVE.get()).build(null));
 
     protected static void init() {
-
     }
 }
