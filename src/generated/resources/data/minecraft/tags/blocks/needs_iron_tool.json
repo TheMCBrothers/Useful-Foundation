@@ -1,0 +1,24 @@
+{
+  "replace": false,
+  "values": [
+    "usefulfoundation:lead_ore",
+    "usefulfoundation:deepslate_lead_ore",
+    "usefulfoundation:lead_block",
+    "usefulfoundation:raw_lead_block",
+    "usefulfoundation:nickel_ore",
+    "usefulfoundation:deepslate_nickel_ore",
+    "usefulfoundation:nickel_block",
+    "usefulfoundation:raw_nickel_block",
+    "usefulfoundation:silver_ore",
+    "usefulfoundation:deepslate_silver_ore",
+    "usefulfoundation:silver_block",
+    "usefulfoundation:raw_silver_block",
+    "usefulfoundation:tin_ore",
+    "usefulfoundation:deepslate_tin_ore",
+    "usefulfoundation:tin_block",
+    "usefulfoundation:raw_tin_block",
+    "usefulfoundation:bronze_block",
+    "usefulfoundation:invar_block",
+    "usefulfoundation:steel_block"
+  ]
+}
