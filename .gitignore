@@ -25,4 +25,5 @@ run
 forge*changelog.txt
 
 secrets.properties
+*/.cache
 /src/generated/resources/.cache/

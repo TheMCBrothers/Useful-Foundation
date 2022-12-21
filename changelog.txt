@@ -1,2 +1,6 @@
+2.0.0:
+- Ores, Storage Blocks and Raw Blocks needs specific tool
+- Tiny changes
+
 1.0.0:
 - Updated to 1.19
