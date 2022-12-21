@@ -189,7 +189,21 @@ public class FoundationTagProvider {
             this.tag(FoundationTags.Blocks.BLOCKS_STEEL).add(FoundationBlocks.STEEL_BLOCK.get());
             this.tag(FoundationTags.Blocks.BLOCKS_TIN).add(FoundationBlocks.TIN_BLOCK.get());
             this.tag(FoundationTags.Blocks.BLOCKS_URANIUM).add(FoundationBlocks.URANIUM_BLOCK.get());
-            this.tag(Tags.Blocks.STORAGE_BLOCKS).addTags(FoundationTags.Blocks.BLOCKS_ALUMINUM, FoundationTags.Blocks.BLOCKS_BRONZE, FoundationTags.Blocks.BLOCKS_ELECTRUM, FoundationTags.Blocks.BLOCKS_ENDEIRUM, FoundationTags.Blocks.BLOCKS_INVAR, FoundationTags.Blocks.BLOCKS_LEAD, FoundationTags.Blocks.BLOCKS_NICKEL, FoundationTags.Blocks.BLOCKS_PLATINUM, FoundationTags.Blocks.BLOCKS_SIGNALUM, FoundationTags.Blocks.BLOCKS_SILVER, FoundationTags.Blocks.BLOCKS_STEEL, FoundationTags.Blocks.BLOCKS_TIN, FoundationTags.Blocks.BLOCKS_URANIUM);
+            this.tag(Tags.Blocks.STORAGE_BLOCKS)
+                    .addTags(FoundationTags.Blocks.BLOCKS_ALUMINUM,
+                            FoundationTags.Blocks.BLOCKS_BRONZE,
+                            FoundationTags.Blocks.BLOCKS_ELECTRUM,
+                            FoundationTags.Blocks.BLOCKS_ENDEIRUM,
+                            FoundationTags.Blocks.BLOCKS_INVAR,
+                            FoundationTags.Blocks.BLOCKS_LEAD,
+                            FoundationTags.Blocks.BLOCKS_NICKEL,
+                            FoundationTags.Blocks.BLOCKS_PLATINUM,
+                            FoundationTags.Blocks.BLOCKS_SIGNALUM,
+                            FoundationTags.Blocks.BLOCKS_SILVER,
+                            FoundationTags.Blocks.BLOCKS_STEEL,
+                            FoundationTags.Blocks.BLOCKS_TIN,
+                            FoundationTags.Blocks.BLOCKS_URANIUM
+                    );
 
             //Raw Storage Blocks
             this.tag(FoundationTags.Blocks.RAW_BLOCKS_ALUMINUM).add(FoundationBlocks.RAW_ALUMINUM_BLOCK.get());
@@ -199,7 +213,15 @@ public class FoundationTagProvider {
             this.tag(FoundationTags.Blocks.RAW_BLOCKS_SILVER).add(FoundationBlocks.RAW_SILVER_BLOCK.get());
             this.tag(FoundationTags.Blocks.RAW_BLOCKS_TIN).add(FoundationBlocks.RAW_TIN_BLOCK.get());
             this.tag(FoundationTags.Blocks.RAW_BLOCKS_URANIUM).add(FoundationBlocks.RAW_URANIUM_BLOCK.get());
-            this.tag(Tags.Blocks.STORAGE_BLOCKS).addTags(FoundationTags.Blocks.RAW_BLOCKS_ALUMINUM, FoundationTags.Blocks.RAW_BLOCKS_LEAD, FoundationTags.Blocks.RAW_BLOCKS_NICKEL, FoundationTags.Blocks.RAW_BLOCKS_PLATINUM, FoundationTags.Blocks.RAW_BLOCKS_SILVER, FoundationTags.Blocks.RAW_BLOCKS_TIN, FoundationTags.Blocks.RAW_BLOCKS_URANIUM);
+            this.tag(Tags.Blocks.STORAGE_BLOCKS)
+                    .addTags(FoundationTags.Blocks.RAW_BLOCKS_ALUMINUM,
+                            FoundationTags.Blocks.RAW_BLOCKS_LEAD,
+                            FoundationTags.Blocks.RAW_BLOCKS_NICKEL,
+                            FoundationTags.Blocks.RAW_BLOCKS_PLATINUM,
+                            FoundationTags.Blocks.RAW_BLOCKS_SILVER,
+                            FoundationTags.Blocks.RAW_BLOCKS_TIN,
+                            FoundationTags.Blocks.RAW_BLOCKS_URANIUM
+                    );
 
             //Ore Blocks
             this.tag(FoundationTags.Blocks.ORES_ALUMINUM).add(FoundationBlocks.ALUMINUM_ORE.get(), FoundationBlocks.DEEPSLATE_ALUMINUM_ORE.get());
@@ -209,16 +231,148 @@ public class FoundationTagProvider {
             this.tag(FoundationTags.Blocks.ORES_SILVER).add(FoundationBlocks.SILVER_ORE.get(), FoundationBlocks.DEEPSLATE_SILVER_ORE.get());
             this.tag(FoundationTags.Blocks.ORES_TIN).add(FoundationBlocks.TIN_ORE.get(), FoundationBlocks.DEEPSLATE_TIN_ORE.get());
             this.tag(FoundationTags.Blocks.ORES_URANIUM).add(FoundationBlocks.URANIUM_ORE.get(), FoundationBlocks.DEEPSLATE_URANIUM_ORE.get());
-            this.tag(Tags.Blocks.ORES).addTags(FoundationTags.Blocks.ORES_ALUMINUM, FoundationTags.Blocks.ORES_LEAD, FoundationTags.Blocks.ORES_NICKEL, FoundationTags.Blocks.ORES_PLATINUM, FoundationTags.Blocks.ORES_SILVER, FoundationTags.Blocks.ORES_TIN, FoundationTags.Blocks.ORES_URANIUM);
+            this.tag(Tags.Blocks.ORES)
+                    .addTags(FoundationTags.Blocks.ORES_ALUMINUM,
+                            FoundationTags.Blocks.ORES_LEAD,
+                            FoundationTags.Blocks.ORES_NICKEL,
+                            FoundationTags.Blocks.ORES_PLATINUM,
+                            FoundationTags.Blocks.ORES_SILVER,
+                            FoundationTags.Blocks.ORES_TIN,
+                            FoundationTags.Blocks.ORES_URANIUM
+                    );
 
             //Forge Tags
-            this.tag(Tags.Blocks.ORES_IN_GROUND_STONE).add(FoundationBlocks.ALUMINUM_ORE.get(), FoundationBlocks.LEAD_ORE.get(), FoundationBlocks.NICKEL_ORE.get(), FoundationBlocks.PLATINUM_ORE.get(), FoundationBlocks.SILVER_ORE.get(), FoundationBlocks.TIN_ORE.get(), FoundationBlocks.URANIUM_ORE.get());
-            this.tag(Tags.Blocks.ORES_IN_GROUND_DEEPSLATE).add(FoundationBlocks.DEEPSLATE_ALUMINUM_ORE.get(), FoundationBlocks.DEEPSLATE_LEAD_ORE.get(), FoundationBlocks.DEEPSLATE_NICKEL_ORE.get(), FoundationBlocks.DEEPSLATE_PLATINUM_ORE.get(), FoundationBlocks.DEEPSLATE_SILVER_ORE.get(), FoundationBlocks.DEEPSLATE_TIN_ORE.get(), FoundationBlocks.DEEPSLATE_URANIUM_ORE.get());
-            this.tag(Tags.Blocks.ORE_RATES_SINGULAR).add(FoundationBlocks.ALUMINUM_ORE.get(), FoundationBlocks.LEAD_ORE.get(), FoundationBlocks.NICKEL_ORE.get(), FoundationBlocks.PLATINUM_ORE.get(), FoundationBlocks.SILVER_ORE.get(), FoundationBlocks.TIN_ORE.get(), FoundationBlocks.URANIUM_ORE.get(), FoundationBlocks.DEEPSLATE_ALUMINUM_ORE.get(), FoundationBlocks.DEEPSLATE_LEAD_ORE.get(), FoundationBlocks.DEEPSLATE_NICKEL_ORE.get(), FoundationBlocks.DEEPSLATE_PLATINUM_ORE.get(), FoundationBlocks.DEEPSLATE_SILVER_ORE.get(), FoundationBlocks.DEEPSLATE_TIN_ORE.get(), FoundationBlocks.DEEPSLATE_URANIUM_ORE.get());
+            this.tag(Tags.Blocks.ORES_IN_GROUND_STONE)
+                    .add(FoundationBlocks.ALUMINUM_ORE.get(),
+                            FoundationBlocks.LEAD_ORE.get(),
+                            FoundationBlocks.NICKEL_ORE.get(),
+                            FoundationBlocks.PLATINUM_ORE.get(),
+                            FoundationBlocks.SILVER_ORE.get(),
+                            FoundationBlocks.TIN_ORE.get(),
+                            FoundationBlocks.URANIUM_ORE.get()
+                    );
+            this.tag(Tags.Blocks.ORES_IN_GROUND_DEEPSLATE)
+                    .add(FoundationBlocks.DEEPSLATE_ALUMINUM_ORE.get(),
+                            FoundationBlocks.DEEPSLATE_LEAD_ORE.get(),
+                            FoundationBlocks.DEEPSLATE_NICKEL_ORE.get(),
+                            FoundationBlocks.DEEPSLATE_PLATINUM_ORE.get(),
+                            FoundationBlocks.DEEPSLATE_SILVER_ORE.get(),
+                            FoundationBlocks.DEEPSLATE_TIN_ORE.get(),
+                            FoundationBlocks.DEEPSLATE_URANIUM_ORE.get()
+                    );
+            this.tag(Tags.Blocks.ORE_RATES_SINGULAR)
+                    .add(FoundationBlocks.ALUMINUM_ORE.get(),
+                            FoundationBlocks.LEAD_ORE.get(),
+                            FoundationBlocks.NICKEL_ORE.get(),
+                            FoundationBlocks.PLATINUM_ORE.get(),
+                            FoundationBlocks.SILVER_ORE.get(),
+                            FoundationBlocks.TIN_ORE.get(),
+                            FoundationBlocks.URANIUM_ORE.get(),
+                            FoundationBlocks.DEEPSLATE_ALUMINUM_ORE.get(),
+                            FoundationBlocks.DEEPSLATE_LEAD_ORE.get(),
+                            FoundationBlocks.DEEPSLATE_NICKEL_ORE.get(),
+                            FoundationBlocks.DEEPSLATE_PLATINUM_ORE.get(),
+                            FoundationBlocks.DEEPSLATE_SILVER_ORE.get(),
+                            FoundationBlocks.DEEPSLATE_TIN_ORE.get(),
+                            FoundationBlocks.DEEPSLATE_URANIUM_ORE.get()
+                    );
+
             //Vanilla Tags
-            this.tag(BlockTags.BEACON_BASE_BLOCKS).addTags(FoundationTags.Blocks.BLOCKS_ALUMINUM, FoundationTags.Blocks.BLOCKS_BRONZE, Tags.Blocks.STORAGE_BLOCKS_COPPER, FoundationTags.Blocks.BLOCKS_ELECTRUM, FoundationTags.Blocks.BLOCKS_ENDEIRUM, FoundationTags.Blocks.BLOCKS_INVAR, FoundationTags.Blocks.BLOCKS_LEAD, FoundationTags.Blocks.BLOCKS_NICKEL, FoundationTags.Blocks.BLOCKS_PLATINUM, FoundationTags.Blocks.BLOCKS_SIGNALUM, FoundationTags.Blocks.BLOCKS_SILVER, FoundationTags.Blocks.BLOCKS_STEEL, FoundationTags.Blocks.BLOCKS_TIN, FoundationTags.Blocks.BLOCKS_URANIUM);
-            this.tag(BlockTags.MINEABLE_WITH_PICKAXE).add(FoundationBlocks.ALUMINUM_ORE.get(), FoundationBlocks.DEEPSLATE_ALUMINUM_ORE.get(), FoundationBlocks.ALUMINUM_BLOCK.get(), FoundationBlocks.LEAD_ORE.get(), FoundationBlocks.DEEPSLATE_LEAD_ORE.get(), FoundationBlocks.LEAD_BLOCK.get(), FoundationBlocks.NICKEL_ORE.get(), FoundationBlocks.DEEPSLATE_NICKEL_ORE.get(), FoundationBlocks.NICKEL_BLOCK.get(), FoundationBlocks.PLATINUM_ORE.get(), FoundationBlocks.DEEPSLATE_PLATINUM_ORE.get(), FoundationBlocks.PLATINUM_BLOCK.get(), FoundationBlocks.SILVER_ORE.get(), FoundationBlocks.DEEPSLATE_SILVER_ORE.get(), FoundationBlocks.SILVER_BLOCK.get(), FoundationBlocks.TIN_ORE.get(), FoundationBlocks.DEEPSLATE_TIN_ORE.get(), FoundationBlocks.TIN_BLOCK.get(), FoundationBlocks.URANIUM_ORE.get(), FoundationBlocks.DEEPSLATE_URANIUM_ORE.get(), FoundationBlocks.URANIUM_BLOCK.get(), FoundationBlocks.BRONZE_BLOCK.get(), FoundationBlocks.INVAR_BLOCK.get(), FoundationBlocks.ELECTRUM_BLOCK.get(), FoundationBlocks.ENDERIUM_BLOCK.get(), FoundationBlocks.SIGNALUM_BLOCK.get(), FoundationBlocks.STEEL_BLOCK.get(), FoundationBlocks.RAW_ALUMINUM_BLOCK.get(), FoundationBlocks.RAW_LEAD_BLOCK.get(), FoundationBlocks.RAW_NICKEL_BLOCK.get(), FoundationBlocks.RAW_PLATINUM_BLOCK.get(), FoundationBlocks.RAW_SILVER_BLOCK.get(), FoundationBlocks.RAW_TIN_BLOCK.get(), FoundationBlocks.RAW_URANIUM_BLOCK.get());
+            this.tag(BlockTags.BEACON_BASE_BLOCKS)
+                    .addTags(FoundationTags.Blocks.BLOCKS_ALUMINUM,
+                            FoundationTags.Blocks.BLOCKS_BRONZE,
+                            Tags.Blocks.STORAGE_BLOCKS_COPPER,
+                            FoundationTags.Blocks.BLOCKS_ELECTRUM,
+                            FoundationTags.Blocks.BLOCKS_ENDEIRUM,
+                            FoundationTags.Blocks.BLOCKS_INVAR,
+                            FoundationTags.Blocks.BLOCKS_LEAD,
+                            FoundationTags.Blocks.BLOCKS_NICKEL,
+                            FoundationTags.Blocks.BLOCKS_PLATINUM,
+                            FoundationTags.Blocks.BLOCKS_SIGNALUM,
+                            FoundationTags.Blocks.BLOCKS_SILVER,
+                            FoundationTags.Blocks.BLOCKS_STEEL,
+                            FoundationTags.Blocks.BLOCKS_TIN,
+                            FoundationTags.Blocks.BLOCKS_URANIUM);
             this.tag(BlockTags.MINEABLE_WITH_AXE).add(FoundationBlocks.USEFUL_BEEHIVE.get());
+            this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                    .add(FoundationBlocks.ALUMINUM_ORE.get(),
+                            FoundationBlocks.DEEPSLATE_ALUMINUM_ORE.get(),
+                            FoundationBlocks.ALUMINUM_BLOCK.get(),
+                            FoundationBlocks.LEAD_ORE.get(),
+                            FoundationBlocks.DEEPSLATE_LEAD_ORE.get(),
+                            FoundationBlocks.LEAD_BLOCK.get(),
+                            FoundationBlocks.NICKEL_ORE.get(),
+                            FoundationBlocks.DEEPSLATE_NICKEL_ORE.get(),
+                            FoundationBlocks.NICKEL_BLOCK.get(),
+                            FoundationBlocks.PLATINUM_ORE.get(),
+                            FoundationBlocks.DEEPSLATE_PLATINUM_ORE.get(),
+                            FoundationBlocks.PLATINUM_BLOCK.get(),
+                            FoundationBlocks.SILVER_ORE.get(),
+                            FoundationBlocks.DEEPSLATE_SILVER_ORE.get(),
+                            FoundationBlocks.SILVER_BLOCK.get(),
+                            FoundationBlocks.TIN_ORE.get(),
+                            FoundationBlocks.DEEPSLATE_TIN_ORE.get(),
+                            FoundationBlocks.TIN_BLOCK.get(),
+                            FoundationBlocks.URANIUM_ORE.get(),
+                            FoundationBlocks.DEEPSLATE_URANIUM_ORE.get(),
+                            FoundationBlocks.URANIUM_BLOCK.get(),
+                            FoundationBlocks.BRONZE_BLOCK.get(),
+                            FoundationBlocks.INVAR_BLOCK.get(),
+                            FoundationBlocks.ELECTRUM_BLOCK.get(),
+                            FoundationBlocks.ENDERIUM_BLOCK.get(),
+                            FoundationBlocks.SIGNALUM_BLOCK.get(),
+                            FoundationBlocks.STEEL_BLOCK.get(),
+                            FoundationBlocks.RAW_ALUMINUM_BLOCK.get(),
+                            FoundationBlocks.RAW_LEAD_BLOCK.get(),
+                            FoundationBlocks.RAW_NICKEL_BLOCK.get(),
+                            FoundationBlocks.RAW_PLATINUM_BLOCK.get(),
+                            FoundationBlocks.RAW_SILVER_BLOCK.get(),
+                            FoundationBlocks.RAW_TIN_BLOCK.get(),
+                            FoundationBlocks.RAW_URANIUM_BLOCK.get()
+                    );
+
+            // Needs Tool
+            this.tag(BlockTags.NEEDS_STONE_TOOL).add(FoundationBlocks.ALUMINUM_ORE.get(), FoundationBlocks.DEEPSLATE_ALUMINUM_ORE.get(), FoundationBlocks.ALUMINUM_BLOCK.get());
+
+            this.tag(BlockTags.NEEDS_IRON_TOOL)
+                    .add(FoundationBlocks.LEAD_ORE.get(),
+                            FoundationBlocks.DEEPSLATE_LEAD_ORE.get(),
+                            FoundationBlocks.LEAD_BLOCK.get(),
+                            FoundationBlocks.RAW_LEAD_BLOCK.get(),
+                            FoundationBlocks.NICKEL_ORE.get(),
+                            FoundationBlocks.DEEPSLATE_NICKEL_ORE.get(),
+                            FoundationBlocks.NICKEL_BLOCK.get(),
+                            FoundationBlocks.RAW_NICKEL_BLOCK.get(),
+                            FoundationBlocks.SILVER_ORE.get(),
+                            FoundationBlocks.DEEPSLATE_SILVER_ORE.get(),
+                            FoundationBlocks.SILVER_BLOCK.get(),
+                            FoundationBlocks.RAW_SILVER_BLOCK.get(),
+                            FoundationBlocks.TIN_ORE.get(),
+                            FoundationBlocks.DEEPSLATE_TIN_ORE.get(),
+                            FoundationBlocks.TIN_BLOCK.get(),
+                            FoundationBlocks.RAW_TIN_BLOCK.get(),
+                            FoundationBlocks.BRONZE_BLOCK.get(),
+                            FoundationBlocks.INVAR_BLOCK.get(),
+                            FoundationBlocks.STEEL_BLOCK.get()
+                    );
+
+            this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
+                    .add(FoundationBlocks.URANIUM_ORE.get(),
+                            FoundationBlocks.DEEPSLATE_URANIUM_ORE.get(),
+                            FoundationBlocks.URANIUM_BLOCK.get(),
+                            FoundationBlocks.RAW_URANIUM_BLOCK.get(),
+                            FoundationBlocks.ELECTRUM_BLOCK.get(),
+                            FoundationBlocks.ENDERIUM_BLOCK.get(),
+                            FoundationBlocks.SIGNALUM_BLOCK.get()
+                    );
+
+            this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
+                    .add(FoundationBlocks.PLATINUM_ORE.get(),
+                            FoundationBlocks.DEEPSLATE_PLATINUM_ORE.get(),
+                            FoundationBlocks.PLATINUM_BLOCK.get(),
+                            FoundationBlocks.RAW_PLATINUM_BLOCK.get()
+                    );
+
         }
     }
 }
