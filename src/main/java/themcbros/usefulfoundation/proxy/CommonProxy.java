@@ -1,17 +1,22 @@
 package themcbros.usefulfoundation.proxy;
 
+import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import themcbros.usefulfoundation.UsefulFoundation;
-import themcbros.usefulfoundation.world.WorldGeneration;
+import themcbros.usefulfoundation.init.Registration;
 
 public class CommonProxy {
     CommonProxy() {
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::commonSetup);
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::enqueueIMC);
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::processIMC);
+        IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        Registration.register(bus);
+
+        bus.addListener(this::commonSetup);
+        bus.addListener(this::enqueueIMC);
+        bus.addListener(this::processIMC);
     }
 
     protected void commonSetup(FMLCommonSetupEvent event) {

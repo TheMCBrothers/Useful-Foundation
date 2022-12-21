@@ -25,7 +25,7 @@ public class UsefulFoundation {
         @Nonnull
         @Override
         public ItemStack makeIcon() {
-            return new ItemStack(FoundationItems.COPPER_GEAR);
+            return new ItemStack(FoundationItems.COPPER_GEAR.get());
         }
     };
 
