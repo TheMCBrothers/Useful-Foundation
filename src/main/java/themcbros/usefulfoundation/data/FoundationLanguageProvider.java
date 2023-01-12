@@ -1,6 +1,6 @@
 package themcbros.usefulfoundation.data;
 
-import net.minecraft.data.DataGenerator;
+import net.minecraft.data.PackOutput;
 import net.minecraftforge.common.data.LanguageProvider;
 import themcbros.usefulfoundation.UsefulFoundation;
 import themcbros.usefulfoundation.init.FoundationBlocks;
@@ -8,8 +8,8 @@ import themcbros.usefulfoundation.init.FoundationBlocks;
 import static themcbros.usefulfoundation.init.FoundationItems.*;
 
 public class FoundationLanguageProvider extends LanguageProvider {
-    public FoundationLanguageProvider(DataGenerator gen) {
-        super(gen, UsefulFoundation.MOD_ID, "en_us");
+    public FoundationLanguageProvider(PackOutput output) {
+        super(output, UsefulFoundation.MOD_ID, "en_us");
     }
 
     @Override

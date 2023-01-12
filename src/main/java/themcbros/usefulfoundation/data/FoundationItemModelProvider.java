@@ -1,6 +1,6 @@
 package themcbros.usefulfoundation.data;
 
-import net.minecraft.data.DataGenerator;
+import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
@@ -13,8 +13,8 @@ import java.util.Objects;
 import static themcbros.usefulfoundation.init.FoundationItems.*;
 
 public class FoundationItemModelProvider extends ItemModelProvider {
-    public FoundationItemModelProvider(DataGenerator generator, ExistingFileHelper existingFileHelper) {
-        super(generator, UsefulFoundation.MOD_ID, existingFileHelper);
+    public FoundationItemModelProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
+        super(output, UsefulFoundation.MOD_ID, existingFileHelper);
     }
 
     @Override

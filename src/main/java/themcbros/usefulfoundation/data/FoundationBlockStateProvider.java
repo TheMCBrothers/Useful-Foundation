@@ -1,6 +1,6 @@
 package themcbros.usefulfoundation.data;
 
-import net.minecraft.data.DataGenerator;
+import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -9,8 +9,8 @@ import themcbros.usefulfoundation.UsefulFoundation;
 import static themcbros.usefulfoundation.init.FoundationBlocks.*;
 
 public class FoundationBlockStateProvider extends BlockStateProvider {
-    public FoundationBlockStateProvider(DataGenerator gen, ExistingFileHelper exFileHelper) {
-        super(gen, UsefulFoundation.MOD_ID, exFileHelper);
+    public FoundationBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {
+        super(output, UsefulFoundation.MOD_ID, exFileHelper);
     }
 
     @Override

@@ -1,28 +1,33 @@
 package themcbros.usefulfoundation.data;
 
-import net.minecraft.data.DataGenerator;
-import net.minecraft.data.tags.BlockTagsProvider;
+import net.minecraft.core.HolderLookup;
+import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.data.tags.TagsProvider;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.Tags;
+import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import themcbros.usefulfoundation.FoundationTags;
 import themcbros.usefulfoundation.UsefulFoundation;
 import themcbros.usefulfoundation.init.FoundationBlocks;
 
+import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
+import java.util.concurrent.CompletableFuture;
 
 import static themcbros.usefulfoundation.FoundationTags.Items.*;
 import static themcbros.usefulfoundation.init.FoundationItems.*;
 
 public class FoundationTagProvider {
     public static class Items extends ItemTagsProvider {
-        public Items(DataGenerator gen, BlockTagsProvider tagsProvider, @Nullable ExistingFileHelper existingFileHelper) {
-            super(gen, tagsProvider, UsefulFoundation.MOD_ID, existingFileHelper);
+        public Items(PackOutput output, CompletableFuture<HolderLookup.Provider> provider, TagsProvider<Block> tagsProvider, @Nullable ExistingFileHelper existingFileHelper) {
+            super(output, provider, tagsProvider, UsefulFoundation.MOD_ID, existingFileHelper);
         }
 
         @Override
-        protected void addTags() {
+        protected void addTags(@Nonnull HolderLookup.Provider provider) {
             //Ingots
             this.tag(INGOTS_ALUMINUM).add(ALUMINUM_INGOT.get());
             this.tag(INGOTS_BRONZE).add(BRONZE_INGOT.get());
@@ -169,12 +174,12 @@ public class FoundationTagProvider {
     }
 
     public static class Blocks extends BlockTagsProvider {
-        public Blocks(DataGenerator gen, @Nullable ExistingFileHelper existingFileHelper) {
-            super(gen, UsefulFoundation.MOD_ID, existingFileHelper);
+        public Blocks(PackOutput output, CompletableFuture<HolderLookup.Provider> provider, @Nullable ExistingFileHelper existingFileHelper) {
+            super(output, provider, UsefulFoundation.MOD_ID, existingFileHelper);
         }
 
         @Override
-        protected void addTags() {
+        protected void addTags(@Nonnull HolderLookup.Provider provider) {
             //Storage Blocks
             this.tag(FoundationTags.Blocks.BLOCKS_ALUMINUM).add(FoundationBlocks.ALUMINUM_BLOCK.get());
             this.tag(FoundationTags.Blocks.BLOCKS_BRONZE).add(FoundationBlocks.BRONZE_BLOCK.get());

@@ -1,18 +1,24 @@
 package themcbros.usefulfoundation.data;
 
-import net.minecraft.data.loot.BlockLoot;
+import net.minecraft.data.loot.BlockLootSubProvider;
+import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.registries.RegistryObject;
 import themcbros.usefulfoundation.init.FoundationItems;
 import themcbros.usefulfoundation.init.Registration;
 
 import javax.annotation.Nonnull;
+import java.util.Collections;
 
 import static themcbros.usefulfoundation.init.FoundationBlocks.*;
 
-public class FoundationBlockLoot extends BlockLoot {
+public class FoundationBlockLoot extends BlockLootSubProvider {
+    public FoundationBlockLoot() {
+        super(Collections.emptySet(), FeatureFlags.REGISTRY.allFlags());
+    }
+
     @Override
-    protected void addTables() {
+    protected void generate() {
         //Ores
         this.add(DEEPSLATE_LEAD_ORE.get(), (block) -> createOreDrop(block, FoundationItems.RAW_LEAD.get()));
         this.add(LEAD_ORE.get(), (block) -> createOreDrop(block, FoundationItems.RAW_LEAD.get()));
@@ -54,7 +60,7 @@ public class FoundationBlockLoot extends BlockLoot {
         this.dropSelf(RAW_PLATINUM_BLOCK.get());
 
         //Other
-        this.add(USEFUL_BEEHIVE.get(), BlockLoot::createBeeHiveDrop);
+        this.add(USEFUL_BEEHIVE.get(), BlockLootSubProvider::createBeeHiveDrop);
     }
 
     @Nonnull
