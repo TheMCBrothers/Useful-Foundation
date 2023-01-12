@@ -7,7 +7,6 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.registries.RegistryObject;
-import themcbros.usefulfoundation.UsefulFoundation;
 import themcbros.usefulfoundation.block.UsefulBeehiveBlock;
 
 import java.util.function.Supplier;
@@ -51,7 +50,7 @@ public class FoundationBlocks {
 
     private static <T extends Block> RegistryObject<T> register(String registryName, Supplier<T> block) {
         RegistryObject<T> blockObj = Registration.BLOCKS.register(registryName, block);
-        Registration.ITEMS.register(registryName, () -> new BlockItem(blockObj.get(), new Item.Properties().tab(UsefulFoundation.GROUP)));
+        Registration.ITEMS.register(registryName, () -> new BlockItem(blockObj.get(), new Item.Properties()));
         return blockObj;
     }
 
