@@ -76,7 +76,7 @@ sourceSets.main.resources {
 }
 
 sourceSets.main.java {
-    exclude '**/compat/top/**'
+    exclude '**/compat/jei/**'
 }
 
 repositories {
@@ -89,11 +89,6 @@ repositories {
         // location of a maven mirror for JEI files, as a fallback
         name = "ModMaven"
         url = "https://modmaven.dev"
-    }
-    maven {
-        // TOP
-        name = "tterrag maven"
-        url = "https://maven.tterrag.com/"
     }
 }
 
@@ -108,12 +103,6 @@ dependencies {
         runtimeOnly fg.deobf("mezz.jei:jei-${mc_version}-forge:${jei_version}")
         compileOnly fg.deobf("mezz.jei:jei-${mc_version}-common-api:${jei_version}")
         compileOnly fg.deobf("mezz.jei:jei-${mc_version}-forge-api:${jei_version}")
-    }
-
-    if (project.hasProperty('top_version')) {
-        // TOP
-        compileOnly fg.deobf("mcjty.theoneprobe:TheOneProbe-${top_version}:api")
-        runtimeOnly fg.deobf("mcjty.theoneprobe:TheOneProbe-${top_version}")
     }
 }
 
@@ -191,3 +180,5 @@ curseforge {
         }
     }
 }
+
+tasks.named("curseforge") { finalizedBy("publish") }
