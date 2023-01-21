@@ -70,10 +70,6 @@ sourceSets.main.resources {
     srcDir 'src/generated/resources'
 }
 
-sourceSets.main.java {
-    exclude '**/compat/jei/**'
-}
-
 repositories {
     maven {
         // location of the maven that hosts JEI files
