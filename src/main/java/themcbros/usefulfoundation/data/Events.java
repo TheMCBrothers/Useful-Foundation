@@ -23,9 +23,9 @@ public class Events {
 
         gen.addProvider(event.includeClient(), new FoundationBlockStateProvider(gen, fileHelper));
         gen.addProvider(event.includeClient(), new FoundationItemModelProvider(gen, fileHelper));
-        gen.addProvider(event.includeClient(), new FoundationLanguageProvider(gen));
         gen.addProvider(event.includeClient(), new FoundationRecipeProvider(gen));
-
+        gen.addProvider(event.includeClient(), new FoundationLanguageProviders.EnglishUS(gen));
+        gen.addProvider(event.includeClient(), new FoundationLanguageProviders.SwissGerman(gen));
 
         // Server Providers
         BlockTagsProvider blockTagsProvider = new FoundationTagProvider.Blocks(gen, fileHelper);
