@@ -12,12 +12,7 @@ java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
 minecraft {
     mappings channel: 'official', version: project.mc_version
-    // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
 
-    // accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
-
-    // Default run configurations.
-    // These can be tweaked, removed, or duplicated as needed.
     runs {
         client {
             workingDirectory project.file('run')
@@ -83,19 +78,24 @@ repositories {
     maven {
         // location of the maven that hosts JEI files
         name = "Progwml6 maven"
-        url = "https://dvs1.progwml6.com/files/maven/"
+        url = "https://nexus.themcbrothers.net/repository/maven-progwml6"
     }
     maven {
         // location of a maven mirror for JEI files, as a fallback
         name = "ModMaven"
-        url = "https://modmaven.dev"
+        url = "https://nexus.themcbrothers.net/repository/maven-mod"
+    }
+    maven {
+        name = "themcb-nexus"
+        url = "https://nexus.themcbrothers.net/repository/maven-releases/"
+    }
+    maven {
+        name = "themcb-nexus-snapshots"
+        url = "https://nexus.themcbrothers.net/repository/maven-snapshots/"
     }
 }
 
 dependencies {
-    // Specify the version of Minecraft to use, If this is any group other then 'net.minecraft' it is assumed
-    // that the dep is a ForgeGradle 'patcher' dependency. And it's patches will be applied.
-    // The userdev artifact is a special name and will get all sorts of transformations applied to it.
     minecraft "net.minecraftforge:forge:${mc_version}-${forge_version}"
 
     if (project.hasProperty('jei_version')) {
@@ -106,8 +106,9 @@ dependencies {
     }
 }
 
-// Example for how to get properties into the manifest for reading by the runtime..
 jar {
+    // TODO for next minecraft release
+    //archiveAppendix.set("${mc_version}")
     manifest {
         attributes([
                 "Specification-Title"     : "usefulfoundation",
@@ -121,20 +122,11 @@ jar {
     }
 }
 
-// Example configuration to allow publishing using the maven-publish task
-// we define a custom artifact that is sourced from the reobfJar output task
-// and then declare that to be published
-// Note you'll need to add a repository here
-def reobfFile = file("$buildDir/reobfJar/output.jar")
-def reobfArtifact = artifacts.add('default', reobfFile) {
-    type 'jar'
-    builtBy 'reobfJar'
-}
 publishing {
     publications { PublicationContainer publicationContainer ->
         publicationContainer.register("maven", MavenPublication) { MavenPublication publication ->
             publication.artifacts = [jar]
-            publication.version = "$project.mc_version-$project.version"
+            publication.version = "${mc_version}-${version}"
             publication.artifactId = "useful-foundation"
         }
     }
