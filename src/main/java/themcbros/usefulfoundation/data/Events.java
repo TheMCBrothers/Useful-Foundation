@@ -18,8 +18,9 @@ public class Events {
         if (event.includeClient()) {
             gen.addProvider(new FoundationBlockStateProvider(gen, fileHelper));
             gen.addProvider(new FoundationItemModelProvider(gen, fileHelper));
-            gen.addProvider(new FoundationLanguageProvider(gen));
             gen.addProvider(new FoundationRecipeProvider(gen));
+            gen.addProvider(new FoundationLanguageProviders.EnglishUS(gen));
+            gen.addProvider(new FoundationLanguageProviders.SwissGerman(gen));
         }
 
         if (event.includeServer()) {

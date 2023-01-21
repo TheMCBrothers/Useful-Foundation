@@ -30,7 +30,7 @@ public class UsefulFoundation {
     };
 
     public UsefulFoundation() {
-        proxy = DistExecutor.runForDist(() -> ClientProxy::new, () -> ServerProxy::new);
+        proxy = DistExecutor.safeRunForDist(() -> ClientProxy::new, () -> ServerProxy::new);
     }
 
     public static ResourceLocation getId(String pathIn) {
