@@ -1,3 +1,7 @@
+9.0.0:
+- integration of TheMCBrosLib
+- updated JEI to the newest beta
+
 8.0.0:
 - Ores, Storage Blocks and Raw Blocks needs specific tool
 - Tiny changes
