@@ -30,8 +30,9 @@ public class Events {
 
         gen.addProvider(event.includeClient(), new FoundationBlockStateProvider(output, fileHelper));
         gen.addProvider(event.includeClient(), new FoundationItemModelProvider(output, fileHelper));
-        gen.addProvider(event.includeClient(), new FoundationLanguageProvider(output));
         gen.addProvider(event.includeClient(), new FoundationRecipeProvider(output));
+        gen.addProvider(event.includeClient(), new FoundationLanguageProviders.EnglishUS(output));
+        gen.addProvider(event.includeClient(), new FoundationLanguageProviders.SwissGerman(output));
 
         // Server Providers
         CompletableFuture<HolderLookup.Provider> provider = event.getLookupProvider();
