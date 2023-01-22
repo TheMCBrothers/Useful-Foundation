@@ -12,12 +12,7 @@ java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
 minecraft {
     mappings channel: 'official', version: project.mc_version
-    // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
 
-    // accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
-
-    // Default run configurations.
-    // These can be tweaked, removed, or duplicated as needed.
     runs {
         client {
             workingDirectory project.file('run')
@@ -79,17 +74,20 @@ repositories {
     maven {
         // location of the maven that hosts JEI files
         name = "Progwml6 maven"
-        url = "https://dvs1.progwml6.com/files/maven/"
+        url = "https://nexus.themcbrothers.net/repository/maven-progwml6"
     }
     maven {
         // location of a maven mirror for JEI files, as a fallback
         name = "ModMaven"
-        url = "https://modmaven.dev"
+        url = "https://nexus.themcbrothers.net/repository/maven-mod"
     }
     maven {
-        // TOP
-        name = "tterrag maven"
-        url = "https://maven.tterrag.com/"
+        name = "themcb-nexus"
+        url = "https://nexus.themcbrothers.net/repository/maven-releases/"
+    }
+    maven {
+        name = "themcb-nexus-snapshots"
+        url = "https://nexus.themcbrothers.net/repository/maven-snapshots/"
     }
 }
 
