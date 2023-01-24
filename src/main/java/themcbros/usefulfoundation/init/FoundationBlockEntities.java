@@ -7,7 +7,7 @@ import themcbros.usefulfoundation.tileentity.UsefulBeehiveBlockEntity;
 import static themcbros.usefulfoundation.init.Registration.BLOCK_ENTITY_TYPES;
 
 public class FoundationBlockEntities {
-    public static final RegistryObject<BlockEntityType<UsefulBeehiveBlockEntity>> USEFUL_BEEHIVE = BLOCK_ENTITY_TYPES.register("useful_beehive", () -> BlockEntityType.Builder.of(UsefulBeehiveBlockEntity::new, FoundationBlocks.USEFUL_BEEHIVE.get()).build(null));
+    public static final RegistryObject<BlockEntityType<UsefulBeehiveBlockEntity>> USEFUL_BEEHIVE = BLOCK_ENTITY_TYPES.register("useful_beehive", UsefulBeehiveBlockEntity::new, FoundationBlocks.USEFUL_BEEHIVE);
 
     protected static void init() {
     }
