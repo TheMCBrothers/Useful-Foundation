@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "usefulfoundation:gold_gear"
-  }
+  },
+  "show_notification": true
 }

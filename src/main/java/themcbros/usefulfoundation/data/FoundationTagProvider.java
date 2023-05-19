@@ -3,7 +3,6 @@ package themcbros.usefulfoundation.data;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
-import net.minecraft.data.tags.TagsProvider;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.Tags;
@@ -22,8 +21,8 @@ import static themcbros.usefulfoundation.init.FoundationItems.*;
 
 public class FoundationTagProvider {
     public static class Items extends ItemTagsProvider {
-        public Items(PackOutput output, CompletableFuture<HolderLookup.Provider> provider, TagsProvider<Block> tagsProvider, @Nullable ExistingFileHelper existingFileHelper) {
-            super(output, provider, tagsProvider, UsefulFoundation.MOD_ID, existingFileHelper);
+        public Items(PackOutput output, CompletableFuture<HolderLookup.Provider> provider, CompletableFuture<TagLookup<Block>> blockTagLookup, @Nullable ExistingFileHelper existingFileHelper) {
+            super(output, provider, blockTagLookup, UsefulFoundation.MOD_ID, existingFileHelper);
         }
 
         @Override

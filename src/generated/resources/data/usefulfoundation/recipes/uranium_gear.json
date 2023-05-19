@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "usefulfoundation:uranium_gear"
-  }
+  },
+  "show_notification": true
 }

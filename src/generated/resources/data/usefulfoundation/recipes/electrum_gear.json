@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "usefulfoundation:electrum_gear"
-  }
+  },
+  "show_notification": true
 }

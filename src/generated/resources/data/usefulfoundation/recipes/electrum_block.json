@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "usefulfoundation:electrum_block"
-  }
+  },
+  "show_notification": true
 }

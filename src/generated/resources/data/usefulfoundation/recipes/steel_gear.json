@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "usefulfoundation:steel_gear"
-  }
+  },
+  "show_notification": true
 }

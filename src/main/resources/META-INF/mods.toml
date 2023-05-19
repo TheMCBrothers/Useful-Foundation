@@ -1,5 +1,5 @@
 modLoader = "javafml" #mandatory
-loaderVersion = "[38,)" #mandatory (38 is current forge version)
+loaderVersion = "[45,)" #mandatory (38 is current forge version)
 issueTrackerURL = "https://github.com/TheMCBrothers/Useful-Foundation/issues" #optional
 license = "MIT License"
 [[mods]] #mandatory
@@ -18,13 +18,13 @@ Useful Foundation for some mods
 [[dependencies.usefulfoundation]] #optional
 modId = "forge" #mandatory
 mandatory = true #mandatory
-versionRange = "[38,)" #mandatory
+versionRange = "[45,)" #mandatory
 ordering = "NONE"
 side = "BOTH"
 # Here's another dependency
 [[dependencies.usefulfoundation]]
 modId = "minecraft"
 mandatory = true
-versionRange = "[1.18,)"
+versionRange = "[1.19.4,)"
 ordering = "NONE"
 side = "BOTH"

@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "usefulfoundation:signalum_block"
-  }
+  },
+  "show_notification": true
 }

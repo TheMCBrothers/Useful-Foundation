@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "usefulfoundation:silver_gear"
-  }
+  },
+  "show_notification": true
 }

@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "usefulfoundation:enderium_gear"
-  }
+  },
+  "show_notification": true
 }

@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "usefulfoundation:nickel_ingot"
-  }
+  },
+  "show_notification": true
 }

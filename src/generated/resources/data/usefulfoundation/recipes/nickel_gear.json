@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "usefulfoundation:nickel_gear"
-  }
+  },
+  "show_notification": true
 }

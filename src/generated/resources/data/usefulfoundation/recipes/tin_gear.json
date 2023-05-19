@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "usefulfoundation:tin_gear"
-  }
+  },
+  "show_notification": true
 }

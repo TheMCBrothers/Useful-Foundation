@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "usefulfoundation:diamond_gear"
-  }
+  },
+  "show_notification": true
 }

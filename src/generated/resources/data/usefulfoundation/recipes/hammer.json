@@ -19,5 +19,6 @@
   ],
   "result": {
     "item": "usefulfoundation:hammer"
-  }
+  },
+  "show_notification": true
 }

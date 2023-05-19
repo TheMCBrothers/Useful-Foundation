@@ -7,6 +7,7 @@ plugins {
 
 group = "net.themcbrothers" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "usefulfoundation"
+version = "${mc_version}-${mod_version}"
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
@@ -73,8 +74,8 @@ sourceSets.main.resources {
 repositories {
     maven {
         // location of the maven that hosts JEI files
-        name = "Progwml6 maven"
-        url = "https://nexus.themcbrothers.net/repository/maven-progwml6"
+        name = "Blamejared"
+        url = "https://nexus.themcbrothers.net/repository/maven-blamejared"
     }
     maven {
         // location of a maven mirror for JEI files, as a fallback
@@ -108,8 +109,6 @@ dependencies {
 }
 
 jar {
-    // TODO for next minecraft release
-    //archiveAppendix.set("${mc_version}")
     manifest {
         attributes([
                 "Specification-Title"     : "usefulfoundation",
@@ -129,7 +128,7 @@ publishing {
             publicationContainer.register("maven", MavenPublication) {
                 MavenPublication publication ->
                     publication.artifacts = [jar]
-                    publication.version = "${mc_version}-${version}"
+                    publication.version = project.version
                     publication.artifactId = "useful-foundation"
             }
     }
@@ -171,7 +170,7 @@ curseforge {
         releaseType = project.curse_type // beta, alpha, release
         addGameVersion(project.mc_version)
         mainArtifact(jar) {
-            displayName = "$project.modname $project.version"
+            displayName = "${modname} ${mod_version}"
         }
     }
 }
