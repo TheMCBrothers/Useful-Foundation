@@ -172,7 +172,7 @@ curseforge {
         releaseType = project.artifact_type
         addGameVersion(project.mc_version)
         mainArtifact(jar) {
-            displayName = "${project.modname} ${project.mod_version})"
+            displayName = "${project.modname} ${project.mod_version}"
         }
         relations {
             requiredDependency "themcbroslib"
