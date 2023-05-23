@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.3,
+  "ingredient": {
+    "item": "usefulfoundation:invar_dust"
+  },
+  "result": "usefulfoundation:invar_ingot"
+}
