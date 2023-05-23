@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 100,
+  "experience": 0.3,
+  "ingredient": {
+    "item": "usefulfoundation:bronze_dust"
+  },
+  "result": "usefulfoundation:bronze_ingot"
+}

@@ -1,9 +1,4 @@
-3.0.0:
-- TheMCBrosLib integration
-
-2.0.0:
-- Ores, Storage Blocks and Raw Blocks needs specific tool
-- Tiny changes
-
-1.0.0:
-- Updated to 1.19
+1.0.1:
+- Added missing dust smelting and blasting recipes
+- Added diamond dust/gear/plate to associated tag
+- Fixed Swiss German translations

@@ -8,6 +8,7 @@ plugins {
 
 group = "net.themcbrothers" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "usefulfoundation"
+version = "${mc_version}-${mod_version}"
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
@@ -129,7 +130,7 @@ publishing {
     publications { PublicationContainer publicationContainer ->
         publicationContainer.register("maven", MavenPublication) { MavenPublication publication ->
             publication.artifacts = [jar]
-            publication.version = "$project.mc_version-$project.version"
+            publication.version = project.version
             publication.artifactId = "useful-foundation"
         }
     }
@@ -171,7 +172,7 @@ curseforge {
         releaseType = project.artifact_type
         addGameVersion(project.mc_version)
         mainArtifact(jar) {
-            displayName = "$project.modname $project.version"
+            displayName = "${project.modname} ${project.mod_version})"
         }
         relations {
             requiredDependency "themcbroslib"
