@@ -251,11 +251,11 @@ public class FoundationLanguageProviders {
             this.addItem(SILVER_NUGGET, "Silberchlumpe");
             this.addItem(SILVER_PLATE, "Silberplatte");
             this.addItem(SILVER_DUST, "Silberstaub");
-            this.addItem(SIGNALUM_GEAR, "Signalumjzahrad");
-            this.addItem(SIGNALUM_INGOT, "Signalumjbarre");
-            this.addItem(SIGNALUM_NUGGET, "Signalumjchlumpe");
-            this.addItem(SIGNALUM_DUST, "Signalumjplatte");
-            this.addItem(SIGNALUM_PLATE, "Signalumjstaub");
+            this.addItem(SIGNALUM_GEAR, "Signalumzahrad");
+            this.addItem(SIGNALUM_INGOT, "Signalumbarre");
+            this.addItem(SIGNALUM_NUGGET, "Signalumchlumpe");
+            this.addItem(SIGNALUM_DUST, "Signalumstaub");
+            this.addItem(SIGNALUM_PLATE, "Signalumplatte");
             this.addItem(STEEL_GEAR, "Stahlzahrad");
             this.addItem(STEEL_INGOT, "Stahlbarre");
             this.addItem(STEEL_NUGGET, "Stahlchlumpe");
@@ -283,8 +283,8 @@ public class FoundationLanguageProviders {
             this.addItem(GOLD_PLATE, "Goldplatte");
             this.addItem(GOLD_DUST, "Goldstaub");
             this.addItem(DIAMOND_GEAR, "Diamantzahrad");
-            this.addItem(DIAMOND_PLATE, "Diamantchlumpe");
-            this.addItem(DIAMOND_DUST, "Diamantplatte");
+            this.addItem(DIAMOND_PLATE, "Diamantplatte");
+            this.addItem(DIAMOND_DUST, "Diamantchlumpe");
             this.addItem(IRON_GEAR, "Isezahrad");
             this.addItem(IRON_PLATE, "Isechlumpe");
             this.addItem(IRON_DUST, "Iseplatte");
