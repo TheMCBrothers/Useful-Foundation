@@ -1,2 +1,7 @@
-1.0.0
+1.0.1:
+- Added missing dust smelting and blasting recipes
+- Added diamond dust/gear/plate to associated tag
+- Fixed Swiss German translations
+
+1.0.0:
 - Updated to 1.19.4
