@@ -1,11 +1,7 @@
 package themcbros.usefulfoundation.data;
 
 import net.minecraft.data.DataGenerator;
-import net.minecraft.data.recipes.FinishedRecipe;
-import net.minecraft.data.recipes.RecipeProvider;
-import net.minecraft.data.recipes.ShapedRecipeBuilder;
-import net.minecraft.data.recipes.ShapelessRecipeBuilder;
-import net.minecraft.data.recipes.SimpleCookingRecipeBuilder;
+import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.common.Tags;
@@ -13,10 +9,11 @@ import net.minecraftforge.common.Tags;
 import javax.annotation.Nonnull;
 import java.util.function.Consumer;
 
+import static net.minecraft.world.item.Items.*;
 import static themcbros.usefulfoundation.FoundationTags.Items.*;
 import static themcbros.usefulfoundation.UsefulFoundation.getId;
-import static themcbros.usefulfoundation.init.FoundationItems.*;
 import static themcbros.usefulfoundation.init.FoundationBlocks.*;
+import static themcbros.usefulfoundation.init.FoundationItems.*;
 
 public class FoundationRecipeProvider extends RecipeProvider {
     public FoundationRecipeProvider(DataGenerator gen) {
@@ -28,7 +25,7 @@ public class FoundationRecipeProvider extends RecipeProvider {
         //Ingots
         ShapedRecipeBuilder.shaped(ALUMINUM_INGOT.get()).pattern("XXX").pattern("XXX").pattern("XXX").define('X', NUGGETS_ALUMINUM).unlockedBy("has_aluminum_nugget", has(NUGGETS_ALUMINUM)).save(recipe, getId("aluminum_ingot_from_nuggets"));
         ShapedRecipeBuilder.shaped(BRONZE_INGOT.get()).pattern("XXX").pattern("XXX").pattern("XXX").define('X', NUGGETS_BRONZE).unlockedBy("has_bronze_nugget", has(NUGGETS_BRONZE)).save(recipe, getId("bronze_ingot_from_nuggets"));
-        ShapedRecipeBuilder.shaped(Items.COPPER_INGOT).pattern("XXX").pattern("XXX").pattern("XXX").define('X', NUGGETS_COPPER).unlockedBy("has_copper_nugget", has(NUGGETS_COPPER)).save(recipe, getId("copper_ingot_from_nuggets"));
+        ShapedRecipeBuilder.shaped(COPPER_INGOT).pattern("XXX").pattern("XXX").pattern("XXX").define('X', NUGGETS_COPPER).unlockedBy("has_copper_nugget", has(NUGGETS_COPPER)).save(recipe, getId("copper_ingot_from_nuggets"));
         ShapedRecipeBuilder.shaped(ELECTRUM_INGOT.get()).pattern("XXX").pattern("XXX").pattern("XXX").define('X', NUGGETS_ELECTRUM).unlockedBy("has_electrum_nugget", has(NUGGETS_ELECTRUM)).save(recipe, getId("electrum_ingot_from_nuggets"));
         ShapedRecipeBuilder.shaped(ENDERIUM_INGOT.get()).pattern("XXX").pattern("XXX").pattern("XXX").define('X', NUGGETS_ENDERIUM).unlockedBy("has_enderium_nugget", has(NUGGETS_ENDERIUM)).save(recipe, getId("enderium_ingot_from_nuggets"));
         ShapedRecipeBuilder.shaped(INVAR_INGOT.get()).pattern("XXX").pattern("XXX").pattern("XXX").define('X', NUGGETS_INVAR).unlockedBy("has_invar_nugget", has(NUGGETS_INVAR)).save(recipe, getId("invar_ingot_from_nuggets"));
@@ -84,6 +81,41 @@ public class FoundationRecipeProvider extends RecipeProvider {
         SimpleCookingRecipeBuilder.blasting(Ingredient.of(ORES_TIN), TIN_INGOT.get(), 0.7F, 100).unlockedBy("has_tin_ore", has(ORES_TIN)).save(recipe, getId("tin_ingot_from_blasting_tin_ore"));
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(ORES_URANIUM), URANIUM_INGOT.get(), 0.7F, 200).unlockedBy("has_uranium_ore", has(ORES_URANIUM)).save(recipe, getId("uranium_ingot_from_smelting_uranium_ore"));
         SimpleCookingRecipeBuilder.blasting(Ingredient.of(ORES_URANIUM), URANIUM_INGOT.get(), 0.7F, 100).unlockedBy("has_uranium_ore", has(ORES_URANIUM)).save(recipe, getId("uranium_ingot_from_blasting_uranium_ore"));
+
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(ALUMINUM_DUST), ALUMINUM_INGOT.get(), 0.3F, 200).unlockedBy("has_aluminum_dust", has(ALUMINUM_DUST)).save(recipe, getId("aluminum_ingot_from_smelting_aluminum_dust"));
+        SimpleCookingRecipeBuilder.blasting(Ingredient.of(ALUMINUM_DUST), ALUMINUM_INGOT.get(), 0.3F, 100).unlockedBy("has_aluminum_dust", has(ALUMINUM_DUST)).save(recipe, getId("aluminum_ingot_from_blasting_aluminum_dust"));
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(BRONZE_DUST), BRONZE_INGOT.get(), 0.3F, 200).unlockedBy("has_bronze_dust", has(BRONZE_INGOT)).save(recipe, getId("bronze_ingot_from_smelting_bronze_dust"));
+        SimpleCookingRecipeBuilder.blasting(Ingredient.of(BRONZE_DUST), BRONZE_INGOT.get(), 0.3F, 100).unlockedBy("has_bronze_dust", has(BRONZE_INGOT)).save(recipe, getId("bronze_ingot_from_blasting_bronze_dust"));
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(COPPER_DUST), COPPER_INGOT, 0.3F, 200).unlockedBy("has_copper_dust", has(COPPER_INGOT)).save(recipe, getId("copper_ingot_from_smelting_copper_dust"));
+        SimpleCookingRecipeBuilder.blasting(Ingredient.of(COPPER_DUST), COPPER_INGOT, 0.3F, 100).unlockedBy("has_copper_dust", has(COPPER_INGOT)).save(recipe, getId("copper_ingot_from_blasting_copper_dust"));
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(DIAMOND_DUST), DIAMOND, 0.3F, 200).unlockedBy("has_diamond_dust", has(DIAMOND)).save(recipe, getId("diamond_from_smelting_diamond_dust"));
+        SimpleCookingRecipeBuilder.blasting(Ingredient.of(DIAMOND_DUST), DIAMOND, 0.3F, 100).unlockedBy("has_diamond_dust", has(DIAMOND)).save(recipe, getId("diamond_from_blasting_diamond_dust"));
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(ELECTRUM_DUST), ELECTRUM_INGOT, 0.3F, 200).unlockedBy("has_electrum_dust", has(ELECTRUM_INGOT)).save(recipe, getId("electrum_ingot_from_smelting_electrum_dust"));
+        SimpleCookingRecipeBuilder.blasting(Ingredient.of(ELECTRUM_DUST), ELECTRUM_INGOT, 0.3F, 100).unlockedBy("has_electrum_dust", has(ELECTRUM_INGOT)).save(recipe, getId("electrum_ingot_from_blasting_electrum_dust"));
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(ENDERIUM_DUST), ENDERIUM_INGOT, 0.3F, 200).unlockedBy("has_enderium_dust", has(ENDERIUM_INGOT)).save(recipe, getId("enderium_ingot_from_smelting_enderium_dust"));
+        SimpleCookingRecipeBuilder.blasting(Ingredient.of(ENDERIUM_DUST), ENDERIUM_INGOT, 0.3F, 100).unlockedBy("has_enderium_dust", has(ENDERIUM_INGOT)).save(recipe, getId("enderium_ingot_from_blasting_enderium_dust"));
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(GOLD_DUST), GOLD_INGOT, 0.3F, 200).unlockedBy("has_gold_dust", has(GOLD_INGOT)).save(recipe, getId("gold_ingot_from_smelting_gold_dust"));
+        SimpleCookingRecipeBuilder.blasting(Ingredient.of(GOLD_DUST), GOLD_INGOT, 0.3F, 100).unlockedBy("has_gold_dust", has(GOLD_INGOT)).save(recipe, getId("gold_ingot_from_blasting_gold_dust"));
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(INVAR_DUST), INVAR_INGOT, 0.3F, 200).unlockedBy("has_invar_dust", has(INVAR_INGOT)).save(recipe, getId("invar_ingot_from_smelting_invar_dust"));
+        SimpleCookingRecipeBuilder.blasting(Ingredient.of(INVAR_DUST), INVAR_INGOT, 0.3F, 100).unlockedBy("has_invar_dust", has(INVAR_INGOT)).save(recipe, getId("invar_ingot_from_blasting_invar_dust"));
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(IRON_DUST), IRON_INGOT, 0.3F, 200).unlockedBy("has_iron_dust", has(IRON_INGOT)).save(recipe, getId("iron_ingot_from_smelting_iron_dust"));
+        SimpleCookingRecipeBuilder.blasting(Ingredient.of(IRON_DUST), IRON_INGOT, 0.3F, 100).unlockedBy("has_iron_dust", has(IRON_INGOT)).save(recipe, getId("iron_ingot_from_blasting_iron_dust"));
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(LEAD_DUST), LEAD_INGOT.get(), 0.3F, 200).unlockedBy("has_lead_dust", has(LEAD_DUST)).save(recipe, getId("lead_ingot_from_smelting_lead_dust"));
+        SimpleCookingRecipeBuilder.blasting(Ingredient.of(LEAD_DUST), LEAD_INGOT.get(), 0.3F, 100).unlockedBy("has_lead_dust", has(LEAD_DUST)).save(recipe, getId("lead_ingot_from_blasting_lead_dust"));
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(NICKEL_DUST), NICKEL_INGOT.get(), 0.3F, 200).unlockedBy("has_nickel_dust", has(NICKEL_DUST)).save(recipe, getId("nickel_ingot_from_smelting_nickel_dust"));
+        SimpleCookingRecipeBuilder.blasting(Ingredient.of(NICKEL_DUST), NICKEL_INGOT.get(), 0.3F, 100).unlockedBy("has_nickel_dust", has(NICKEL_DUST)).save(recipe, getId("nickel_ingot_from_blasting_nickel_dust"));
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(PLATINUM_DUST), PLATINUM_INGOT.get(), 0.3F, 200).unlockedBy("has_platinum_dust", has(PLATINUM_DUST)).save(recipe, getId("platinum_ingot_from_smelting_platinum_dust"));
+        SimpleCookingRecipeBuilder.blasting(Ingredient.of(PLATINUM_DUST), PLATINUM_INGOT.get(), 0.3F, 100).unlockedBy("has_platinum_dust", has(PLATINUM_DUST)).save(recipe, getId("platinum_ingot_from_blasting_platinum_dust"));
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(SIGNALUM_DUST), SIGNALUM_INGOT.get(), 0.3F, 200).unlockedBy("has_signalum_dust", has(SIGNALUM_DUST)).save(recipe, getId("signalum_ingot_from_smelting_signalum_dust"));
+        SimpleCookingRecipeBuilder.blasting(Ingredient.of(SIGNALUM_DUST), SIGNALUM_INGOT.get(), 0.3F, 100).unlockedBy("has_signalum_dust", has(SIGNALUM_DUST)).save(recipe, getId("signalum_ingot_from_blasting_signalum_dust"));
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(SILVER_DUST), SILVER_INGOT.get(), 0.3F, 200).unlockedBy("has_silver_dust", has(SILVER_DUST)).save(recipe, getId("silver_ingot_from_smelting_silver_dust"));
+        SimpleCookingRecipeBuilder.blasting(Ingredient.of(SILVER_DUST), SILVER_INGOT.get(), 0.3F, 100).unlockedBy("has_silver_dust", has(SILVER_DUST)).save(recipe, getId("silver_ingot_from_blasting_silver_dust"));
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(STEEL_DUST), STEEL_INGOT.get(), 0.3F, 200).unlockedBy("has_steel_dust", has(STEEL_DUST)).save(recipe, getId("steel_ingot_from_smelting_steel_dust"));
+        SimpleCookingRecipeBuilder.blasting(Ingredient.of(STEEL_DUST), STEEL_INGOT.get(), 0.3F, 100).unlockedBy("has_steel_dust", has(STEEL_DUST)).save(recipe, getId("steel_ingot_from_blasting_steel_dust"));
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(TIN_DUST), TIN_INGOT.get(), 0.3F, 200).unlockedBy("has_tin_dust", has(TIN_DUST)).save(recipe, getId("tin_ingot_from_smelting_tin_dust"));
+        SimpleCookingRecipeBuilder.blasting(Ingredient.of(TIN_DUST), TIN_INGOT.get(), 0.3F, 100).unlockedBy("has_tin_dust", has(TIN_DUST)).save(recipe, getId("tin_ingot_from_blasting_tin_dust"));
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(URANIUM_DUST), URANIUM_INGOT.get(), 0.3F, 200).unlockedBy("has_uranium_dust", has(URANIUM_DUST)).save(recipe, getId("uranium_ingot_from_smelting_uranium_dust"));
+        SimpleCookingRecipeBuilder.blasting(Ingredient.of(URANIUM_DUST), URANIUM_INGOT.get(), 0.3F, 100).unlockedBy("has_uranium_dust", has(URANIUM_DUST)).save(recipe, getId("uranium_ingot_from_blasting_uranium_dust"));
 
         //Raw Materials
         ShapelessRecipeBuilder.shapeless(RAW_ALUMINUM.get(), 9).requires(RAW_BLOCKS_ALUMINUM).unlockedBy("has_raw_aluminum", has(RAW_BLOCKS_ALUMINUM)).save(recipe, getId("raw_aluminum_from_raw_aluminum_block"));
