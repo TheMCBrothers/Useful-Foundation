@@ -28,5 +28,6 @@
     "recipes": [
       "usefulfoundation:raw_tin_block"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

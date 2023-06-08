@@ -28,5 +28,6 @@
     "recipes": [
       "usefulfoundation:signalum_ingot_from_signalum_block"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

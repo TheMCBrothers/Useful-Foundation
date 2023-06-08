@@ -28,5 +28,6 @@
     "recipes": [
       "usefulfoundation:uranium_plate"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

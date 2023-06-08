@@ -28,5 +28,6 @@
     "recipes": [
       "usefulfoundation:steel_plate"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

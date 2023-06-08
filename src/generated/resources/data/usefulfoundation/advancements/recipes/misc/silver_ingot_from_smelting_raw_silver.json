@@ -28,5 +28,6 @@
     "recipes": [
       "usefulfoundation:silver_ingot_from_smelting_raw_silver"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

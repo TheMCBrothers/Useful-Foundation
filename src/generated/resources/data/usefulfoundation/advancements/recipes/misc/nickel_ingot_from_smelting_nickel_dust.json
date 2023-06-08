@@ -30,5 +30,6 @@
     "recipes": [
       "usefulfoundation:nickel_ingot_from_smelting_nickel_dust"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

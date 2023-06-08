@@ -30,5 +30,6 @@
     "recipes": [
       "usefulfoundation:enderium_ingot_from_blasting_enderium_dust"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

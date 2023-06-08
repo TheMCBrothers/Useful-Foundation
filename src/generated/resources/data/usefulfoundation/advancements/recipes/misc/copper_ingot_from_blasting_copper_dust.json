@@ -30,5 +30,6 @@
     "recipes": [
       "usefulfoundation:copper_ingot_from_blasting_copper_dust"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

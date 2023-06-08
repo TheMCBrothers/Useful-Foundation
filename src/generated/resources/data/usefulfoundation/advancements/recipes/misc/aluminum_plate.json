@@ -28,5 +28,6 @@
     "recipes": [
       "usefulfoundation:aluminum_plate"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

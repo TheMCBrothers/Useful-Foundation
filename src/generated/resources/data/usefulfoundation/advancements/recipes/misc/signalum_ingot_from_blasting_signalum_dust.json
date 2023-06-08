@@ -30,5 +30,6 @@
     "recipes": [
       "usefulfoundation:signalum_ingot_from_blasting_signalum_dust"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

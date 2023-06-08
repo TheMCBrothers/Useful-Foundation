@@ -28,5 +28,6 @@
     "recipes": [
       "usefulfoundation:raw_aluminum_from_raw_aluminum_block"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

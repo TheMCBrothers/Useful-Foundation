@@ -30,5 +30,6 @@
     "recipes": [
       "usefulfoundation:steel_ingot_from_smelting_steel_dust"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

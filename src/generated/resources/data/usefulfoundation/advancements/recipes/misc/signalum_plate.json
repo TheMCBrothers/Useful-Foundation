@@ -28,5 +28,6 @@
     "recipes": [
       "usefulfoundation:signalum_plate"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

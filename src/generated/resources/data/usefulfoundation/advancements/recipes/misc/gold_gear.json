@@ -28,5 +28,6 @@
     "recipes": [
       "usefulfoundation:gold_gear"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

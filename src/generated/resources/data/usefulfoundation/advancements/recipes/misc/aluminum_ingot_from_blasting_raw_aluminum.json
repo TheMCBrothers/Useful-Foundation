@@ -28,5 +28,6 @@
     "recipes": [
       "usefulfoundation:aluminum_ingot_from_blasting_raw_aluminum"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

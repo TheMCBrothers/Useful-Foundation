@@ -28,5 +28,6 @@
     "recipes": [
       "usefulfoundation:nickel_ingot_from_blasting_nickel_ore"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

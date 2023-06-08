@@ -28,5 +28,6 @@
     "recipes": [
       "usefulfoundation:lead_plate"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

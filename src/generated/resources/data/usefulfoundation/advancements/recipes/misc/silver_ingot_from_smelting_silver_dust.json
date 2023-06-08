@@ -30,5 +30,6 @@
     "recipes": [
       "usefulfoundation:silver_ingot_from_smelting_silver_dust"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

@@ -28,5 +28,6 @@
     "recipes": [
       "usefulfoundation:electrum_ingot_from_electrum_block"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

@@ -28,5 +28,6 @@
     "recipes": [
       "usefulfoundation:enderium_nugget"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

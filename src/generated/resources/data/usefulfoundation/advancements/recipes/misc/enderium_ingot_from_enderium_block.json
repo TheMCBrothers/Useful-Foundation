@@ -28,5 +28,6 @@
     "recipes": [
       "usefulfoundation:enderium_ingot_from_enderium_block"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

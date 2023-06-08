@@ -28,5 +28,6 @@
     "recipes": [
       "usefulfoundation:nickel_nugget"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

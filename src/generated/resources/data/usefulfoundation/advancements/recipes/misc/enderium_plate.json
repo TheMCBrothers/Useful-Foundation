@@ -28,5 +28,6 @@
     "recipes": [
       "usefulfoundation:enderium_plate"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

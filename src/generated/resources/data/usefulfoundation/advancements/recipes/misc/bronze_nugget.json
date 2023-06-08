@@ -28,5 +28,6 @@
     "recipes": [
       "usefulfoundation:bronze_nugget"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

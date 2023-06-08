@@ -28,5 +28,6 @@
     "recipes": [
       "usefulfoundation:platinum_ingot_from_smelting_raw_platinum"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

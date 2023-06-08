@@ -28,5 +28,6 @@
     "recipes": [
       "usefulfoundation:silver_plate"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

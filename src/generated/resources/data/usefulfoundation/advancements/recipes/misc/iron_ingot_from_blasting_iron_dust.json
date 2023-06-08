@@ -30,5 +30,6 @@
     "recipes": [
       "usefulfoundation:iron_ingot_from_blasting_iron_dust"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

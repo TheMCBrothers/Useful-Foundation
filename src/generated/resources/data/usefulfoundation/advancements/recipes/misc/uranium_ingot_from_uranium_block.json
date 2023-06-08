@@ -28,5 +28,6 @@
     "recipes": [
       "usefulfoundation:uranium_ingot_from_uranium_block"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

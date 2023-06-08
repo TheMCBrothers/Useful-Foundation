@@ -30,5 +30,6 @@
     "recipes": [
       "usefulfoundation:bronze_ingot_from_smelting_bronze_dust"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

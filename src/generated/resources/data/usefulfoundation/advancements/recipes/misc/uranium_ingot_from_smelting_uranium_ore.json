@@ -28,5 +28,6 @@
     "recipes": [
       "usefulfoundation:uranium_ingot_from_smelting_uranium_ore"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

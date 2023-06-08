@@ -28,5 +28,6 @@
     "recipes": [
       "usefulfoundation:invar_dust_from_dust_mix"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

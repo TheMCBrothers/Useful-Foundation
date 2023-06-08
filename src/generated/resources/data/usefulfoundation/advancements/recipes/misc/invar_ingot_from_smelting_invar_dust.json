@@ -30,5 +30,6 @@
     "recipes": [
       "usefulfoundation:invar_ingot_from_smelting_invar_dust"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

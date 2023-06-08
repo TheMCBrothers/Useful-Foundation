@@ -28,5 +28,6 @@
     "recipes": [
       "usefulfoundation:tin_ingot_from_blasting_tin_ore"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

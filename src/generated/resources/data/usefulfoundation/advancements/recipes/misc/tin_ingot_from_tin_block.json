@@ -28,5 +28,6 @@
     "recipes": [
       "usefulfoundation:tin_ingot_from_tin_block"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

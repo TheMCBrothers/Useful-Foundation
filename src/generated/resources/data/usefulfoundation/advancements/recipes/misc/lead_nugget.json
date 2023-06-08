@@ -28,5 +28,6 @@
     "recipes": [
       "usefulfoundation:lead_nugget"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

@@ -30,5 +30,6 @@
     "recipes": [
       "usefulfoundation:aluminum_ingot_from_smelting_aluminum_dust"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

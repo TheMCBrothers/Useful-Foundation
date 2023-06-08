@@ -28,5 +28,6 @@
     "recipes": [
       "usefulfoundation:raw_nickel_from_raw_nickel_block"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

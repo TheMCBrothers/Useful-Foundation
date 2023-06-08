@@ -30,5 +30,6 @@
     "recipes": [
       "usefulfoundation:diamond_from_blasting_diamond_dust"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

@@ -30,5 +30,6 @@
     "recipes": [
       "usefulfoundation:electrum_ingot_from_blasting_electrum_dust"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

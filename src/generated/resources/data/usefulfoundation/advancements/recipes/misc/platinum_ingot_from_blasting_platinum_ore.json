@@ -28,5 +28,6 @@
     "recipes": [
       "usefulfoundation:platinum_ingot_from_blasting_platinum_ore"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

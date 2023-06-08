@@ -30,5 +30,6 @@
     "recipes": [
       "usefulfoundation:tin_ingot_from_smelting_tin_dust"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }
