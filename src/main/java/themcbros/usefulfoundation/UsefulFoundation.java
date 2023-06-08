@@ -1,7 +1,6 @@
 package themcbros.usefulfoundation;
 
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.common.Mod;
@@ -18,7 +17,6 @@ public class UsefulFoundation {
     public static final Logger LOGGER = LogManager.getLogger();
     public static final String MOD_ID = "usefulfoundation";
     public static CommonProxy proxy;
-    public static CreativeModeTab GROUP;
 
     public UsefulFoundation() {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
