@@ -9,6 +9,6 @@ import static themcbros.usefulfoundation.init.Registration.BLOCK_ENTITY_TYPES;
 public class FoundationBlockEntities {
     public static final RegistryObject<BlockEntityType<UsefulBeehiveBlockEntity>> USEFUL_BEEHIVE = BLOCK_ENTITY_TYPES.register("useful_beehive", UsefulBeehiveBlockEntity::new, FoundationBlocks.USEFUL_BEEHIVE);
 
-    protected static void init() {
+    static void init() {
     }
 }

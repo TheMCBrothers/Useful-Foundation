@@ -6,9 +6,9 @@ import net.minecraft.world.item.DiggerItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Tiers;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.material.Material;
 import net.minecraftforge.common.Tags;
 
+@Deprecated
 public class HammerItem extends DiggerItem {
     public static final RandomSource RAND = RandomSource.create();
 
@@ -32,10 +32,5 @@ public class HammerItem extends DiggerItem {
 
         if (copy.hurt(1, RAND, null)) return ItemStack.EMPTY;
         else return copy;
-    }
-
-    public float getDestroySpeed(ItemStack stack, BlockState state) {
-        Material material = state.getMaterial();
-        return material != Material.METAL && material != Material.HEAVY_METAL && material != Material.STONE ? super.getDestroySpeed(stack, state) : this.speed;
     }
 }

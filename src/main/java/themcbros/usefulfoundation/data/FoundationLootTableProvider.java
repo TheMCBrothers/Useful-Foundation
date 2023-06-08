@@ -4,8 +4,9 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.data.loot.LootTableProvider;
 import net.minecraft.data.loot.packs.VanillaLootTableProvider;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.storage.loot.LootDataId;
+import net.minecraft.world.level.storage.loot.LootDataType;
 import net.minecraft.world.level.storage.loot.LootTable;
-import net.minecraft.world.level.storage.loot.LootTables;
 import net.minecraft.world.level.storage.loot.ValidationContext;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 
@@ -15,7 +16,6 @@ import java.util.Map;
 import java.util.Set;
 
 public class FoundationLootTableProvider extends LootTableProvider {
-
     public FoundationLootTableProvider(PackOutput output) {
         super(output, Set.of(), VanillaLootTableProvider.create(output).getTables());
     }
@@ -28,6 +28,6 @@ public class FoundationLootTableProvider extends LootTableProvider {
 
     @Override
     protected void validate(Map<ResourceLocation, LootTable> map, @Nonnull ValidationContext context) {
-        map.forEach((location, lootTable) -> LootTables.validate(context, location, lootTable));
+        map.forEach((location, lootTable) -> lootTable.validate(context.setParams(lootTable.getParamSet()).enterElement("{" + location + "}", new LootDataId<>(LootDataType.TABLE, location))));
     }
 }

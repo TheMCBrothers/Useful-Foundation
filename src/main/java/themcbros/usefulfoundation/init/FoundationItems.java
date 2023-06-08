@@ -97,6 +97,6 @@ public class FoundationItems {
     public static final ItemObject<Item> STEEL_GEAR = ITEMS.register("steel_gear", () -> new Item(new Item.Properties()));
     public static final ItemObject<Item> STEEL_DUST = ITEMS.register("steel_dust", () -> new Item(new Item.Properties()));
 
-    protected static void init() {
+    static void init() {
     }
 }
