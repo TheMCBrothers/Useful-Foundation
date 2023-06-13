@@ -76,7 +76,8 @@ processResources {
         expand 'file': ['jarVersion': version],
                 'loader_version_range': loader_version_range,
                 'forge_version_range': forge_version_range,
-                'minecraft_version_range': minecraft_version_range
+                'minecraft_version_range': minecraft_version_range,
+                'themcbroslib_version_range': themcbroslib_version_range
     }
 }
 
