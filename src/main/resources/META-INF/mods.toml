@@ -1,30 +1,37 @@
 modLoader = "javafml" #mandatory
-loaderVersion = "[46,)" #mandatory (46 is current forge version)
+loaderVersion = "[47,)" #mandatory (46 is current forge version)
 issueTrackerURL = "https://github.com/TheMCBrothers/Useful-Foundation/issues" #optional
 license = "MIT License"
+
 [[mods]] #mandatory
 modId = "usefulfoundation" #mandatory
 version = "${file.jarVersion}" #mandatory
 displayName = "Useful Foundation" #mandatory
-#updateJSONURL="http://myurl.me/" #optional
-displayURL = "https://www.curseforge.com/minecraft/mc-mods/useful-foundation" #optional
-logoFile = "logo.png" #optional
-credits = "Thanks to TheMCCrazyMan for the awesome textures" #optional
-authors = "TheMCBrothers (TheMCLoveMan + TheMCCrazyMan)" #optional
+# updateJSONURL="http://myurl.me/" #optional
+displayURL = "https://themcbrothers.net/" #optional
+# logoFile="examplemod.png" #optional
+# credits="Thanks for this example mod goes to Java" #optional
+authors = "TheMCBrothers" #optional
 description = '''
-Useful Foundation for some mods
+This is a mod that adds new ores and materials
 '''
 
 [[dependencies.usefulfoundation]] #optional
 modId = "forge" #mandatory
 mandatory = true #mandatory
-versionRange = "[46,)" #mandatory
+versionRange = "[47,)" #mandatory
 ordering = "NONE"
 side = "BOTH"
 # Here's another dependency
 [[dependencies.usefulfoundation]]
 modId = "minecraft"
 mandatory = true
-versionRange = "[1.20,)"
+versionRange = "[1.20,1.20.1,)"
+ordering = "NONE"
+side = "BOTH"
+[[dependencies.usefulfoundation]]
+modId = "tmcb_lib"
+mandatory = true
+versionRange = "[1.20.1-4.1.1,)"
 ordering = "NONE"
 side = "BOTH"
