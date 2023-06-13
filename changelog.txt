@@ -1,2 +1,5 @@
+2.0.1:
+- Hammer Item works again! (yey)
+
 2.0.0:
 - Migration to 1.20
