@@ -1,37 +1,41 @@
-modLoader = "javafml" #mandatory
-loaderVersion = "[47,)" #mandatory (46 is current forge version)
-issueTrackerURL = "https://github.com/TheMCBrothers/Useful-Foundation/issues" #optional
+modLoader = "javafml"
+loaderVersion = "${loader_version_range}"
+issueTrackerURL = "https://github.com/TheMCBrothers/Useful-Foundation/issues"
 license = "MIT License"
 
-[[mods]] #mandatory
-modId = "usefulfoundation" #mandatory
-version = "${file.jarVersion}" #mandatory
-displayName = "Useful Foundation" #mandatory
-# updateJSONURL="http://myurl.me/" #optional
-displayURL = "https://themcbrothers.net/" #optional
-# logoFile="examplemod.png" #optional
-# credits="Thanks for this example mod goes to Java" #optional
-authors = "TheMCBrothers" #optional
-description = '''
-This is a mod that adds new ores and materials
-'''
+[[mods]]
+    modId = "usefulfoundation"
+    version = "${file.jarVersion}"
+    displayName = "Useful Foundation"
+    updateJSONURL="https://forge.curseupdate.com/355245/usefulfoundation"
+    displayURL = "https://themcbrothers.net/mods/usefulfoundation"
+    logoFile="logo.png"
+    logoBlur = false
+    authors = "TheMCBrothers"
+    description = '''
+    This is a mod that adds new ores and materials
+    '''
 
-[[dependencies.usefulfoundation]] #optional
-modId = "forge" #mandatory
-mandatory = true #mandatory
-versionRange = "[47,)" #mandatory
-ordering = "NONE"
-side = "BOTH"
-# Here's another dependency
 [[dependencies.usefulfoundation]]
-modId = "minecraft"
-mandatory = true
-versionRange = "[1.20,1.20.1,)"
-ordering = "NONE"
-side = "BOTH"
+    modId = "forge"
+    mandatory = true
+    versionRange = "${forge_version_range}"
+    ordering = "NONE"
+    side = "BOTH"
+
 [[dependencies.usefulfoundation]]
-modId = "tmcb_lib"
-mandatory = true
-versionRange = "[1.20.1-4.1.1,)"
-ordering = "NONE"
-side = "BOTH"
+    modId = "minecraft"
+    mandatory = true
+    versionRange = "${minecraft_version_range}"
+    ordering = "NONE"
+    side = "BOTH"
+
+[[dependencies.usefulfoundation]]
+    modId = "tmcb_lib"
+    mandatory = true
+    versionRange = "${themcbroslib_version_range}"
+    ordering = "NONE"
+    side = "BOTH"
+
+[modproperties.usefulfoundation]
+    catalogueItemIcon = "usefulfoundation:copper_gear"
