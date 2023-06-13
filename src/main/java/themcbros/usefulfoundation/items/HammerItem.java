@@ -33,4 +33,9 @@ public class HammerItem extends DiggerItem {
         if (copy.hurt(1, RAND, null)) return ItemStack.EMPTY;
         else return copy;
     }
+
+    @Override
+    public float getDestroySpeed(ItemStack stack, BlockState state) {
+        return state.getBlock().defaultDestroyTime() < 1.5 ? super.getDestroySpeed(stack, state) : this.speed;
+    }
 }
