@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "usefulfoundation:block/enderium_block"
+    }
+  }
+}

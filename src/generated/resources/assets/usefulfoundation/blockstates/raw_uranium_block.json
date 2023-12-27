@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "usefulfoundation:block/raw_uranium_block"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "values": [
+    "usefulfoundation:aluminum_ore",
+    "usefulfoundation:lead_ore",
+    "usefulfoundation:nickel_ore",
+    "usefulfoundation:platinum_ore",
+    "usefulfoundation:silver_ore",
+    "usefulfoundation:tin_ore",
+    "usefulfoundation:uranium_ore",
+    "usefulfoundation:deepslate_aluminum_ore",
+    "usefulfoundation:deepslate_lead_ore",
+    "usefulfoundation:deepslate_nickel_ore",
+    "usefulfoundation:deepslate_platinum_ore",
+    "usefulfoundation:deepslate_silver_ore",
+    "usefulfoundation:deepslate_tin_ore",
+    "usefulfoundation:deepslate_uranium_ore"
+  ]
+}
