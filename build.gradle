@@ -112,6 +112,7 @@ publishing {
     publications {
         register('mavenJava', MavenPublication) {
             from components.java
+            artifactId = archive_base
         }
     }
     repositories {
