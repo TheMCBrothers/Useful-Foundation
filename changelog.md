@@ -1,5 +1,4 @@
 ## 1.0.0
-- Initial release
+- Migration to NeoForge
+- Updated to 1.20.4
 
-## 0.99.99
-- Not existing

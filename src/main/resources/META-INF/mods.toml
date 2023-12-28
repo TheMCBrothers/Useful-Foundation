@@ -26,3 +26,10 @@ issueTrackerURL = "https://github.com/${github_repo}/issues"
     versionRange = "${minecraft_version_range}"
     ordering = "NONE"
     side = "BOTH"
+
+[[dependencies.${mod_id}]]
+    modId = "tmcb_lib"
+    type = "required"
+    versionRange = "${lib_version_range}"
+    ordering = "NONE"
+    side = "BOTH"
