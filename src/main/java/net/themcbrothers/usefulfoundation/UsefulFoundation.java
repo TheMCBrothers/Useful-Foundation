@@ -1,5 +1,6 @@
 package net.themcbrothers.usefulfoundation;
 
+import net.minecraft.resources.ResourceLocation;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
 import net.themcbrothers.usefulfoundation.infrastructure.Registration;
@@ -11,5 +12,9 @@ public class UsefulFoundation {
     public UsefulFoundation(IEventBus modEventBus) {
         // Register stuff
         Registration.register(modEventBus);
+    }
+
+    public static ResourceLocation rl(String pathIn) {
+        return new ResourceLocation(MOD_ID, pathIn);
     }
 }
