@@ -4,8 +4,8 @@ import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.common.data.LanguageProvider;
 import net.themcbrothers.usefulfoundation.UsefulFoundation;
 
-import static net.themcbrothers.usefulfoundation.infrastructure.FoundationBlocks.*;
-import static net.themcbrothers.usefulfoundation.infrastructure.FoundationItems.*;
+import static net.themcbrothers.usefulfoundation.core.FoundationBlocks.*;
+import static net.themcbrothers.usefulfoundation.core.FoundationItems.*;
 
 public class FoundationLanguageProvider {
     public static class EnglishUS extends LanguageProvider {

@@ -6,7 +6,7 @@ import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.themcbrothers.usefulfoundation.UsefulFoundation;
 
-import static net.themcbrothers.usefulfoundation.infrastructure.FoundationBlocks.*;
+import static net.themcbrothers.usefulfoundation.core.FoundationBlocks.*;
 
 public class FoundationBlockStateProvider extends BlockStateProvider {
     public FoundationBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {

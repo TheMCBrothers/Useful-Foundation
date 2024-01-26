@@ -10,7 +10,7 @@ import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguratio
 import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
 import net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest;
 import net.themcbrothers.usefulfoundation.UsefulFoundation;
-import net.themcbrothers.usefulfoundation.infrastructure.FoundationBlocks;
+import net.themcbrothers.usefulfoundation.core.FoundationBlocks;
 
 import java.util.List;
 import java.util.function.Supplier;

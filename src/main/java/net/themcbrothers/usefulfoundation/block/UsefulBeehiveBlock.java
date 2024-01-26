@@ -4,7 +4,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.block.BeehiveBlock;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
-import net.themcbrothers.usefulfoundation.infrastructure.FoundationBlockEntityTypes;
+import net.themcbrothers.usefulfoundation.core.FoundationBlockEntityTypes;
 
 import javax.annotation.Nullable;
 

@@ -3,7 +3,7 @@ package net.themcbrothers.usefulfoundation;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
-import net.themcbrothers.usefulfoundation.infrastructure.Registration;
+import net.themcbrothers.usefulfoundation.core.Registration;
 
 @Mod(UsefulFoundation.MOD_ID)
 public class UsefulFoundation {

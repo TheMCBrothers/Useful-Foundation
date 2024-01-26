@@ -1,10 +1,10 @@
-package net.themcbrothers.usefulfoundation.infrastructure;
+package net.themcbrothers.usefulfoundation.core;
 
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.themcbrothers.usefulfoundation.block.entity.UsefulBeehiveBlockEntity;
 
-import static net.themcbrothers.usefulfoundation.infrastructure.Registration.BLOCK_ENTITY_TYPES;
+import static net.themcbrothers.usefulfoundation.core.Registration.BLOCK_ENTITY_TYPES;
 
 public class FoundationBlockEntityTypes {
     static void init() {

@@ -1,9 +1,9 @@
-package net.themcbrothers.usefulfoundation.infrastructure;
+package net.themcbrothers.usefulfoundation.core;
 
 import net.minecraft.world.item.Item;
 import net.neoforged.neoforge.registries.DeferredItem;
 
-import static net.themcbrothers.usefulfoundation.infrastructure.Registration.ITEMS;
+import static net.themcbrothers.usefulfoundation.core.Registration.ITEMS;
 
 public final class FoundationItems {
     static void init() {

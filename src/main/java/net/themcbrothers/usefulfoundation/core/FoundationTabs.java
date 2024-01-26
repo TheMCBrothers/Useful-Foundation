@@ -1,12 +1,12 @@
-package net.themcbrothers.usefulfoundation.infrastructure;
+package net.themcbrothers.usefulfoundation.core;
 
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.neoforged.neoforge.registries.DeferredHolder;
 
-import static net.themcbrothers.usefulfoundation.infrastructure.FoundationItems.COPPER_GEAR;
-import static net.themcbrothers.usefulfoundation.infrastructure.Registration.CREATIVE_MODE_TABS;
+import static net.themcbrothers.usefulfoundation.core.FoundationItems.COPPER_GEAR;
+import static net.themcbrothers.usefulfoundation.core.Registration.CREATIVE_MODE_TABS;
 
 public final class FoundationTabs {
     static void init() {

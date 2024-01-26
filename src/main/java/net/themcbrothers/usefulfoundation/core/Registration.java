@@ -1,4 +1,4 @@
-package net.themcbrothers.usefulfoundation.infrastructure;
+package net.themcbrothers.usefulfoundation.core;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.CreativeModeTab;

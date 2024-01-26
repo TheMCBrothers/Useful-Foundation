@@ -1,4 +1,4 @@
-package net.themcbrothers.usefulfoundation.infrastructure;
+package net.themcbrothers.usefulfoundation.core;
 
 import net.minecraft.world.level.block.BeehiveBlock;
 import net.minecraft.world.level.block.Block;
@@ -9,8 +9,8 @@ import net.themcbrothers.usefulfoundation.block.UsefulBeehiveBlock;
 
 import java.util.function.Function;
 
-import static net.themcbrothers.usefulfoundation.infrastructure.Registration.BLOCKS;
-import static net.themcbrothers.usefulfoundation.infrastructure.Registration.ITEMS;
+import static net.themcbrothers.usefulfoundation.core.Registration.BLOCKS;
+import static net.themcbrothers.usefulfoundation.core.Registration.ITEMS;
 
 public final class FoundationBlocks {
     static void init() {

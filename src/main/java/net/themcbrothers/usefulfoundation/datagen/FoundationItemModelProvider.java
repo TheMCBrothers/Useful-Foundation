@@ -8,7 +8,7 @@ import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.themcbrothers.usefulfoundation.UsefulFoundation;
 
-import static net.themcbrothers.usefulfoundation.infrastructure.FoundationItems.*;
+import static net.themcbrothers.usefulfoundation.core.FoundationItems.*;
 
 public class FoundationItemModelProvider extends ItemModelProvider {
     public FoundationItemModelProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
