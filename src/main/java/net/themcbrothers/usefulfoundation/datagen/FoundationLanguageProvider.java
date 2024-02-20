@@ -147,7 +147,7 @@ public class FoundationLanguageProvider {
             this.addItem(IRON_DUST, "Iron Dust");
 
             // Tools
-            //this.addItem(HAMMER, "Hammer");
+            this.addItem(HAMMER, "Hammer");
         }
     }
 
@@ -290,7 +290,7 @@ public class FoundationLanguageProvider {
             this.addItem(IRON_DUST, "Iseplatte");
 
             // Tools
-            //this.addItem(HAMMER, "Hammer");
+            this.addItem(HAMMER, "Hammer");
         }
     }
 }

@@ -24,12 +24,12 @@ public final class DataGenEvents {
     @SubscribeEvent
     static void onDataGen(final GatherDataEvent event) {
         final DataGenerator generator = event.getGenerator();
-        final PackOutput packOutput = generator.getPackOutput();
+        final PackOutput output = generator.getPackOutput();
         final ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
         final CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
 
         // Server resources
-        FoundationBlockTagsProvider blockTags = new FoundationBlockTagsProvider(packOutput, lookupProvider, existingFileHelper);
+        FoundationBlockTagsProvider blockTags = new FoundationBlockTagsProvider(output, lookupProvider, existingFileHelper);
 
         RegistrySetBuilder registrySetBuilder = new RegistrySetBuilder()
                 .add(Registries.CONFIGURED_FEATURE, FoundationOreFeatures::bootstrap)
@@ -37,13 +37,13 @@ public final class DataGenEvents {
                 .add(NeoForgeRegistries.Keys.BIOME_MODIFIERS, FoundationBiomeModifiers::bootstrap);
 
         generator.addProvider(event.includeServer(), blockTags);
-        generator.addProvider(event.includeServer(), new FoundationItemTagsProvider(packOutput, lookupProvider, blockTags.contentsGetter(), existingFileHelper));
-        generator.addProvider(event.includeServer(), new DatapackBuiltinEntriesProvider(packOutput, lookupProvider, registrySetBuilder, Set.of(UsefulFoundation.MOD_ID)));
+        generator.addProvider(event.includeServer(), new FoundationItemTagsProvider(output, lookupProvider, blockTags.contentsGetter(), existingFileHelper));
+        generator.addProvider(event.includeServer(), new DatapackBuiltinEntriesProvider(output, lookupProvider, registrySetBuilder, Set.of(UsefulFoundation.MOD_ID)));
 
         // Client resources
-        generator.addProvider(event.includeClient(), new FoundationBlockStateProvider(packOutput, existingFileHelper));
-        generator.addProvider(event.includeClient(), new FoundationItemModelProvider(packOutput, existingFileHelper));
-        generator.addProvider(event.includeClient(), new FoundationLanguageProvider.EnglishUS(packOutput));
-        generator.addProvider(event.includeClient(), new FoundationLanguageProvider.SwissGerman(packOutput));
+        generator.addProvider(event.includeClient(), new FoundationBlockStateProvider(output, existingFileHelper));
+        generator.addProvider(event.includeClient(), new FoundationItemModelProvider(output, existingFileHelper));
+        generator.addProvider(event.includeClient(), new FoundationLanguageProvider.EnglishUS(output));
+        generator.addProvider(event.includeClient(), new FoundationLanguageProvider.SwissGerman(output));
     }
 }

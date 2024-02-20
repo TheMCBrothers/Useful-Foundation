@@ -92,7 +92,7 @@ public class FoundationItemModelProvider extends ItemModelProvider {
         basicItem(URANIUM_DUST.get());
 
         // Foundation Tools
-        // simpleTool(HAMMER.get());
+        basicTool(HAMMER.get());
 
         // Vanilla Items
         basicItem(COPPER_GEAR.get());

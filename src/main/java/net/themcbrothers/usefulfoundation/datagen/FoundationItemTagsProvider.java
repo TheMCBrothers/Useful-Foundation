@@ -6,18 +6,18 @@ import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
-import net.themcbrothers.usefulfoundation.FoundationTags;
+import net.themcbrothers.usefulfoundation.core.FoundationTags;
 import net.themcbrothers.usefulfoundation.UsefulFoundation;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
 
-import static net.themcbrothers.usefulfoundation.FoundationTags.Items.*;
+import static net.themcbrothers.usefulfoundation.core.FoundationTags.Items.*;
 import static net.themcbrothers.usefulfoundation.core.FoundationItems.*;
 
 public class FoundationItemTagsProvider extends ItemTagsProvider {
-    public FoundationItemTagsProvider(PackOutput packOutput, CompletableFuture<HolderLookup.Provider> lookupProvider, CompletableFuture<TagLookup<Block>> blockTags, @Nullable ExistingFileHelper existingFileHelper) {
-        super(packOutput, lookupProvider, blockTags, UsefulFoundation.MOD_ID, existingFileHelper);
+    public FoundationItemTagsProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, CompletableFuture<TagLookup<Block>> blockTags, @Nullable ExistingFileHelper existingFileHelper) {
+        super(output, lookupProvider, blockTags, UsefulFoundation.MOD_ID, existingFileHelper);
     }
 
     @Override
@@ -36,7 +36,9 @@ public class FoundationItemTagsProvider extends ItemTagsProvider {
         this.tag(INGOTS_STEEL).add(STEEL_INGOT.get());
         this.tag(INGOTS_TIN).add(TIN_INGOT.get());
         this.tag(INGOTS_URANIUM).add(URANIUM_INGOT.get());
-        this.tag(Tags.Items.INGOTS).addTags(INGOTS_ALUMINUM, INGOTS_BRONZE, INGOTS_ELECTRUM, INGOTS_ENDERIUM, INGOTS_INVAR, INGOTS_LEAD, INGOTS_NICKEL, INGOTS_PLATINUM, INGOTS_SIGNALUM, INGOTS_SILVER, INGOTS_STEEL, INGOTS_TIN, INGOTS_URANIUM);
+        this.tag(Tags.Items.INGOTS).addTags(INGOTS_ALUMINUM, INGOTS_BRONZE, INGOTS_ELECTRUM, INGOTS_ENDERIUM,
+                INGOTS_INVAR, INGOTS_LEAD, INGOTS_NICKEL, INGOTS_PLATINUM, INGOTS_SIGNALUM, INGOTS_SILVER,
+                INGOTS_STEEL, INGOTS_TIN, INGOTS_URANIUM);
 
         // Gears
         this.tag(GEARS_ALUMINUM).add(ALUMINUM_GEAR.get());
@@ -56,7 +58,9 @@ public class FoundationItemTagsProvider extends ItemTagsProvider {
         this.tag(GEARS_STEEL).add(STEEL_GEAR.get());
         this.tag(GEARS_TIN).add(TIN_GEAR.get());
         this.tag(GEARS_URANIUM).add(URANIUM_GEAR.get());
-        this.tag(GEARS).addTags(GEARS_ALUMINUM, GEARS_BRONZE, GEARS_COPPER, GEARS_DIAMOND, GEARS_ELECTRUM, GEARS_ENDERIUM, GEARS_GOLD, GEARS_INVAR, GEARS_IRON, GEARS_LEAD, GEARS_NICKEL, GEARS_PLATINUM, GEARS_SIGNALUM, GEARS_SILVER, GEARS_STEEL, GEARS_TIN, GEARS_URANIUM);
+        this.tag(GEARS).addTags(GEARS_ALUMINUM, GEARS_BRONZE, GEARS_COPPER, GEARS_DIAMOND, GEARS_ELECTRUM,
+                GEARS_ENDERIUM, GEARS_GOLD, GEARS_INVAR, GEARS_IRON, GEARS_LEAD, GEARS_NICKEL, GEARS_PLATINUM,
+                GEARS_SIGNALUM, GEARS_SILVER, GEARS_STEEL, GEARS_TIN, GEARS_URANIUM);
 
         // Nuggets
         this.tag(NUGGETS_ALUMINUM).add(ALUMINUM_NUGGET.get());
@@ -73,7 +77,9 @@ public class FoundationItemTagsProvider extends ItemTagsProvider {
         this.tag(NUGGETS_STEEL).add(STEEL_NUGGET.get());
         this.tag(NUGGETS_TIN).add(TIN_NUGGET.get());
         this.tag(NUGGETS_URANIUM).add(URANIUM_NUGGET.get());
-        this.tag(Tags.Items.NUGGETS).addTags(NUGGETS_ALUMINUM, NUGGETS_BRONZE, NUGGETS_COPPER, NUGGETS_ELECTRUM, NUGGETS_ENDERIUM, NUGGETS_INVAR, NUGGETS_LEAD, NUGGETS_NICKEL, NUGGETS_PLATINUM, NUGGETS_SIGNALUM, NUGGETS_SILVER, NUGGETS_STEEL, NUGGETS_TIN, NUGGETS_URANIUM);
+        this.tag(Tags.Items.NUGGETS).addTags(NUGGETS_ALUMINUM, NUGGETS_BRONZE, NUGGETS_COPPER, NUGGETS_ELECTRUM,
+                NUGGETS_ENDERIUM, NUGGETS_INVAR, NUGGETS_LEAD, NUGGETS_NICKEL, NUGGETS_PLATINUM, NUGGETS_SIGNALUM,
+                NUGGETS_SILVER, NUGGETS_STEEL, NUGGETS_TIN, NUGGETS_URANIUM);
 
         // Dusts
         this.tag(DUSTS_ALUMINUM).add(ALUMINUM_DUST.get());
@@ -93,7 +99,9 @@ public class FoundationItemTagsProvider extends ItemTagsProvider {
         this.tag(DUSTS_STEEL).add(STEEL_DUST.get());
         this.tag(DUSTS_TIN).add(TIN_DUST.get());
         this.tag(DUSTS_URANIUM).add(URANIUM_DUST.get());
-        this.tag(DUSTS).addTags(DUSTS_ALUMINUM, DUSTS_BRONZE, DUSTS_COPPER, DUSTS_DIAMOND, DUSTS_ELECTRUM, DUSTS_ENDERIUM, DUSTS_GOLD, DUSTS_INVAR, DUSTS_IRON, DUSTS_LEAD, DUSTS_NICKEL, DUSTS_PLATINUM, DUSTS_SIGNALUM, DUSTS_SILVER, DUSTS_STEEL, DUSTS_TIN, DUSTS_URANIUM);
+        this.tag(DUSTS).addTags(DUSTS_ALUMINUM, DUSTS_BRONZE, DUSTS_COPPER, DUSTS_DIAMOND, DUSTS_ELECTRUM,
+                DUSTS_ENDERIUM, DUSTS_GOLD, DUSTS_INVAR, DUSTS_IRON, DUSTS_LEAD, DUSTS_NICKEL, DUSTS_PLATINUM,
+                DUSTS_SIGNALUM, DUSTS_SILVER, DUSTS_STEEL, DUSTS_TIN, DUSTS_URANIUM);
 
         // Plates
         this.tag(PLATES_ALUMINUM).add(ALUMINUM_PLATE.get());
@@ -113,7 +121,9 @@ public class FoundationItemTagsProvider extends ItemTagsProvider {
         this.tag(PLATES_STEEL).add(STEEL_PLATE.get());
         this.tag(PLATES_TIN).add(TIN_PLATE.get());
         this.tag(PLATES_URANIUM).add(URANIUM_PLATE.get());
-        this.tag(PLATES).addTags(PLATES_ALUMINUM, PLATES_BRONZE, PLATES_COPPER, PLATES_DIAMOND, PLATES_ELECTRUM, PLATES_ENDERIUM, PLATES_GOLD, PLATES_INVAR, PLATES_IRON, PLATES_LEAD, PLATES_NICKEL, PLATES_PLATINUM, PLATES_SIGNALUM, PLATES_SILVER, PLATES_STEEL, PLATES_TIN, PLATES_URANIUM);
+        this.tag(PLATES).addTags(PLATES_ALUMINUM, PLATES_BRONZE, PLATES_COPPER, PLATES_DIAMOND, PLATES_ELECTRUM,
+                PLATES_ENDERIUM, PLATES_GOLD, PLATES_INVAR, PLATES_IRON, PLATES_LEAD, PLATES_NICKEL, PLATES_PLATINUM,
+                PLATES_SIGNALUM, PLATES_SILVER, PLATES_STEEL, PLATES_TIN, PLATES_URANIUM);
 
         // Raw Materials
         this.tag(RAW_MATERIALS_ALUMINUM).add(RAW_ALUMINUM.get());
@@ -123,7 +133,8 @@ public class FoundationItemTagsProvider extends ItemTagsProvider {
         this.tag(RAW_MATERIALS_SILVER).add(RAW_SILVER.get());
         this.tag(RAW_MATERIALS_TIN).add(RAW_TIN.get());
         this.tag(RAW_MATERIALS_URANIUM).add(RAW_URANIUM.get());
-        this.tag(Tags.Items.RAW_MATERIALS).addTags(RAW_MATERIALS_ALUMINUM, RAW_MATERIALS_LEAD, RAW_MATERIALS_NICKEL, RAW_MATERIALS_PLATINUM, RAW_MATERIALS_SILVER, RAW_MATERIALS_TIN, RAW_MATERIALS_URANIUM);
+        this.tag(Tags.Items.RAW_MATERIALS).addTags(RAW_MATERIALS_ALUMINUM, RAW_MATERIALS_LEAD, RAW_MATERIALS_NICKEL,
+                RAW_MATERIALS_PLATINUM, RAW_MATERIALS_SILVER, RAW_MATERIALS_TIN, RAW_MATERIALS_URANIUM);
 
         // Storage Blocks
         this.copy(Tags.Blocks.STORAGE_BLOCKS, Tags.Items.STORAGE_BLOCKS);

@@ -13,7 +13,6 @@ public final class FoundationTabs {
     }
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> BASE = CREATIVE_MODE_TABS.register("base", () -> CreativeModeTab.builder()
-            .withTabsBefore(CreativeModeTabs.COMBAT)
             .icon(() -> COPPER_GEAR.get().getDefaultInstance())
             .title(Component.translatable("itemGroup.usefulfoundation.base"))
             .displayItems((parameters, output) -> {

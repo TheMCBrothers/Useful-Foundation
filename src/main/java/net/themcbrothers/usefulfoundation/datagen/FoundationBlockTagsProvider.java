@@ -11,7 +11,7 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
 
-import static net.themcbrothers.usefulfoundation.FoundationTags.Blocks.*;
+import static net.themcbrothers.usefulfoundation.core.FoundationTags.Blocks.*;
 import static net.themcbrothers.usefulfoundation.core.FoundationBlocks.*;
 
 public class FoundationBlockTagsProvider extends BlockTagsProvider {

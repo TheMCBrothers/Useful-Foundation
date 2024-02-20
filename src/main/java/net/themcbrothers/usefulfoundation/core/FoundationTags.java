@@ -1,4 +1,4 @@
-package net.themcbrothers.usefulfoundation;
+package net.themcbrothers.usefulfoundation.core;
 
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
@@ -7,6 +7,9 @@ import net.themcbrothers.lib.util.TagUtils;
 
 public class FoundationTags {
     public static class Blocks {
+        // Tools
+        public static final TagKey<Block> MINEABLE_WITH_HAMMER = TagUtils.forgeBlockTag("mineable/hammer");
+
         // Ore Blocks
         public static final TagKey<Block> ORES_ALUMINUM = TagUtils.forgeBlockTag("ores/aluminum");
         public static final TagKey<Block> ORES_LEAD = TagUtils.forgeBlockTag("ores/lead");

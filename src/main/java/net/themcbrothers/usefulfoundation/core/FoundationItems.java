@@ -2,6 +2,7 @@ package net.themcbrothers.usefulfoundation.core;
 
 import net.minecraft.world.item.Item;
 import net.neoforged.neoforge.registries.DeferredItem;
+import net.themcbrothers.usefulfoundation.item.HammerItem;
 
 import static net.themcbrothers.usefulfoundation.core.Registration.ITEMS;
 
@@ -10,8 +11,7 @@ public final class FoundationItems {
     }
 
     // Tool Items
-    // public static final ItemObject<HammerItem> HAMMER = ITEMS.register("hammer", () -> new HammerItem(new Item.Properties()));
-
+    public static final DeferredItem<HammerItem> HAMMER = ITEMS.register("hammer", () -> new HammerItem(new Item.Properties()));
 
     // Material Items
     public static final DeferredItem<Item> IRON_PLATE = ITEMS.registerSimpleItem("iron_plate");
