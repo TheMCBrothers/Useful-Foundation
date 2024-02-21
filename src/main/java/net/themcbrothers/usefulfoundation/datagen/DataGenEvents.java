@@ -43,7 +43,6 @@ public final class DataGenEvents {
         // Client resources
         generator.addProvider(event.includeClient(), new FoundationBlockStateProvider(output, existingFileHelper));
         generator.addProvider(event.includeClient(), new FoundationItemModelProvider(output, existingFileHelper));
-        generator.addProvider(event.includeClient(), new FoundationLanguageProvider.EnglishUS(output));
-        generator.addProvider(event.includeClient(), new FoundationLanguageProvider.SwissGerman(output));
+        generator.addProvider(event.includeClient(), new FoundationLanguageProvider(output));
     }
 }
