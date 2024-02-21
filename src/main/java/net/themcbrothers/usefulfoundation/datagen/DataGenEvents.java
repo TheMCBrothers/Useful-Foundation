@@ -39,6 +39,7 @@ public final class DataGenEvents {
         generator.addProvider(event.includeServer(), blockTags);
         generator.addProvider(event.includeServer(), new FoundationItemTagsProvider(output, lookupProvider, blockTags.contentsGetter(), existingFileHelper));
         generator.addProvider(event.includeServer(), new DatapackBuiltinEntriesProvider(output, lookupProvider, registrySetBuilder, Set.of(UsefulFoundation.MOD_ID)));
+        generator.addProvider(event.includeServer(), new FoundationRecipeProvider(output));
 
         // Client resources
         generator.addProvider(event.includeClient(), new FoundationBlockStateProvider(output, existingFileHelper));

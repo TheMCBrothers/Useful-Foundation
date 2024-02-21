@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/signalum"
+    },
+    {
+      "item": "usefulfoundation:hammer"
+    }
+  ],
+  "result": {
+    "item": "usefulfoundation:signalum_plate"
+  }
+}

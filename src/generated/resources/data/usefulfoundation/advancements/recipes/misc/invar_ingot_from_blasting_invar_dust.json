@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_invar_dust": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "usefulfoundation:invar_ingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "usefulfoundation:invar_ingot_from_blasting_invar_dust"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_invar_dust"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "usefulfoundation:invar_ingot_from_blasting_invar_dust"
+    ]
+  }
+}
