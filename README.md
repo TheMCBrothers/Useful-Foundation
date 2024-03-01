@@ -1,5 +1,7 @@
 Useful Foundation
 ===
+[![Java-CI](https://github.com/TheMCBrothers/Useful-Foundation/actions/workflows/java_ci.yml/badge.svg?branch=1.20.4)](https://github.com/TheMCBrothers/Useful-Foundation/actions/workflows/java_ci.yml?query=branch:1.20.4)
+[![Crowdin](https://badges.crowdin.net/useful-foundation/localized.svg)](https://crowdin.com/project/useful-foundation)
 
 Useful Foundation is a mod `by TheMCBrothers` developed for [NeoForge]
 
