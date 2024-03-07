@@ -5,6 +5,8 @@ import net.minecraft.core.RegistrySetBuilder;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
+import net.minecraft.data.loot.LootTableProvider;
+import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.common.data.DatapackBuiltinEntriesProvider;
@@ -16,6 +18,8 @@ import net.themcbrothers.usefulfoundation.datagen.world.FoundationBiomeModifiers
 import net.themcbrothers.usefulfoundation.datagen.world.FoundationOreFeatures;
 import net.themcbrothers.usefulfoundation.datagen.world.FoundationOrePlacements;
 
+import java.util.Collections;
+import java.util.List;
 import java.util.Set;
 import java.util.concurrent.CompletableFuture;
 
@@ -30,16 +34,18 @@ public final class DataGenEvents {
 
         // Server resources
         FoundationBlockTagsProvider blockTags = new FoundationBlockTagsProvider(output, lookupProvider, existingFileHelper);
-
         RegistrySetBuilder registrySetBuilder = new RegistrySetBuilder()
                 .add(Registries.CONFIGURED_FEATURE, FoundationOreFeatures::bootstrap)
                 .add(Registries.PLACED_FEATURE, FoundationOrePlacements::bootstrap)
                 .add(NeoForgeRegistries.Keys.BIOME_MODIFIERS, FoundationBiomeModifiers::bootstrap);
+        LootTableProvider.SubProviderEntry providerEntry = new LootTableProvider.SubProviderEntry(FoundationBlockLootSubProvider::new, LootContextParamSets.BLOCK);
 
         generator.addProvider(event.includeServer(), blockTags);
         generator.addProvider(event.includeServer(), new FoundationItemTagsProvider(output, lookupProvider, blockTags.contentsGetter(), existingFileHelper));
         generator.addProvider(event.includeServer(), new DatapackBuiltinEntriesProvider(output, lookupProvider, registrySetBuilder, Set.of(UsefulFoundation.MOD_ID)));
         generator.addProvider(event.includeServer(), new FoundationRecipeProvider(output));
+        generator.addProvider(event.includeServer(), new LootTableProvider(output, Collections.emptySet(), List.of(providerEntry)));
+
 
         // Client resources
         generator.addProvider(event.includeClient(), new FoundationBlockStateProvider(output, existingFileHelper));
