@@ -1,3 +1,7 @@
+## 1.3.0
+- Added block loot tables
+- Added translations
+
 ## 1.2.0
 - Added recipes for materials
 
