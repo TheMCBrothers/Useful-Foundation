@@ -8,7 +8,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.data.loot.LootTableProvider;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.common.data.DatapackBuiltinEntriesProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
@@ -23,7 +23,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.concurrent.CompletableFuture;
 
-@Mod.EventBusSubscriber(modid = UsefulFoundation.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber(modid = UsefulFoundation.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
 public final class DataGenEvents {
     @SubscribeEvent
     static void onDataGen(final GatherDataEvent event) {
@@ -43,8 +43,8 @@ public final class DataGenEvents {
         generator.addProvider(event.includeServer(), blockTags);
         generator.addProvider(event.includeServer(), new FoundationItemTagsProvider(output, lookupProvider, blockTags.contentsGetter(), existingFileHelper));
         generator.addProvider(event.includeServer(), new DatapackBuiltinEntriesProvider(output, lookupProvider, registrySetBuilder, Set.of(UsefulFoundation.MOD_ID)));
-        generator.addProvider(event.includeServer(), new FoundationRecipeProvider(output));
-        generator.addProvider(event.includeServer(), new LootTableProvider(output, Collections.emptySet(), List.of(providerEntry)));
+        generator.addProvider(event.includeServer(), new FoundationRecipeProvider(output, lookupProvider));
+        generator.addProvider(event.includeServer(), new LootTableProvider(output, Collections.emptySet(), List.of(providerEntry), lookupProvider));
 
 
         // Client resources

@@ -10,7 +10,7 @@ public class HammerItem extends DiggerItem {
     private static final RandomSource RAND = RandomSource.create();
 
     public HammerItem(Properties props) {
-        super(0, -2.5F, Tiers.IRON, FoundationTags.Blocks.MINEABLE_WITH_HAMMER, props);
+        super(Tiers.IRON, FoundationTags.Blocks.MINEABLE_WITH_HAMMER, props);
     }
 
     @Override
@@ -20,12 +20,9 @@ public class HammerItem extends DiggerItem {
 
     @Override
     public ItemStack getCraftingRemainingItem(ItemStack stack) {
-
         ItemStack copy = stack.copy();
-
-        if (copy.hurt(1, RAND, null)) {
-            return ItemStack.EMPTY;
-        }
+       
+        copy.hurtAndBreak(1, RAND, null, () -> copy.setCount(0));
 
         return copy;
     }
