@@ -3,17 +3,17 @@
   "category": "misc",
   "ingredients": [
     {
-      "tag": "forge:dusts/iron"
+      "tag": "c:dusts/iron"
     },
     {
-      "tag": "forge:dusts/iron"
+      "tag": "c:dusts/iron"
     },
     {
-      "tag": "forge:dusts/nickel"
+      "tag": "c:dusts/nickel"
     }
   ],
   "result": {
     "count": 3,
-    "item": "usefulfoundation:invar_dust"
+    "id": "usefulfoundation:invar_dust"
   }
 }

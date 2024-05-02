@@ -6,5 +6,8 @@
   "ingredient": {
     "item": "usefulfoundation:aluminum_dust"
   },
-  "result": "usefulfoundation:aluminum_ingot"
+  "result": {
+    "count": 1,
+    "id": "usefulfoundation:aluminum_ingot"
+  }
 }

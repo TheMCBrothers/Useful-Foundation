@@ -6,5 +6,8 @@
   "ingredient": {
     "item": "usefulfoundation:nickel_dust"
   },
-  "result": "usefulfoundation:nickel_ingot"
+  "result": {
+    "count": 1,
+    "id": "usefulfoundation:nickel_ingot"
+  }
 }

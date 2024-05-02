@@ -3,11 +3,11 @@
   "category": "misc",
   "ingredients": [
     {
-      "tag": "forge:storage_blocks/uranium"
+      "tag": "c:storage_blocks/uranium"
     }
   ],
   "result": {
     "count": 9,
-    "item": "usefulfoundation:uranium_ingot"
+    "id": "usefulfoundation:uranium_ingot"
   }
 }

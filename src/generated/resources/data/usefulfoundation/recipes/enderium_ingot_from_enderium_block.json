@@ -3,11 +3,11 @@
   "category": "misc",
   "ingredients": [
     {
-      "tag": "forge:storage_blocks/enderium"
+      "tag": "c:storage_blocks/enderium"
     }
   ],
   "result": {
     "count": 9,
-    "item": "usefulfoundation:enderium_ingot"
+    "id": "usefulfoundation:enderium_ingot"
   }
 }

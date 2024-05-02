@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "X": {
-      "tag": "forge:nuggets/silver"
+      "tag": "c:nuggets/silver"
     }
   },
   "pattern": [
@@ -12,6 +12,7 @@
     "XXX"
   ],
   "result": {
-    "item": "usefulfoundation:silver_ingot"
+    "count": 1,
+    "id": "usefulfoundation:silver_ingot"
   }
 }

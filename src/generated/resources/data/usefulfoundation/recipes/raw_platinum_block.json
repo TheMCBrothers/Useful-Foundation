@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "X": {
-      "tag": "forge:raw_materials/platinum"
+      "tag": "c:raw_materials/platinum"
     }
   },
   "pattern": [
@@ -12,6 +12,7 @@
     "XXX"
   ],
   "result": {
-    "item": "usefulfoundation:raw_platinum_block"
+    "count": 1,
+    "id": "usefulfoundation:raw_platinum_block"
   }
 }

@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "X": {
-      "tag": "forge:ingots/invar"
+      "tag": "c:ingots/invar"
     }
   },
   "pattern": [
@@ -12,6 +12,7 @@
     "XXX"
   ],
   "result": {
-    "item": "usefulfoundation:invar_block"
+    "count": 1,
+    "id": "usefulfoundation:invar_block"
   }
 }

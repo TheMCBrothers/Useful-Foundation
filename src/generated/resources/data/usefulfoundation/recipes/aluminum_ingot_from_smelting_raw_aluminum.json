@@ -4,7 +4,10 @@
   "cookingtime": 100,
   "experience": 0.7,
   "ingredient": {
-    "tag": "forge:raw_materials/aluminum"
+    "tag": "c:raw_materials/aluminum"
   },
-  "result": "usefulfoundation:aluminum_ingot"
+  "result": {
+    "count": 1,
+    "id": "usefulfoundation:aluminum_ingot"
+  }
 }

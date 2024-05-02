@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "X": {
-      "tag": "forge:ingots/uranium"
+      "tag": "c:ingots/uranium"
     }
   },
   "pattern": [
@@ -12,6 +12,7 @@
     "XXX"
   ],
   "result": {
-    "item": "usefulfoundation:uranium_block"
+    "count": 1,
+    "id": "usefulfoundation:uranium_block"
   }
 }

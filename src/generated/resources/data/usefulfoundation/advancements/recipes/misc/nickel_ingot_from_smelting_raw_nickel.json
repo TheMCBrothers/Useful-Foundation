@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "forge:raw_materials/nickel"
+            "items": "#c:raw_materials/nickel"
           }
         ]
       },

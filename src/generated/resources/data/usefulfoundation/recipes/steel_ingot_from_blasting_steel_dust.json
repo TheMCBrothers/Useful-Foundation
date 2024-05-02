@@ -6,5 +6,8 @@
   "ingredient": {
     "item": "usefulfoundation:steel_dust"
   },
-  "result": "usefulfoundation:steel_ingot"
+  "result": {
+    "count": 1,
+    "id": "usefulfoundation:steel_ingot"
+  }
 }

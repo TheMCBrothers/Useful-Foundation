@@ -3,11 +3,11 @@
   "category": "misc",
   "ingredients": [
     {
-      "tag": "forge:storage_blocks/tin"
+      "tag": "c:storage_blocks/tin"
     }
   ],
   "result": {
     "count": 9,
-    "item": "usefulfoundation:tin_ingot"
+    "id": "usefulfoundation:tin_ingot"
   }
 }

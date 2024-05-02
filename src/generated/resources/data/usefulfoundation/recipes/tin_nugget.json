@@ -3,11 +3,11 @@
   "category": "misc",
   "ingredients": [
     {
-      "tag": "forge:ingots/tin"
+      "tag": "c:ingots/tin"
     }
   ],
   "result": {
     "count": 9,
-    "item": "usefulfoundation:tin_nugget"
+    "id": "usefulfoundation:tin_nugget"
   }
 }

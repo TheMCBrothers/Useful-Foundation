@@ -6,5 +6,8 @@
   "ingredient": {
     "item": "usefulfoundation:tin_dust"
   },
-  "result": "usefulfoundation:tin_ingot"
+  "result": {
+    "count": 1,
+    "id": "usefulfoundation:tin_ingot"
+  }
 }

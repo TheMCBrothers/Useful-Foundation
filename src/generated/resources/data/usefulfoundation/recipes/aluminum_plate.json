@@ -3,13 +3,14 @@
   "category": "misc",
   "ingredients": [
     {
-      "tag": "forge:ingots/aluminum"
+      "tag": "c:ingots/aluminum"
     },
     {
       "item": "usefulfoundation:hammer"
     }
   ],
   "result": {
-    "item": "usefulfoundation:aluminum_plate"
+    "count": 1,
+    "id": "usefulfoundation:aluminum_plate"
   }
 }

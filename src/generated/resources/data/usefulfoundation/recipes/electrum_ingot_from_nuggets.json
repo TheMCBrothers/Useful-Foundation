@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "X": {
-      "tag": "forge:nuggets/electrum"
+      "tag": "c:nuggets/electrum"
     }
   },
   "pattern": [
@@ -12,6 +12,7 @@
     "XXX"
   ],
   "result": {
-    "item": "usefulfoundation:electrum_ingot"
+    "count": 1,
+    "id": "usefulfoundation:electrum_ingot"
   }
 }

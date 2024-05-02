@@ -3,13 +3,14 @@
   "category": "misc",
   "ingredients": [
     {
-      "tag": "forge:ingots/nickel"
+      "tag": "c:ingots/nickel"
     },
     {
       "item": "usefulfoundation:hammer"
     }
   ],
   "result": {
-    "item": "usefulfoundation:nickel_plate"
+    "count": 1,
+    "id": "usefulfoundation:nickel_plate"
   }
 }

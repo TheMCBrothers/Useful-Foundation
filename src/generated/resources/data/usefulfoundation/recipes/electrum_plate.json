@@ -3,13 +3,14 @@
   "category": "misc",
   "ingredients": [
     {
-      "tag": "forge:ingots/electrum"
+      "tag": "c:ingots/electrum"
     },
     {
       "item": "usefulfoundation:hammer"
     }
   ],
   "result": {
-    "item": "usefulfoundation:electrum_plate"
+    "count": 1,
+    "id": "usefulfoundation:electrum_plate"
   }
 }

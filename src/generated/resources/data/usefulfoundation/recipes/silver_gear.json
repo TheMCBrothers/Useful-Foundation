@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "X": {
-      "tag": "forge:ingots/silver"
+      "tag": "c:ingots/silver"
     }
   },
   "pattern": [
@@ -12,6 +12,7 @@
     " X "
   ],
   "result": {
-    "item": "usefulfoundation:silver_gear"
+    "count": 1,
+    "id": "usefulfoundation:silver_gear"
   }
 }

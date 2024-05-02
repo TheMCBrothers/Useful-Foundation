@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "X": {
-      "tag": "forge:ingots/gold"
+      "tag": "c:ingots/gold"
     }
   },
   "pattern": [
@@ -12,6 +12,7 @@
     " X "
   ],
   "result": {
-    "item": "usefulfoundation:gold_gear"
+    "count": 1,
+    "id": "usefulfoundation:gold_gear"
   }
 }

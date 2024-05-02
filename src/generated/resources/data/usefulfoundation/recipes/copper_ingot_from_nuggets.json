@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "X": {
-      "tag": "forge:nuggets/copper"
+      "tag": "c:nuggets/copper"
     }
   },
   "pattern": [
@@ -12,6 +12,7 @@
     "XXX"
   ],
   "result": {
-    "item": "minecraft:copper_ingot"
+    "count": 1,
+    "id": "minecraft:copper_ingot"
   }
 }

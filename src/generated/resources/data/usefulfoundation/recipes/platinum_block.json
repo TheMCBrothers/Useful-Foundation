@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "X": {
-      "tag": "forge:ingots/platinum"
+      "tag": "c:ingots/platinum"
     }
   },
   "pattern": [
@@ -12,6 +12,7 @@
     "XXX"
   ],
   "result": {
-    "item": "usefulfoundation:platinum_block"
+    "count": 1,
+    "id": "usefulfoundation:platinum_block"
   }
 }

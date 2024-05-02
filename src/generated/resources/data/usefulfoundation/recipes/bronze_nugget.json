@@ -3,11 +3,11 @@
   "category": "misc",
   "ingredients": [
     {
-      "tag": "forge:ingots/bronze"
+      "tag": "c:ingots/bronze"
     }
   ],
   "result": {
     "count": 9,
-    "item": "usefulfoundation:bronze_nugget"
+    "id": "usefulfoundation:bronze_nugget"
   }
 }

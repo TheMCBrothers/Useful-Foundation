@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "X": {
-      "tag": "forge:raw_materials/lead"
+      "tag": "c:raw_materials/lead"
     }
   },
   "pattern": [
@@ -12,6 +12,7 @@
     "XXX"
   ],
   "result": {
-    "item": "usefulfoundation:raw_lead_block"
+    "count": 1,
+    "id": "usefulfoundation:raw_lead_block"
   }
 }

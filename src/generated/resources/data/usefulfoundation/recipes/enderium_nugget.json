@@ -3,11 +3,11 @@
   "category": "misc",
   "ingredients": [
     {
-      "tag": "forge:ingots/enderium"
+      "tag": "c:ingots/enderium"
     }
   ],
   "result": {
     "count": 9,
-    "item": "usefulfoundation:enderium_nugget"
+    "id": "usefulfoundation:enderium_nugget"
   }
 }

@@ -3,11 +3,11 @@
   "category": "misc",
   "ingredients": [
     {
-      "tag": "forge:ingots/invar"
+      "tag": "c:ingots/invar"
     }
   ],
   "result": {
     "count": 9,
-    "item": "usefulfoundation:invar_nugget"
+    "id": "usefulfoundation:invar_nugget"
   }
 }

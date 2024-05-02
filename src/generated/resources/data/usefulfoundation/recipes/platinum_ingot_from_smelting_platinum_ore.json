@@ -4,7 +4,10 @@
   "cookingtime": 200,
   "experience": 0.7,
   "ingredient": {
-    "tag": "forge:ores/platinum"
+    "tag": "c:ores/platinum"
   },
-  "result": "usefulfoundation:platinum_ingot"
+  "result": {
+    "count": 1,
+    "id": "usefulfoundation:platinum_ingot"
+  }
 }

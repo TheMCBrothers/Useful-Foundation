@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "X": {
-      "tag": "forge:raw_materials/tin"
+      "tag": "c:raw_materials/tin"
     }
   },
   "pattern": [
@@ -12,6 +12,7 @@
     "XXX"
   ],
   "result": {
-    "item": "usefulfoundation:raw_tin_block"
+    "count": 1,
+    "id": "usefulfoundation:raw_tin_block"
   }
 }

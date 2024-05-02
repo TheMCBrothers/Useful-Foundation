@@ -3,13 +3,14 @@
   "category": "misc",
   "ingredients": [
     {
-      "tag": "forge:ingots/invar"
+      "tag": "c:ingots/invar"
     },
     {
       "item": "usefulfoundation:hammer"
     }
   ],
   "result": {
-    "item": "usefulfoundation:invar_plate"
+    "count": 1,
+    "id": "usefulfoundation:invar_plate"
   }
 }

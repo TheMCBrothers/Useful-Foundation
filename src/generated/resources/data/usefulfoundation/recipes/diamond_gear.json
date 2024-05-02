@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "X": {
-      "tag": "forge:gems/diamond"
+      "tag": "c:gems/diamond"
     }
   },
   "pattern": [
@@ -12,6 +12,7 @@
     " X "
   ],
   "result": {
-    "item": "usefulfoundation:diamond_gear"
+    "count": 1,
+    "id": "usefulfoundation:diamond_gear"
   }
 }

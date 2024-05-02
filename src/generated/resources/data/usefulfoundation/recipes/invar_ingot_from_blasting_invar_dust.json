@@ -6,5 +6,8 @@
   "ingredient": {
     "item": "usefulfoundation:invar_dust"
   },
-  "result": "usefulfoundation:invar_ingot"
+  "result": {
+    "count": 1,
+    "id": "usefulfoundation:invar_ingot"
+  }
 }

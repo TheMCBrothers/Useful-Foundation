@@ -1,0 +1,21 @@
+{
+  "values": [
+    "#c:gears/aluminum",
+    "#c:gears/bronze",
+    "#c:gears/copper",
+    "#c:gears/diamond",
+    "#c:gears/electrum",
+    "#c:gears/enderium",
+    "#c:gears/gold",
+    "#c:gears/invar",
+    "#c:gears/iron",
+    "#c:gears/lead",
+    "#c:gears/nickel",
+    "#c:gears/platinum",
+    "#c:gears/signalum",
+    "#c:gears/silver",
+    "#c:gears/steel",
+    "#c:gears/tin",
+    "#c:gears/uranium"
+  ]
+}

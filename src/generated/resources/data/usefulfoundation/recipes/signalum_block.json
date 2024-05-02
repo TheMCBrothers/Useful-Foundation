@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "X": {
-      "tag": "forge:ingots/signalum"
+      "tag": "c:ingots/signalum"
     }
   },
   "pattern": [
@@ -12,6 +12,7 @@
     "XXX"
   ],
   "result": {
-    "item": "usefulfoundation:signalum_block"
+    "count": 1,
+    "id": "usefulfoundation:signalum_block"
   }
 }

@@ -6,5 +6,8 @@
   "ingredient": {
     "item": "usefulfoundation:uranium_dust"
   },
-  "result": "usefulfoundation:uranium_ingot"
+  "result": {
+    "count": 1,
+    "id": "usefulfoundation:uranium_ingot"
+  }
 }

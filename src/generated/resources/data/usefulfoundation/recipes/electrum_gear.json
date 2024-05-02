@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "X": {
-      "tag": "forge:ingots/electrum"
+      "tag": "c:ingots/electrum"
     }
   },
   "pattern": [
@@ -12,6 +12,7 @@
     " X "
   ],
   "result": {
-    "item": "usefulfoundation:electrum_gear"
+    "count": 1,
+    "id": "usefulfoundation:electrum_gear"
   }
 }

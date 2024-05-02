@@ -1,0 +1,24 @@
+{
+  "values": [
+    "#c:storage_blocks/aluminum",
+    "#c:storage_blocks/bronze",
+    "#c:storage_blocks/electrum",
+    "#c:storage_blocks/enderium",
+    "#c:storage_blocks/invar",
+    "#c:storage_blocks/lead",
+    "#c:storage_blocks/nickel",
+    "#c:storage_blocks/platinum",
+    "#c:storage_blocks/signalum",
+    "#c:storage_blocks/silver",
+    "#c:storage_blocks/steel",
+    "#c:storage_blocks/tin",
+    "#c:storage_blocks/uranium",
+    "#c:storage_blocks/raw_aluminum",
+    "#c:storage_blocks/raw_lead",
+    "#c:storage_blocks/raw_nickel",
+    "#c:storage_blocks/raw_platinum",
+    "#c:storage_blocks/raw_silver",
+    "#c:storage_blocks/raw_tin",
+    "#c:storage_blocks/raw_uranium"
+  ]
+}

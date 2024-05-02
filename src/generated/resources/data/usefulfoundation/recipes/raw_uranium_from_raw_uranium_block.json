@@ -3,11 +3,11 @@
   "category": "misc",
   "ingredients": [
     {
-      "tag": "forge:storage_blocks/raw_uranium"
+      "tag": "c:storage_blocks/raw_uranium"
     }
   ],
   "result": {
     "count": 9,
-    "item": "usefulfoundation:raw_uranium"
+    "id": "usefulfoundation:raw_uranium"
   }
 }

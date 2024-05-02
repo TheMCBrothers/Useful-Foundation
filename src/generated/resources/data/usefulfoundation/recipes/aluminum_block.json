@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "X": {
-      "tag": "forge:ingots/aluminum"
+      "tag": "c:ingots/aluminum"
     }
   },
   "pattern": [
@@ -12,6 +12,7 @@
     "XXX"
   ],
   "result": {
-    "item": "usefulfoundation:aluminum_block"
+    "count": 1,
+    "id": "usefulfoundation:aluminum_block"
   }
 }

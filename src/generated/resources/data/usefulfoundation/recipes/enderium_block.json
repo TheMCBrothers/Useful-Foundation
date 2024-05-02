@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "X": {
-      "tag": "forge:ingots/enderium"
+      "tag": "c:ingots/enderium"
     }
   },
   "pattern": [
@@ -12,6 +12,7 @@
     "XXX"
   ],
   "result": {
-    "item": "usefulfoundation:enderium_block"
+    "count": 1,
+    "id": "usefulfoundation:enderium_block"
   }
 }

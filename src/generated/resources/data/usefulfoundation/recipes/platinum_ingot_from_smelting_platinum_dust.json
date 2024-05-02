@@ -6,5 +6,8 @@
   "ingredient": {
     "item": "usefulfoundation:platinum_dust"
   },
-  "result": "usefulfoundation:platinum_ingot"
+  "result": {
+    "count": 1,
+    "id": "usefulfoundation:platinum_ingot"
+  }
 }
