@@ -1,16 +1,10 @@
 package net.themcbrothers.usefulfoundation.core;
 
-import net.minecraft.world.entity.EquipmentSlotGroup;
-import net.minecraft.world.entity.ai.attributes.AttributeModifier;
-import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Tiers;
-import net.minecraft.world.item.component.ItemAttributeModifiers;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.themcbrothers.usefulfoundation.item.HammerItem;
 
-import static net.minecraft.world.item.Item.BASE_ATTACK_DAMAGE_UUID;
-import static net.minecraft.world.item.Item.BASE_ATTACK_SPEED_UUID;
 import static net.themcbrothers.usefulfoundation.core.Registration.ITEMS;
 
 public final class FoundationItems {
@@ -18,11 +12,7 @@ public final class FoundationItems {
     }
 
     // Tool Items
-    public static final DeferredItem<HammerItem> HAMMER = ITEMS.registerItem("hammer", HammerItem::new, new Item.Properties()
-            .attributes(ItemAttributeModifiers.builder()
-                    .add(Attributes.ATTACK_DAMAGE, new AttributeModifier(BASE_ATTACK_DAMAGE_UUID, "Tool modifier", Tiers.IRON.getAttackDamageBonus(), AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND)
-                    .add(Attributes.ATTACK_SPEED, new AttributeModifier(BASE_ATTACK_SPEED_UUID, "Tool modifier", -2.5, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND)
-                    .build()));
+    public static final DeferredItem<HammerItem> HAMMER = ITEMS.registerItem("hammer", HammerItem::new, new Item.Properties().attributes(HammerItem.createAttributes(Tiers.IRON, 0, -2.5F)));
 
     // Material Items
     public static final DeferredItem<Item> IRON_PLATE = ITEMS.registerSimpleItem("iron_plate");
