@@ -3,11 +3,11 @@
   "category": "misc",
   "ingredients": [
     {
-      "tag": "forge:storage_blocks/aluminum"
+      "tag": "c:storage_blocks/aluminum"
     }
   ],
   "result": {
     "count": 9,
-    "item": "usefulfoundation:aluminum_ingot"
+    "id": "usefulfoundation:aluminum_ingot"
   }
 }

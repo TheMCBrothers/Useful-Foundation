@@ -3,13 +3,14 @@
   "category": "misc",
   "ingredients": [
     {
-      "tag": "forge:ingots/platinum"
+      "tag": "c:ingots/platinum"
     },
     {
       "item": "usefulfoundation:hammer"
     }
   ],
   "result": {
-    "item": "usefulfoundation:platinum_plate"
+    "count": 1,
+    "id": "usefulfoundation:platinum_plate"
   }
 }

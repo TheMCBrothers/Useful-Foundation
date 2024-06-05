@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "X": {
-      "tag": "forge:ingots/lead"
+      "tag": "c:ingots/lead"
     }
   },
   "pattern": [
@@ -12,6 +12,7 @@
     " X "
   ],
   "result": {
-    "item": "usefulfoundation:lead_gear"
+    "count": 1,
+    "id": "usefulfoundation:lead_gear"
   }
 }

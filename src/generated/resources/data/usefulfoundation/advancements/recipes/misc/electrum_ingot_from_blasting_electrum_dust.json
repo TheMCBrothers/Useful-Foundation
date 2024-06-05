@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "usefulfoundation:electrum_ingot"
-            ]
+            "items": "usefulfoundation:electrum_ingot"
           }
         ]
       },

@@ -11,9 +11,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "usefulfoundation:tin_dust"
-            ]
+            "items": "usefulfoundation:tin_dust"
           }
         ]
       },

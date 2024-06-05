@@ -3,13 +3,14 @@
   "category": "misc",
   "ingredients": [
     {
-      "tag": "forge:ingots/tin"
+      "tag": "c:ingots/tin"
     },
     {
       "item": "usefulfoundation:hammer"
     }
   ],
   "result": {
-    "item": "usefulfoundation:tin_plate"
+    "count": 1,
+    "id": "usefulfoundation:tin_plate"
   }
 }

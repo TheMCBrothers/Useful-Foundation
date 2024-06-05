@@ -3,11 +3,11 @@
   "category": "misc",
   "ingredients": [
     {
-      "tag": "forge:storage_blocks/silver"
+      "tag": "c:storage_blocks/silver"
     }
   ],
   "result": {
     "count": 9,
-    "item": "usefulfoundation:silver_ingot"
+    "id": "usefulfoundation:silver_ingot"
   }
 }

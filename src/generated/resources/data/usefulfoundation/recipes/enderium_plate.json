@@ -3,13 +3,14 @@
   "category": "misc",
   "ingredients": [
     {
-      "tag": "forge:ingots/enderium"
+      "tag": "c:ingots/enderium"
     },
     {
       "item": "usefulfoundation:hammer"
     }
   ],
   "result": {
-    "item": "usefulfoundation:enderium_plate"
+    "count": 1,
+    "id": "usefulfoundation:enderium_plate"
   }
 }

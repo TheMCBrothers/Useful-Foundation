@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "usefulfoundation:steel_dust"
-            ]
+            "items": "usefulfoundation:steel_dust"
           }
         ]
       },

@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "usefulfoundation:invar_ingot"
-            ]
+            "items": "usefulfoundation:invar_ingot"
           }
         ]
       },

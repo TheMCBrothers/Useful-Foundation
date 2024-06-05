@@ -6,5 +6,8 @@
   "ingredient": {
     "item": "usefulfoundation:signalum_dust"
   },
-  "result": "usefulfoundation:signalum_ingot"
+  "result": {
+    "count": 1,
+    "id": "usefulfoundation:signalum_ingot"
+  }
 }

@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "usefulfoundation:enderium_ingot"
-            ]
+            "items": "usefulfoundation:enderium_ingot"
           }
         ]
       },

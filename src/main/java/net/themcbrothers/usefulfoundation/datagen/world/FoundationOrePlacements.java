@@ -3,7 +3,7 @@ package net.themcbrothers.usefulfoundation.datagen.world;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderGetter;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.data.worldgen.BootstapContext;
+import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
@@ -23,7 +23,7 @@ public class FoundationOrePlacements {
     public static final ResourceKey<PlacedFeature> ORE_TIN = PlacementUtils.createKey(UsefulFoundation.rl("ore_tin").toString());
     public static final ResourceKey<PlacedFeature> ORE_URANIUM = PlacementUtils.createKey(UsefulFoundation.rl("ore_uranium").toString());
 
-    public static void bootstrap(BootstapContext<PlacedFeature> context) {
+    public static void bootstrap(BootstrapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> getter = context.lookup(Registries.CONFIGURED_FEATURE);
         Holder<ConfiguredFeature<?, ?>> aluminumHolder = getter.getOrThrow(FoundationOreFeatures.ORE_ALUMINUM);
         Holder<ConfiguredFeature<?, ?>> leadHolder = getter.getOrThrow(FoundationOreFeatures.ORE_LEAD);

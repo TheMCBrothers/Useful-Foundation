@@ -6,5 +6,8 @@
   "ingredient": {
     "item": "usefulfoundation:electrum_dust"
   },
-  "result": "usefulfoundation:electrum_ingot"
+  "result": {
+    "count": 1,
+    "id": "usefulfoundation:electrum_ingot"
+  }
 }

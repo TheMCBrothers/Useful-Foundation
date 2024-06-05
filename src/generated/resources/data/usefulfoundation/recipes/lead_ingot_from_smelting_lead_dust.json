@@ -6,5 +6,8 @@
   "ingredient": {
     "item": "usefulfoundation:lead_dust"
   },
-  "result": "usefulfoundation:lead_ingot"
+  "result": {
+    "count": 1,
+    "id": "usefulfoundation:lead_ingot"
+  }
 }

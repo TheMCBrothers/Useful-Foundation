@@ -6,5 +6,8 @@
   "ingredient": {
     "item": "usefulfoundation:enderium_dust"
   },
-  "result": "usefulfoundation:enderium_ingot"
+  "result": {
+    "count": 1,
+    "id": "usefulfoundation:enderium_ingot"
+  }
 }

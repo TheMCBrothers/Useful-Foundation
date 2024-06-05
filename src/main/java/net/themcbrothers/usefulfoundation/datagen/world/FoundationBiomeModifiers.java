@@ -3,7 +3,7 @@ package net.themcbrothers.usefulfoundation.datagen.world;
 import net.minecraft.core.HolderGetter;
 import net.minecraft.core.HolderSet;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.data.worldgen.BootstapContext;
+import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BiomeTags;
@@ -15,7 +15,7 @@ import net.neoforged.neoforge.common.world.BiomeModifiers;
 import net.neoforged.neoforge.registries.NeoForgeRegistries;
 
 public class FoundationBiomeModifiers {
-    public static void bootstrap(BootstapContext<BiomeModifier> context) {
+    public static void bootstrap(BootstrapContext<BiomeModifier> context) {
         HolderGetter<Biome> biomeGetter = context.lookup(Registries.BIOME);
         HolderGetter<PlacedFeature> placedFeatureGetter = context.lookup(Registries.PLACED_FEATURE);
         HolderSet<Biome> biomes = biomeGetter.getOrThrow(BiomeTags.IS_OVERWORLD);
@@ -29,7 +29,7 @@ public class FoundationBiomeModifiers {
         registerModifierForOre(context, placedFeatureGetter, FoundationOrePlacements.ORE_TIN, biomes);
     }
 
-    private static void registerModifierForOre(BootstapContext<BiomeModifier> context, HolderGetter<PlacedFeature> getter, ResourceKey<PlacedFeature> key, HolderSet<Biome> biomes) {
+    private static void registerModifierForOre(BootstrapContext<BiomeModifier> context, HolderGetter<PlacedFeature> getter, ResourceKey<PlacedFeature> key, HolderSet<Biome> biomes) {
         BiomeModifiers.AddFeaturesBiomeModifier modifier = new BiomeModifiers.AddFeaturesBiomeModifier(biomes, HolderSet.direct(getter.getOrThrow(key)), GenerationStep.Decoration.UNDERGROUND_ORES);
 
         context.register(ResourceKey.create(NeoForgeRegistries.Keys.BIOME_MODIFIERS, new ResourceLocation(key.location() + "_generation")), modifier);

@@ -11,9 +11,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "usefulfoundation:uranium_dust"
-            ]
+            "items": "usefulfoundation:uranium_dust"
           }
         ]
       },

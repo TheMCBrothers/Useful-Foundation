@@ -3,11 +3,11 @@
   "category": "misc",
   "ingredients": [
     {
-      "tag": "forge:ingots/silver"
+      "tag": "c:ingots/silver"
     }
   ],
   "result": {
     "count": 9,
-    "item": "usefulfoundation:silver_nugget"
+    "id": "usefulfoundation:silver_nugget"
   }
 }

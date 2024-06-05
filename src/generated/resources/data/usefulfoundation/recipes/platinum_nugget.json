@@ -3,11 +3,11 @@
   "category": "misc",
   "ingredients": [
     {
-      "tag": "forge:ingots/platinum"
+      "tag": "c:ingots/platinum"
     }
   ],
   "result": {
     "count": 9,
-    "item": "usefulfoundation:platinum_nugget"
+    "id": "usefulfoundation:platinum_nugget"
   }
 }

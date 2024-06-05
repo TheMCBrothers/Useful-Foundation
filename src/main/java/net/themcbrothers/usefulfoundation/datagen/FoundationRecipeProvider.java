@@ -1,9 +1,12 @@
 package net.themcbrothers.usefulfoundation.datagen;
 
+import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.neoforged.neoforge.common.Tags;
+
+import java.util.concurrent.CompletableFuture;
 
 import static net.minecraft.world.item.Items.*;
 import static net.themcbrothers.usefulfoundation.UsefulFoundation.rl;
@@ -12,8 +15,8 @@ import static net.themcbrothers.usefulfoundation.core.FoundationItems.*;
 import static net.themcbrothers.usefulfoundation.core.FoundationTags.Items.*;
 
 public class FoundationRecipeProvider extends RecipeProvider {
-    public FoundationRecipeProvider(PackOutput output) {
-        super(output);
+    public FoundationRecipeProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider) {
+        super(output, lookupProvider);
     }
 
     @Override
@@ -206,6 +209,6 @@ public class FoundationRecipeProvider extends RecipeProvider {
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, RAW_URANIUM_BLOCK.get()).pattern("XXX").pattern("XXX").pattern("XXX").define('X', RAW_MATERIALS_URANIUM).unlockedBy("has_raw_uranium", has(RAW_MATERIALS_URANIUM)).save(recipe);
 
         // Tools
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HAMMER.get()).pattern(" X#").pattern(" RX").pattern("R  ").define('X', Tags.Items.INGOTS_IRON).define('#', Tags.Items.STRING).define('R', Tags.Items.RODS_WOODEN).unlockedBy("has_iron_ingot", has(IRON_INGOT)).save(recipe);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HAMMER.get()).pattern(" X#").pattern(" RX").pattern("R  ").define('X', Tags.Items.INGOTS_IRON).define('#', Tags.Items.STRINGS).define('R', Tags.Items.RODS_WOODEN).unlockedBy("has_iron_ingot", has(IRON_INGOT)).save(recipe);
     }
 }

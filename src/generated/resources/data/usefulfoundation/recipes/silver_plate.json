@@ -3,13 +3,14 @@
   "category": "misc",
   "ingredients": [
     {
-      "tag": "forge:ingots/silver"
+      "tag": "c:ingots/silver"
     },
     {
       "item": "usefulfoundation:hammer"
     }
   ],
   "result": {
-    "item": "usefulfoundation:silver_plate"
+    "count": 1,
+    "id": "usefulfoundation:silver_plate"
   }
 }

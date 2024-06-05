@@ -3,13 +3,14 @@
   "category": "misc",
   "ingredients": [
     {
-      "tag": "forge:ingots/lead"
+      "tag": "c:ingots/lead"
     },
     {
       "item": "usefulfoundation:hammer"
     }
   ],
   "result": {
-    "item": "usefulfoundation:lead_plate"
+    "count": 1,
+    "id": "usefulfoundation:lead_plate"
   }
 }

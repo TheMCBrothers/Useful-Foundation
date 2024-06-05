@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "X": {
-      "tag": "forge:ingots/nickel"
+      "tag": "c:ingots/nickel"
     }
   },
   "pattern": [
@@ -12,6 +12,7 @@
     "XXX"
   ],
   "result": {
-    "item": "usefulfoundation:nickel_block"
+    "count": 1,
+    "id": "usefulfoundation:nickel_block"
   }
 }

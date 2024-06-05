@@ -3,11 +3,11 @@
   "category": "misc",
   "ingredients": [
     {
-      "tag": "forge:storage_blocks/signalum"
+      "tag": "c:storage_blocks/signalum"
     }
   ],
   "result": {
     "count": 9,
-    "item": "usefulfoundation:signalum_ingot"
+    "id": "usefulfoundation:signalum_ingot"
   }
 }

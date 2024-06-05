@@ -6,5 +6,8 @@
   "ingredient": {
     "item": "usefulfoundation:silver_dust"
   },
-  "result": "usefulfoundation:silver_ingot"
+  "result": {
+    "count": 1,
+    "id": "usefulfoundation:silver_ingot"
+  }
 }

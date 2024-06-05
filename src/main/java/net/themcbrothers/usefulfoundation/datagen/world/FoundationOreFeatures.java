@@ -1,7 +1,7 @@
 package net.themcbrothers.usefulfoundation.datagen.world;
 
 import com.google.common.base.Suppliers;
-import net.minecraft.data.worldgen.BootstapContext;
+import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
@@ -40,7 +40,7 @@ public class FoundationOreFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> ORE_TIN = FeatureUtils.createKey(UsefulFoundation.rl("ore_tin").toString());
     public static final ResourceKey<ConfiguredFeature<?, ?>> ORE_URANIUM = FeatureUtils.createKey(UsefulFoundation.rl("ore_uranium").toString());
 
-    public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
+    public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
         context.register(ORE_ALUMINUM, new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(ORE_ALUMINUM_SUPPLIER.get(), 8)));
         context.register(ORE_LEAD, new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(ORE_LEAD_SUPPLIER.get(), 8)));
         context.register(ORE_NICKEL, new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(ORE_NICKEL_SUPPLIER.get(), 8)));

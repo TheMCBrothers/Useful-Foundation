@@ -3,13 +3,14 @@
   "category": "misc",
   "ingredients": [
     {
-      "tag": "forge:ingots/signalum"
+      "tag": "c:ingots/signalum"
     },
     {
       "item": "usefulfoundation:hammer"
     }
   ],
   "result": {
-    "item": "usefulfoundation:signalum_plate"
+    "count": 1,
+    "id": "usefulfoundation:signalum_plate"
   }
 }

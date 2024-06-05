@@ -3,13 +3,14 @@
   "category": "misc",
   "ingredients": [
     {
-      "tag": "forge:ingots/bronze"
+      "tag": "c:ingots/bronze"
     },
     {
       "item": "usefulfoundation:hammer"
     }
   ],
   "result": {
-    "item": "usefulfoundation:bronze_plate"
+    "count": 1,
+    "id": "usefulfoundation:bronze_plate"
   }
 }

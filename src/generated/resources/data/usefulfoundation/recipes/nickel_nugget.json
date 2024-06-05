@@ -3,11 +3,11 @@
   "category": "misc",
   "ingredients": [
     {
-      "tag": "forge:ingots/nickel"
+      "tag": "c:ingots/nickel"
     }
   ],
   "result": {
     "count": 9,
-    "item": "usefulfoundation:nickel_nugget"
+    "id": "usefulfoundation:nickel_nugget"
   }
 }

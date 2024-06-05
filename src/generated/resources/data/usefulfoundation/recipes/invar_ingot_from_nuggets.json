@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "X": {
-      "tag": "forge:nuggets/invar"
+      "tag": "c:nuggets/invar"
     }
   },
   "pattern": [
@@ -12,6 +12,7 @@
     "XXX"
   ],
   "result": {
-    "item": "usefulfoundation:invar_ingot"
+    "count": 1,
+    "id": "usefulfoundation:invar_ingot"
   }
 }

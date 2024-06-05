@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "X": {
-      "tag": "forge:raw_materials/nickel"
+      "tag": "c:raw_materials/nickel"
     }
   },
   "pattern": [
@@ -12,6 +12,7 @@
     "XXX"
   ],
   "result": {
-    "item": "usefulfoundation:raw_nickel_block"
+    "count": 1,
+    "id": "usefulfoundation:raw_nickel_block"
   }
 }

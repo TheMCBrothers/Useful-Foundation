@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "X": {
-      "tag": "forge:nuggets/tin"
+      "tag": "c:nuggets/tin"
     }
   },
   "pattern": [
@@ -12,6 +12,7 @@
     "XXX"
   ],
   "result": {
-    "item": "usefulfoundation:tin_ingot"
+    "count": 1,
+    "id": "usefulfoundation:tin_ingot"
   }
 }

@@ -4,7 +4,10 @@
   "cookingtime": 200,
   "experience": 0.7,
   "ingredient": {
-    "tag": "forge:ores/uranium"
+    "tag": "c:ores/uranium"
   },
-  "result": "usefulfoundation:uranium_ingot"
+  "result": {
+    "count": 1,
+    "id": "usefulfoundation:uranium_ingot"
+  }
 }

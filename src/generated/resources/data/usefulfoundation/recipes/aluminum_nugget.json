@@ -3,11 +3,11 @@
   "category": "misc",
   "ingredients": [
     {
-      "tag": "forge:ingots/aluminum"
+      "tag": "c:ingots/aluminum"
     }
   ],
   "result": {
     "count": 9,
-    "item": "usefulfoundation:aluminum_nugget"
+    "id": "usefulfoundation:aluminum_nugget"
   }
 }

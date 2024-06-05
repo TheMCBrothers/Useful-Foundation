@@ -3,11 +3,11 @@
   "category": "misc",
   "ingredients": [
     {
-      "tag": "forge:storage_blocks/electrum"
+      "tag": "c:storage_blocks/electrum"
     }
   ],
   "result": {
     "count": 9,
-    "item": "usefulfoundation:electrum_ingot"
+    "id": "usefulfoundation:electrum_ingot"
   }
 }

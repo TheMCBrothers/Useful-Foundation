@@ -3,11 +3,11 @@
   "category": "misc",
   "ingredients": [
     {
-      "tag": "forge:storage_blocks/raw_platinum"
+      "tag": "c:storage_blocks/raw_platinum"
     }
   ],
   "result": {
     "count": 9,
-    "item": "usefulfoundation:raw_platinum"
+    "id": "usefulfoundation:raw_platinum"
   }
 }
