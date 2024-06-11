@@ -14,8 +14,6 @@ public final class FoundationTabs {
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> BASE = CREATIVE_MODE_TABS.register("base", () -> CreativeModeTab.builder()
             .icon(() -> COPPER_GEAR.get().getDefaultInstance())
             .title(Component.translatable("itemGroup.usefulfoundation.base"))
-            .displayItems((parameters, output) -> {
-                Registration.BLOCKS.getEntries().forEach(block -> output.accept(block.get()));
-                Registration.ITEMS.getEntries().forEach(item -> output.accept(item.get()));
-            }).build());
+            .displayItems((parameters, output) -> Registration.ITEMS.getEntries().forEach(item -> output.accept(item.get())))
+            .build());
 }

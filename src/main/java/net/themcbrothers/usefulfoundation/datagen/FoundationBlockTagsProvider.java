@@ -11,8 +11,8 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
 
-import static net.themcbrothers.usefulfoundation.core.FoundationTags.Blocks.*;
 import static net.themcbrothers.usefulfoundation.core.FoundationBlocks.*;
+import static net.themcbrothers.usefulfoundation.core.FoundationTags.Blocks.*;
 
 public class FoundationBlockTagsProvider extends BlockTagsProvider {
     public FoundationBlockTagsProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> provider, @Nullable ExistingFileHelper existingFileHelper) {
