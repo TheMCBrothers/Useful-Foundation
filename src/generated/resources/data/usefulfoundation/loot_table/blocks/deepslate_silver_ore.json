@@ -16,7 +16,7 @@
                     "predicates": {
                       "minecraft:enchantments": [
                         {
-                          "enchantment": "minecraft:silk_touch",
+                          "enchantments": "minecraft:silk_touch",
                           "levels": {
                             "min": 1
                           }
@@ -26,7 +26,7 @@
                   }
                 }
               ],
-              "name": "usefulfoundation:aluminum_ore"
+              "name": "usefulfoundation:deepslate_silver_ore"
             },
             {
               "type": "minecraft:item",
@@ -40,7 +40,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "usefulfoundation:raw_aluminum"
+              "name": "usefulfoundation:raw_silver"
             }
           ]
         }
@@ -48,5 +48,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "usefulfoundation:blocks/aluminum_ore"
+  "random_sequence": "usefulfoundation:blocks/deepslate_silver_ore"
 }
