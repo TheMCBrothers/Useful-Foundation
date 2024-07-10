@@ -14,14 +14,14 @@ import net.themcbrothers.usefulfoundation.UsefulFoundation;
 import java.util.List;
 
 public class FoundationOrePlacements {
-    public static final ResourceKey<PlacedFeature> ORE_ALUMINUM = PlacementUtils.createKey(UsefulFoundation.rl("ore_aluminum").toString());
-    public static final ResourceKey<PlacedFeature> ORE_LEAD = PlacementUtils.createKey(UsefulFoundation.rl("ore_lead").toString());
-    public static final ResourceKey<PlacedFeature> ORE_NICKEL = PlacementUtils.createKey(UsefulFoundation.rl("ore_nickel").toString());
-    public static final ResourceKey<PlacedFeature> ORE_PLATINUM = PlacementUtils.createKey(UsefulFoundation.rl("ore_platinum").toString());
-    public static final ResourceKey<PlacedFeature> ORE_PLATINUM_TOP = PlacementUtils.createKey(UsefulFoundation.rl("ore_platinum_top").toString());
-    public static final ResourceKey<PlacedFeature> ORE_SILVER = PlacementUtils.createKey(UsefulFoundation.rl("ore_silver").toString());
-    public static final ResourceKey<PlacedFeature> ORE_TIN = PlacementUtils.createKey(UsefulFoundation.rl("ore_tin").toString());
-    public static final ResourceKey<PlacedFeature> ORE_URANIUM = PlacementUtils.createKey(UsefulFoundation.rl("ore_uranium").toString());
+    public static final ResourceKey<PlacedFeature> ORE_ALUMINUM = createKey("ore_aluminum");
+    public static final ResourceKey<PlacedFeature> ORE_LEAD = createKey("ore_lead");
+    public static final ResourceKey<PlacedFeature> ORE_NICKEL = createKey("ore_nickel");
+    public static final ResourceKey<PlacedFeature> ORE_PLATINUM = createKey("ore_platinum");
+    public static final ResourceKey<PlacedFeature> ORE_PLATINUM_TOP = createKey("ore_platinum_top");
+    public static final ResourceKey<PlacedFeature> ORE_SILVER = createKey("ore_silver");
+    public static final ResourceKey<PlacedFeature> ORE_TIN = createKey("ore_tin");
+    public static final ResourceKey<PlacedFeature> ORE_URANIUM = createKey("ore_uranium");
 
     public static void bootstrap(BootstrapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> getter = context.lookup(Registries.CONFIGURED_FEATURE);
@@ -53,5 +53,9 @@ public class FoundationOrePlacements {
 
     private static List<PlacementModifier> rareOrePlacement(int num, PlacementModifier modifier) {
         return orePlacement(RarityFilter.onAverageOnceEvery(num), modifier);
+    }
+
+    private static ResourceKey<PlacedFeature> createKey(String name) {
+        return ResourceKey.create(Registries.PLACED_FEATURE, UsefulFoundation.rl(name));
     }
 }

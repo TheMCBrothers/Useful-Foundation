@@ -1,8 +1,8 @@
 package net.themcbrothers.usefulfoundation.datagen.world;
 
 import com.google.common.base.Suppliers;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
-import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
@@ -32,13 +32,13 @@ public class FoundationOreFeatures {
     private static final Supplier<List<OreConfiguration.TargetBlockState>> ORE_URANIUM_SUPPLIER = Suppliers.memoize(() -> List.of(OreConfiguration.target(stoneOreTest, FoundationBlocks.URANIUM_ORE.get().defaultBlockState()), OreConfiguration.target(deepslateOreTest, FoundationBlocks.DEEPSLATE_URANIUM_ORE.get().defaultBlockState())));
 
     //Features
-    public static final ResourceKey<ConfiguredFeature<?, ?>> ORE_ALUMINUM = FeatureUtils.createKey(UsefulFoundation.rl("ore_aluminum").toString());
-    public static final ResourceKey<ConfiguredFeature<?, ?>> ORE_LEAD = FeatureUtils.createKey(UsefulFoundation.rl("ore_lead").toString());
-    public static final ResourceKey<ConfiguredFeature<?, ?>> ORE_NICKEL = FeatureUtils.createKey(UsefulFoundation.rl("ore_nickel").toString());
-    public static final ResourceKey<ConfiguredFeature<?, ?>> ORE_PLATINUM = FeatureUtils.createKey(UsefulFoundation.rl("ore_platinum").toString());
-    public static final ResourceKey<ConfiguredFeature<?, ?>> ORE_SILVER = FeatureUtils.createKey(UsefulFoundation.rl("ore_silver").toString());
-    public static final ResourceKey<ConfiguredFeature<?, ?>> ORE_TIN = FeatureUtils.createKey(UsefulFoundation.rl("ore_tin").toString());
-    public static final ResourceKey<ConfiguredFeature<?, ?>> ORE_URANIUM = FeatureUtils.createKey(UsefulFoundation.rl("ore_uranium").toString());
+    public static final ResourceKey<ConfiguredFeature<?, ?>> ORE_ALUMINUM = createKey("ore_aluminum");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> ORE_LEAD = createKey("ore_lead");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> ORE_NICKEL = createKey("ore_nickel");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> ORE_PLATINUM = createKey("ore_platinum");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> ORE_SILVER = createKey("ore_silver");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> ORE_TIN = createKey("ore_tin");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> ORE_URANIUM = createKey("ore_uranium");
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
         context.register(ORE_ALUMINUM, new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(ORE_ALUMINUM_SUPPLIER.get(), 8)));
@@ -48,5 +48,9 @@ public class FoundationOreFeatures {
         context.register(ORE_SILVER, new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(ORE_SILVER_SUPPLIER.get(), 8)));
         context.register(ORE_TIN, new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(ORE_TIN_SUPPLIER.get(), 8)));
         context.register(ORE_URANIUM, new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(ORE_URANIUM_SUPPLIER.get(), 8)));
+    }
+
+    private static ResourceKey<ConfiguredFeature<?, ?>> createKey(String name) {
+        return ResourceKey.create(Registries.CONFIGURED_FEATURE, UsefulFoundation.rl(name));
     }
 }
