@@ -99,9 +99,7 @@ tasks.withType(ProcessResources).configureEach {
 }
 
 jar {
-    from(rootProject.file('LICENSE')) {
-        rename { "${it}_${rootProject.name}" }
-    }
+    from(rootProject.file('LICENSE'))
 
     manifest {
         attributes([
