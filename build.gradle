@@ -23,7 +23,7 @@ base {
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
 
 neoForge {
-    version = '21.0.42-beta'
+    version = neo_version
 
     runs {
         // applies to all the run configs below
