@@ -1,25 +1,24 @@
 package net.themcbrothers.usefulfoundation.datagen;
 
-import net.minecraft.data.loot.BlockLootSubProvider;
-import net.minecraft.world.flag.FeatureFlags;
+import net.minecraft.core.HolderLookup;
+import net.minecraft.data.loot.packs.VanillaBlockLoot;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.themcbrothers.usefulfoundation.core.Registration;
 
-import java.util.Collections;
 import java.util.stream.Collectors;
 
 import static net.themcbrothers.usefulfoundation.core.FoundationBlocks.*;
 import static net.themcbrothers.usefulfoundation.core.FoundationItems.*;
 
-public class FoundationBlockLootSubProvider extends BlockLootSubProvider {
-    protected FoundationBlockLootSubProvider() {
-        super(Collections.emptySet(), FeatureFlags.REGISTRY.allFlags());
+public class FoundationBlockLootSubProvider extends VanillaBlockLoot {
+    protected FoundationBlockLootSubProvider(HolderLookup.Provider lookupProvider) {
+        super(lookupProvider);
     }
 
     @Override
     protected void generate() {
-        this.add(USEFUL_BEEHIVE.get(), BlockLootSubProvider::createBeeHiveDrop);
+        this.add(USEFUL_BEEHIVE.get(), this::createBeeHiveDrop);
 
         // Storage Blocks
         this.dropSelf(TIN_BLOCK.get());

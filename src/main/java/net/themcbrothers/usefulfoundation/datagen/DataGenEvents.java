@@ -30,7 +30,7 @@ public final class DataGenEvents {
         final DataGenerator generator = event.getGenerator();
         final PackOutput output = generator.getPackOutput();
         final ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
-        final CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
+        CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
 
         // Server resources
         FoundationBlockTagsProvider blockTags = new FoundationBlockTagsProvider(output, lookupProvider, existingFileHelper);
@@ -38,14 +38,18 @@ public final class DataGenEvents {
                 .add(Registries.CONFIGURED_FEATURE, FoundationOreFeatures::bootstrap)
                 .add(Registries.PLACED_FEATURE, FoundationOrePlacements::bootstrap)
                 .add(NeoForgeRegistries.Keys.BIOME_MODIFIERS, FoundationBiomeModifiers::bootstrap);
+
+        DatapackBuiltinEntriesProvider datapackBuiltinEntriesProvider = new DatapackBuiltinEntriesProvider(output, lookupProvider, registrySetBuilder, Set.of(UsefulFoundation.MOD_ID));
+        generator.addProvider(event.includeServer(), datapackBuiltinEntriesProvider);
+
         LootTableProvider.SubProviderEntry providerEntry = new LootTableProvider.SubProviderEntry(FoundationBlockLootSubProvider::new, LootContextParamSets.BLOCK);
+
+        lookupProvider = datapackBuiltinEntriesProvider.getRegistryProvider();
 
         generator.addProvider(event.includeServer(), blockTags);
         generator.addProvider(event.includeServer(), new FoundationItemTagsProvider(output, lookupProvider, blockTags.contentsGetter(), existingFileHelper));
-        generator.addProvider(event.includeServer(), new DatapackBuiltinEntriesProvider(output, lookupProvider, registrySetBuilder, Set.of(UsefulFoundation.MOD_ID)));
         generator.addProvider(event.includeServer(), new FoundationRecipeProvider(output, lookupProvider));
         generator.addProvider(event.includeServer(), new LootTableProvider(output, Collections.emptySet(), List.of(providerEntry), lookupProvider));
-
 
         // Client resources
         generator.addProvider(event.includeClient(), new FoundationBlockStateProvider(output, existingFileHelper));
