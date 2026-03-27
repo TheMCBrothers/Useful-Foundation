@@ -1,7 +1,7 @@
 package net.themcbrothers.usefulfoundation.core;
 
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Tiers;
+import net.minecraft.world.item.ToolMaterial;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.themcbrothers.usefulfoundation.item.HammerItem;
 
@@ -12,7 +12,7 @@ public final class FoundationItems {
     }
 
     // Tool Items
-    public static final DeferredItem<HammerItem> HAMMER = ITEMS.registerItem("hammer", HammerItem::new, new Item.Properties().attributes(HammerItem.createAttributes(Tiers.IRON, 0, -2.5F)));
+    public static final DeferredItem<HammerItem> HAMMER = ITEMS.registerItem("hammer", HammerItem::new, props -> props.tool(ToolMaterial.IRON, FoundationTags.Blocks.MINEABLE_WITH_HAMMER, 0, -2.5F, 0));
 
     // Material Items
     public static final DeferredItem<Item> IRON_PLATE = ITEMS.registerSimpleItem("iron_plate");
@@ -24,7 +24,6 @@ public final class FoundationItems {
     public static final DeferredItem<Item> DIAMOND_PLATE = ITEMS.registerSimpleItem("diamond_plate");
     public static final DeferredItem<Item> DIAMOND_GEAR = ITEMS.registerSimpleItem("diamond_gear");
     public static final DeferredItem<Item> DIAMOND_DUST = ITEMS.registerSimpleItem("diamond_dust");
-    public static final DeferredItem<Item> COPPER_NUGGET = ITEMS.registerSimpleItem("copper_nugget");
     public static final DeferredItem<Item> COPPER_PLATE = ITEMS.registerSimpleItem("copper_plate");
     public static final DeferredItem<Item> COPPER_GEAR = ITEMS.registerSimpleItem("copper_gear");
     public static final DeferredItem<Item> COPPER_DUST = ITEMS.registerSimpleItem("copper_dust");

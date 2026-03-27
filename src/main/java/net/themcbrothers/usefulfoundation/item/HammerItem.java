@@ -1,32 +1,30 @@
 package net.themcbrothers.usefulfoundation.item;
 
-import net.minecraft.world.item.DiggerItem;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Tiers;
-import net.themcbrothers.usefulfoundation.core.FoundationTags;
+import net.minecraft.core.component.DataComponentPatch;
+import net.minecraft.core.component.DataComponents;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemInstance;
+import net.minecraft.world.item.ItemStackTemplate;
+import org.jspecify.annotations.Nullable;
 
-public class HammerItem extends DiggerItem {
+public class HammerItem extends Item {
     public HammerItem(Properties props) {
-        super(Tiers.IRON, FoundationTags.Blocks.MINEABLE_WITH_HAMMER, props);
+        super(props);
     }
 
     @Override
-    public boolean hasCraftingRemainingItem(ItemStack stack) {
-        return true;
-    }
+    public @Nullable ItemStackTemplate getCraftingRemainder(ItemInstance instance) {
+        int damage = instance.getOrDefault(DataComponents.DAMAGE, 0);
+        int maxDamage = instance.getOrDefault(DataComponents.MAX_DAMAGE, 0);
 
-    @Override
-    public ItemStack getCraftingRemainingItem(ItemStack stack) {
-        ItemStack copy = stack.copy();
-
-        int damageValue = copy.getDamageValue();
-
-        if (damageValue < copy.getMaxDamage() - 1) {
-            copy.setDamageValue(damageValue + 1);
-
-            return copy;
+        if (damage < maxDamage - 1) {
+            return new ItemStackTemplate(this,
+                    DataComponentPatch.builder()
+                            .set(DataComponents.DAMAGE, damage + 1)
+                            .build()
+            );
         } else {
-            return ItemStack.EMPTY;
+            return null;
         }
     }
 }

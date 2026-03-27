@@ -1,7 +1,6 @@
 package net.themcbrothers.usefulfoundation;
 
-import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
 import net.themcbrothers.usefulfoundation.core.Registration;
@@ -15,7 +14,7 @@ public class UsefulFoundation {
         Registration.register(modEventBus);
     }
 
-    public static ResourceLocation rl(String pathIn) {
-        return ResourceLocation.fromNamespaceAndPath(MOD_ID, pathIn);
+    public static Identifier id(String pathIn) {
+        return Identifier.fromNamespaceAndPath(MOD_ID, pathIn);
     }
 }
