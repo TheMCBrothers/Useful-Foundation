@@ -5,9 +5,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
 import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
-import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.themcbrothers.usefulfoundation.UsefulFoundation;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -15,11 +13,12 @@ import static net.themcbrothers.usefulfoundation.core.FoundationBlocks.*;
 import static net.themcbrothers.usefulfoundation.core.FoundationTags.Blocks.*;
 
 public class FoundationBlockTagsProvider extends BlockTagsProvider {
-    public FoundationBlockTagsProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> provider, @Nullable ExistingFileHelper existingFileHelper) {
-        super(output, provider, UsefulFoundation.MOD_ID, existingFileHelper);
+    public FoundationBlockTagsProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> provider) {
+        super(output, provider, UsefulFoundation.MOD_ID);
     }
 
     @Override
+    @SuppressWarnings("unchecked")
     protected void addTags(HolderLookup.Provider provider) {
         // Storage Blocks
         this.tag(BLOCKS_ALUMINUM).add(ALUMINUM_BLOCK.get());

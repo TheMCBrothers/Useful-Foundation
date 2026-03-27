@@ -2,25 +2,24 @@ package net.themcbrothers.usefulfoundation.datagen;
 
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
-import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.Tags;
-import net.neoforged.neoforge.common.data.ExistingFileHelper;
-import net.themcbrothers.usefulfoundation.core.FoundationTags;
+import net.neoforged.neoforge.common.data.BlockTagCopyingItemTagProvider;
 import net.themcbrothers.usefulfoundation.UsefulFoundation;
-import org.jetbrains.annotations.Nullable;
+import net.themcbrothers.usefulfoundation.core.FoundationTags;
 
 import java.util.concurrent.CompletableFuture;
 
-import static net.themcbrothers.usefulfoundation.core.FoundationTags.Items.*;
 import static net.themcbrothers.usefulfoundation.core.FoundationItems.*;
+import static net.themcbrothers.usefulfoundation.core.FoundationTags.Items.*;
 
-public class FoundationItemTagsProvider extends ItemTagsProvider {
-    public FoundationItemTagsProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, CompletableFuture<TagLookup<Block>> blockTags, @Nullable ExistingFileHelper existingFileHelper) {
-        super(output, lookupProvider, blockTags, UsefulFoundation.MOD_ID, existingFileHelper);
+public class FoundationItemTagsProvider extends BlockTagCopyingItemTagProvider {
+    public FoundationItemTagsProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, CompletableFuture<TagLookup<Block>> blockTags) {
+        super(output, lookupProvider, blockTags, UsefulFoundation.MOD_ID);
     }
 
     @Override
+    @SuppressWarnings("unchecked")
     protected void addTags(HolderLookup.Provider provider) {
         // Ingots
         this.tag(INGOTS_ALUMINUM).add(ALUMINUM_INGOT.get());
@@ -65,7 +64,6 @@ public class FoundationItemTagsProvider extends ItemTagsProvider {
         // Nuggets
         this.tag(NUGGETS_ALUMINUM).add(ALUMINUM_NUGGET.get());
         this.tag(NUGGETS_BRONZE).add(BRONZE_NUGGET.get());
-        this.tag(NUGGETS_COPPER).add(COPPER_NUGGET.get());
         this.tag(NUGGETS_ELECTRUM).add(ELECTRUM_NUGGET.get());
         this.tag(NUGGETS_ENDERIUM).add(ENDERIUM_NUGGET.get());
         this.tag(NUGGETS_INVAR).add(INVAR_NUGGET.get());

@@ -37,7 +37,7 @@ public class FoundationOrePlacements {
         PlacementUtils.register(context, ORE_LEAD, leadHolder, commonOrePlacement(18, HeightRangePlacement.uniform(VerticalAnchor.bottom(), VerticalAnchor.absolute(80))));
         PlacementUtils.register(context, ORE_NICKEL, nickelHolder, commonOrePlacement(10, HeightRangePlacement.uniform(VerticalAnchor.bottom(), VerticalAnchor.absolute(60))));
         PlacementUtils.register(context, ORE_PLATINUM, platinumHolder, commonOrePlacement(4, HeightRangePlacement.uniform(VerticalAnchor.bottom(), VerticalAnchor.absolute(0))));
-        PlacementUtils.register(context, ORE_PLATINUM_TOP, platinumHolder, commonOrePlacement(100, HeightRangePlacement.uniform(VerticalAnchor.absolute(190), VerticalAnchor.top())));
+        PlacementUtils.register(context, ORE_PLATINUM_TOP, platinumHolder, commonOrePlacement(100, HeightRangePlacement.uniform(VerticalAnchor.absolute(180), VerticalAnchor.top())));
         PlacementUtils.register(context, ORE_SILVER, silverHolder, commonOrePlacement(12, HeightRangePlacement.uniform(VerticalAnchor.bottom(), VerticalAnchor.absolute(80))));
         PlacementUtils.register(context, ORE_TIN, tinHolder, commonOrePlacement(32, HeightRangePlacement.uniform(VerticalAnchor.absolute(85), VerticalAnchor.top())));
         PlacementUtils.register(context, ORE_URANIUM, uraniumHolder, commonOrePlacement(16, HeightRangePlacement.uniform(VerticalAnchor.bottom(), VerticalAnchor.absolute(0))));
@@ -56,6 +56,6 @@ public class FoundationOrePlacements {
     }
 
     private static ResourceKey<PlacedFeature> createKey(String name) {
-        return ResourceKey.create(Registries.PLACED_FEATURE, UsefulFoundation.rl(name));
+        return ResourceKey.create(Registries.PLACED_FEATURE, UsefulFoundation.id(name));
     }
 }

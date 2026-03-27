@@ -132,7 +132,6 @@ public class FoundationLanguageProvider extends LanguageProvider {
 
         // Vanilla Items
         this.addItem(COPPER_GEAR, "Copper Gear");
-        this.addItem(COPPER_NUGGET, "Copper Nugget");
         this.addItem(COPPER_PLATE, "Copper Plate");
         this.addItem(COPPER_DUST, "Copper Dust");
         this.addItem(GOLD_GEAR, "Gold Gear");

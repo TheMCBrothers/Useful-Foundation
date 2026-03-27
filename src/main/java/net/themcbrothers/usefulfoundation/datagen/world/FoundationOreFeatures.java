@@ -51,6 +51,6 @@ public class FoundationOreFeatures {
     }
 
     private static ResourceKey<ConfiguredFeature<?, ?>> createKey(String name) {
-        return ResourceKey.create(Registries.CONFIGURED_FEATURE, UsefulFoundation.rl(name));
+        return ResourceKey.create(Registries.CONFIGURED_FEATURE, UsefulFoundation.id(name));
     }
 }
