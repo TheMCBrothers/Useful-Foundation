@@ -2,15 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": {
-      "tag": "c:strings"
-    },
-    "R": {
-      "tag": "c:rods/wooden"
-    },
-    "X": {
-      "tag": "c:ingots/iron"
-    }
+    "#": "#c:strings",
+    "R": "#c:rods/wooden",
+    "X": "#c:ingots/iron"
   },
   "pattern": [
     " X#",
@@ -18,7 +12,6 @@
     "R  "
   ],
   "result": {
-    "count": 1,
     "id": "usefulfoundation:hammer"
   }
 }

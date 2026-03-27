@@ -3,11 +3,9 @@
   "category": "misc",
   "cookingtime": 100,
   "experience": 0.3,
-  "ingredient": {
-    "item": "usefulfoundation:enderium_dust"
-  },
+  "group": "enderium_ingot",
+  "ingredient": "usefulfoundation:enderium_dust",
   "result": {
-    "count": 1,
     "id": "usefulfoundation:enderium_ingot"
   }
 }

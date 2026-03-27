@@ -1,10 +1,9 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
+  "group": "enderium_ingot",
   "ingredients": [
-    {
-      "tag": "c:storage_blocks/enderium"
-    }
+    "#c:storage_blocks/enderium"
   ],
   "result": {
     "count": 9,

@@ -3,11 +3,9 @@
   "category": "misc",
   "cookingtime": 200,
   "experience": 0.3,
-  "ingredient": {
-    "item": "usefulfoundation:nickel_dust"
-  },
+  "group": "nickel_ingot",
+  "ingredient": "usefulfoundation:nickel_dust",
   "result": {
-    "count": 1,
     "id": "usefulfoundation:nickel_ingot"
   }
 }

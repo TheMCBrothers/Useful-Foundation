@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "X": {
-      "tag": "c:raw_materials/silver"
-    }
+    "X": "#c:raw_materials/silver"
   },
   "pattern": [
     "XXX",
@@ -12,7 +10,6 @@
     "XXX"
   ],
   "result": {
-    "count": 1,
     "id": "usefulfoundation:raw_silver_block"
   }
 }

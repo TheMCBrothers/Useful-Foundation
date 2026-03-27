@@ -2,15 +2,10 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "tag": "c:ingots/uranium"
-    },
-    {
-      "item": "usefulfoundation:hammer"
-    }
+    "#c:ingots/uranium",
+    "usefulfoundation:hammer"
   ],
   "result": {
-    "count": 1,
     "id": "usefulfoundation:uranium_plate"
   }
 }

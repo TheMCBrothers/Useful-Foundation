@@ -3,11 +3,9 @@
   "category": "misc",
   "cookingtime": 100,
   "experience": 0.7,
-  "ingredient": {
-    "tag": "c:raw_materials/lead"
-  },
+  "group": "lead_ingot",
+  "ingredient": "#c:raw_materials/lead",
   "result": {
-    "count": 1,
     "id": "usefulfoundation:lead_ingot"
   }
 }

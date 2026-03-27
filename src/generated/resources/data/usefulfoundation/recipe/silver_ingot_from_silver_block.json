@@ -1,10 +1,9 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
+  "group": "silver_ingot",
   "ingredients": [
-    {
-      "tag": "c:storage_blocks/silver"
-    }
+    "#c:storage_blocks/silver"
   ],
   "result": {
     "count": 9,

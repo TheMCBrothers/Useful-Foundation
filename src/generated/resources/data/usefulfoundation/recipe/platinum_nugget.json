@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "tag": "c:ingots/platinum"
-    }
+    "#c:ingots/platinum"
   ],
   "result": {
     "count": 9,

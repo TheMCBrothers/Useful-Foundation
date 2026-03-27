@@ -1,10 +1,9 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
+  "group": "signalum_ingot",
   "ingredients": [
-    {
-      "tag": "c:storage_blocks/signalum"
-    }
+    "#c:storage_blocks/signalum"
   ],
   "result": {
     "count": 9,

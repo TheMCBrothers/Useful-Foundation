@@ -1,10 +1,9 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
+  "group": "aluminum_ingot",
   "ingredients": [
-    {
-      "tag": "c:storage_blocks/aluminum"
-    }
+    "#c:storage_blocks/aluminum"
   ],
   "result": {
     "count": 9,

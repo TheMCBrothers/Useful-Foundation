@@ -3,11 +3,9 @@
   "category": "misc",
   "cookingtime": 100,
   "experience": 0.7,
-  "ingredient": {
-    "tag": "c:ores/lead"
-  },
+  "group": "lead_ingot",
+  "ingredient": "#c:ores/lead",
   "result": {
-    "count": 1,
     "id": "usefulfoundation:lead_ingot"
   }
 }

@@ -1,10 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
+  "group": "enderium_ingot",
   "key": {
-    "X": {
-      "tag": "c:nuggets/enderium"
-    }
+    "X": "#c:nuggets/enderium"
   },
   "pattern": [
     "XXX",
@@ -12,7 +11,6 @@
     "XXX"
   ],
   "result": {
-    "count": 1,
     "id": "usefulfoundation:enderium_ingot"
   }
 }

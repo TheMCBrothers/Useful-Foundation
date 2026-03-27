@@ -1,10 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
+  "group": "aluminum_ingot",
   "key": {
-    "X": {
-      "tag": "c:nuggets/aluminum"
-    }
+    "X": "#c:nuggets/aluminum"
   },
   "pattern": [
     "XXX",
@@ -12,7 +11,6 @@
     "XXX"
   ],
   "result": {
-    "count": 1,
     "id": "usefulfoundation:aluminum_ingot"
   }
 }

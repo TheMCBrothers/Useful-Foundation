@@ -3,11 +3,9 @@
   "category": "misc",
   "cookingtime": 200,
   "experience": 0.7,
-  "ingredient": {
-    "tag": "c:ores/aluminum"
-  },
+  "group": "aluminum_ingot",
+  "ingredient": "#c:ores/aluminum",
   "result": {
-    "count": 1,
     "id": "usefulfoundation:aluminum_ingot"
   }
 }

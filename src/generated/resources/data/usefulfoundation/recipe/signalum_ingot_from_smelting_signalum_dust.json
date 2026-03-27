@@ -3,11 +3,9 @@
   "category": "misc",
   "cookingtime": 200,
   "experience": 0.3,
-  "ingredient": {
-    "item": "usefulfoundation:signalum_dust"
-  },
+  "group": "signalum_ingot",
+  "ingredient": "usefulfoundation:signalum_dust",
   "result": {
-    "count": 1,
     "id": "usefulfoundation:signalum_ingot"
   }
 }

@@ -3,11 +3,9 @@
   "category": "misc",
   "cookingtime": 200,
   "experience": 0.3,
-  "ingredient": {
-    "item": "usefulfoundation:lead_dust"
-  },
+  "group": "lead_ingot",
+  "ingredient": "usefulfoundation:lead_dust",
   "result": {
-    "count": 1,
     "id": "usefulfoundation:lead_ingot"
   }
 }

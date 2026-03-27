@@ -3,11 +3,9 @@
   "category": "misc",
   "cookingtime": 150,
   "experience": 0.7,
-  "ingredient": {
-    "tag": "c:raw_materials/platinum"
-  },
+  "group": "platinum_ingot",
+  "ingredient": "#c:raw_materials/platinum",
   "result": {
-    "count": 1,
     "id": "usefulfoundation:platinum_ingot"
   }
 }

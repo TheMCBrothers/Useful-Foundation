@@ -3,11 +3,9 @@
   "category": "misc",
   "cookingtime": 100,
   "experience": 0.3,
-  "ingredient": {
-    "item": "usefulfoundation:uranium_dust"
-  },
+  "group": "uranium_ingot",
+  "ingredient": "usefulfoundation:uranium_dust",
   "result": {
-    "count": 1,
     "id": "usefulfoundation:uranium_ingot"
   }
 }

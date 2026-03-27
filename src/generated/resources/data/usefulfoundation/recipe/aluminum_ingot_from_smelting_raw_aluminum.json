@@ -3,11 +3,9 @@
   "category": "misc",
   "cookingtime": 100,
   "experience": 0.7,
-  "ingredient": {
-    "tag": "c:raw_materials/aluminum"
-  },
+  "group": "aluminum_ingot",
+  "ingredient": "#c:raw_materials/aluminum",
   "result": {
-    "count": 1,
     "id": "usefulfoundation:aluminum_ingot"
   }
 }

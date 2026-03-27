@@ -1,10 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
+  "group": "silver_ingot",
   "key": {
-    "X": {
-      "tag": "c:nuggets/silver"
-    }
+    "X": "#c:nuggets/silver"
   },
   "pattern": [
     "XXX",
@@ -12,7 +11,6 @@
     "XXX"
   ],
   "result": {
-    "count": 1,
     "id": "usefulfoundation:silver_ingot"
   }
 }

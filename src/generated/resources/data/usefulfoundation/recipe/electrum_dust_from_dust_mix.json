@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "tag": "c:dusts/gold"
-    },
-    {
-      "tag": "c:dusts/silver"
-    }
+    "#c:dusts/gold",
+    "#c:dusts/silver"
   ],
   "result": {
     "count": 2,

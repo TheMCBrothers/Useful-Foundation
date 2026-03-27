@@ -3,11 +3,9 @@
   "category": "misc",
   "cookingtime": 100,
   "experience": 0.7,
-  "ingredient": {
-    "tag": "c:ores/platinum"
-  },
+  "group": "platinum_ingot",
+  "ingredient": "#c:ores/platinum",
   "result": {
-    "count": 1,
     "id": "usefulfoundation:platinum_ingot"
   }
 }

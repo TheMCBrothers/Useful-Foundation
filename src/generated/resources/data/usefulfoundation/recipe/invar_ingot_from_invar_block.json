@@ -1,10 +1,9 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
+  "group": "invar_ingot",
   "ingredients": [
-    {
-      "tag": "c:storage_blocks/invar"
-    }
+    "#c:storage_blocks/invar"
   ],
   "result": {
     "count": 9,

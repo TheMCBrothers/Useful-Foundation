@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "X": {
-      "tag": "c:gems/diamond"
-    }
+    "X": "#c:gems/diamond"
   },
   "pattern": [
     " X ",
@@ -12,7 +10,6 @@
     " X "
   ],
   "result": {
-    "count": 1,
     "id": "usefulfoundation:diamond_gear"
   }
 }

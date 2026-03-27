@@ -1,10 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
+  "group": "uranium_ingot",
   "key": {
-    "X": {
-      "tag": "c:nuggets/uranium"
-    }
+    "X": "#c:nuggets/uranium"
   },
   "pattern": [
     "XXX",
@@ -12,7 +11,6 @@
     "XXX"
   ],
   "result": {
-    "count": 1,
     "id": "usefulfoundation:uranium_ingot"
   }
 }

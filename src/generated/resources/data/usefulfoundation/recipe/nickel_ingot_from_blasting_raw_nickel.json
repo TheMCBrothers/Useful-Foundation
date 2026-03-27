@@ -3,11 +3,9 @@
   "category": "misc",
   "cookingtime": 100,
   "experience": 0.7,
-  "ingredient": {
-    "tag": "c:raw_materials/nickel"
-  },
+  "group": "nickel_ingot",
+  "ingredient": "#c:raw_materials/nickel",
   "result": {
-    "count": 1,
     "id": "usefulfoundation:nickel_ingot"
   }
 }

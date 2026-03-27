@@ -2,15 +2,10 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "tag": "c:ingots/copper"
-    },
-    {
-      "item": "usefulfoundation:hammer"
-    }
+    "#c:ingots/copper",
+    "usefulfoundation:hammer"
   ],
   "result": {
-    "count": 1,
     "id": "usefulfoundation:copper_plate"
   }
 }

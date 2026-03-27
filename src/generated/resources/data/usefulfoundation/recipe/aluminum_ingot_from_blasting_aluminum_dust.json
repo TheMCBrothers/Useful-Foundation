@@ -3,11 +3,9 @@
   "category": "misc",
   "cookingtime": 100,
   "experience": 0.3,
-  "ingredient": {
-    "item": "usefulfoundation:aluminum_dust"
-  },
+  "group": "aluminum_ingot",
+  "ingredient": "usefulfoundation:aluminum_dust",
   "result": {
-    "count": 1,
     "id": "usefulfoundation:aluminum_ingot"
   }
 }

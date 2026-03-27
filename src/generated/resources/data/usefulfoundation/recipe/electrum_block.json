@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "X": {
-      "tag": "c:ingots/electrum"
-    }
+    "X": "#c:ingots/electrum"
   },
   "pattern": [
     "XXX",
@@ -12,7 +10,6 @@
     "XXX"
   ],
   "result": {
-    "count": 1,
     "id": "usefulfoundation:electrum_block"
   }
 }

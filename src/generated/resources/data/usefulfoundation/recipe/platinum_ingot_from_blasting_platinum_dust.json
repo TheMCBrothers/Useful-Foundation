@@ -3,11 +3,9 @@
   "category": "misc",
   "cookingtime": 100,
   "experience": 0.3,
-  "ingredient": {
-    "item": "usefulfoundation:platinum_dust"
-  },
+  "group": "platinum_ingot",
+  "ingredient": "usefulfoundation:platinum_dust",
   "result": {
-    "count": 1,
     "id": "usefulfoundation:platinum_ingot"
   }
 }

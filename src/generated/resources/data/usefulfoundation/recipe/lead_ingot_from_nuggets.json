@@ -1,10 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
+  "group": "lead_ingot",
   "key": {
-    "X": {
-      "tag": "c:nuggets/lead"
-    }
+    "X": "#c:nuggets/lead"
   },
   "pattern": [
     "XXX",
@@ -12,7 +11,6 @@
     "XXX"
   ],
   "result": {
-    "count": 1,
     "id": "usefulfoundation:lead_ingot"
   }
 }

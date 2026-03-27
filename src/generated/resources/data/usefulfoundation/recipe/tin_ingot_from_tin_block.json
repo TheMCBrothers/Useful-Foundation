@@ -1,10 +1,9 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
+  "group": "tin_ingot",
   "ingredients": [
-    {
-      "tag": "c:storage_blocks/tin"
-    }
+    "#c:storage_blocks/tin"
   ],
   "result": {
     "count": 9,

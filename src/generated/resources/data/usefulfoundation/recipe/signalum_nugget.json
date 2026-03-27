@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "tag": "c:ingots/signalum"
-    }
+    "#c:ingots/signalum"
   ],
   "result": {
     "count": 9,

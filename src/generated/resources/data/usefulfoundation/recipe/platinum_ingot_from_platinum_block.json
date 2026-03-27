@@ -1,10 +1,9 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
+  "group": "platinum_ingot",
   "ingredients": [
-    {
-      "tag": "c:storage_blocks/platinum"
-    }
+    "#c:storage_blocks/platinum"
   ],
   "result": {
     "count": 9,
